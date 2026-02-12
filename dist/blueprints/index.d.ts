@@ -67,5 +67,15 @@ export declare function getBenefitKontext(fachrichtung: string, benefitId: strin
  * Verbotene Phrasen für eine Fachrichtung.
  */
 export declare function getVerbotenePhrases(fachrichtung: string): string[];
+export interface TeamPositionSuggestion {
+    label: string;
+    category: 'arzt' | 'fachpersonal' | 'verwaltung' | 'ausbildung';
+    aiPlaceholder: string;
+}
+/**
+ * Positions-Vorschläge für die Team-Verwaltung.
+ * Basiert auf employer.aufgaben Keys + fachrichtung_titel + jobs.templates.
+ */
+export declare function getBlueprintTeamPositions(fachrichtung: string): TeamPositionSuggestion[];
 export type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext };
 export { HEALTHCARE_BLUEPRINTS };

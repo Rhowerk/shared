@@ -15,4 +15,4 @@ export { WERTE_CATALOG, getWert, getWerteLabels } from './employer-context.js';
 // ── Registry (ersetzt fachrichtungMapping.ts) ──
 export { REGISTRY, INDUSTRIES, resolveFachrichtung, getRegistryEntry, getBlueprintId, getFachrichtungLabel, getFeaturedFachrichtungen, getMoreFachrichtungen, getAllFachrichtungen, getFachrichtungenByIndustry, getValidFachrichtungIds, } from './registry.js';
 // ── Blueprints ──
-export { getBlueprint, getAvailableBlueprintIds, getAllBlueprints, getBlueprintServices, getServicesByCategory, findService, generateSEO, buildAIContext, buildServicePrompt, getEmployerData, getAufgaben, getBenefitKontext, getVerbotenePhrases, HEALTHCARE_BLUEPRINTS, } from './blueprints/index.js';
+export { getBlueprint, getAvailableBlueprintIds, getAllBlueprints, getBlueprintServices, getServicesByCategory, findService, getBlueprintTeamPositions, generateSEO, buildAIContext, buildServicePrompt, getEmployerData, getAufgaben, getBenefitKontext, getVerbotenePhrases, HEALTHCARE_BLUEPRINTS, } from './blueprints/index.js';
