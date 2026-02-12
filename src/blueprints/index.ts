@@ -1,0 +1,239 @@
+// ═══════════════════════════════════════════════════════════
+// @pracio/shared — Blueprint Loader
+// Single Source of Truth für alle Blueprint-Daten
+// ═══════════════════════════════════════════════════════════
+
+import type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext } from './types.ts'
+import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.ts'
+import { getBlueprintId } from '../registry.ts'
+
+// ── All blueprints across all industries ──
+
+const ALL_BLUEPRINTS: Record<string, Blueprint> = {
+  ...HEALTHCARE_BLUEPRINTS,
+  // Zukünftig: ...LEGAL_BLUEPRINTS,
+}
+
+// ═══════════════════════════════════════════════════════════
+// Blueprint Loader
+// ═══════════════════════════════════════════════════════════
+
+/**
+ * Lädt einen Blueprint für eine Fachrichtung.
+ * Nutzt die Fallback-Kette aus der Registry.
+ * Gibt null zurück wenn kein Blueprint existiert.
+ */
+export function getBlueprint(fachrichtung: string): Blueprint | null {
+  const normalized = fachrichtung.toLowerCase().trim()
+
+  // Direkt vorhanden?
+  if (ALL_BLUEPRINTS[normalized]) return ALL_BLUEPRINTS[normalized]
+
+  // Fallback über Registry
+  const fallbackId = getBlueprintId(normalized)
+  if (fallbackId && ALL_BLUEPRINTS[fallbackId]) return ALL_BLUEPRINTS[fallbackId]
+
+  return null
+}
+
+/**
+ * Gibt alle verfügbaren Blueprint-IDs zurück.
+ */
+export function getAvailableBlueprintIds(): string[] {
+  return Object.keys(ALL_BLUEPRINTS)
+}
+
+/**
+ * Gibt alle Blueprints zurück.
+ */
+export function getAllBlueprints(): Record<string, Blueprint> {
+  return ALL_BLUEPRINTS
+}
+
+// ═══════════════════════════════════════════════════════════
+// Service Helpers
+// ═══════════════════════════════════════════════════════════
+
+/**
+ * Alle Services eines Blueprints als flache Liste.
+ */
+export function getBlueprintServices(blueprint: Blueprint | null): ServiceItem[] {
+  if (!blueprint?.services) return []
+  return blueprint.services.flatMap(cat => cat.items || [])
+}
+
+/**
+ * Services gruppiert nach Kategorie.
+ */
+export function getServicesByCategory(blueprint: Blueprint | null): ServiceCategory[] {
+  if (!blueprint?.services) return []
+  return blueprint.services
+}
+
+/**
+ * Einzelnen Service nach Name finden.
+ */
+export function findService(blueprint: Blueprint | null, name: string): ServiceItem | null {
+  if (!blueprint?.services) return null
+  const lower = name.toLowerCase()
+  for (const cat of blueprint.services) {
+    for (const item of cat.items) {
+      if (item.name.toLowerCase() === lower) return item
+    }
+  }
+  return null
+}
+
+// ═══════════════════════════════════════════════════════════
+// SEO Helpers
+// ═══════════════════════════════════════════════════════════
+
+/**
+ * Generiert SEO-Daten aus Blueprint-Templates.
+ */
+export function generateSEO(
+  blueprint: Blueprint | null,
+  data: { praxis_name: string; ort: string; telefon?: string; adresse?: string }
+): { title: string; description: string; keywords: string[] } {
+  const replace = (template: string) =>
+    template
+      .replace(/\{praxis_name\}/g, data.praxis_name)
+      .replace(/\{ort\}/g, data.ort)
+      .replace(/\{telefon\}/g, data.telefon || '')
+      .replace(/\{adresse\}/g, data.adresse || '')
+
+  if (!blueprint?.seo) {
+    return {
+      title: `${data.praxis_name} | ${data.ort}`,
+      description: `${data.praxis_name} in ${data.ort}. Jetzt Termin vereinbaren!`,
+      keywords: [],
+    }
+  }
+
+  return {
+    title: replace(blueprint.seo.title_template),
+    description: replace(blueprint.seo.description_template),
+    keywords: blueprint.seo.keywords.map(k => replace(k)),
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// AI Context Helpers
+// ═══════════════════════════════════════════════════════════
+
+/**
+ * Baut den System-Prompt für Claude aus Blueprint ai_context + employer.
+ * Ersetzt die alte buildAIContext() aus blueprintHelpers.ts.
+ */
+export function buildAIContext(
+  blueprint: Blueprint | null,
+  data: { praxis_name: string; ort: string }
+): string {
+  if (!blueprint) {
+    return `Du schreibst Texte für die Website einer Arztpraxis.\nPRAXIS: ${data.praxis_name} in ${data.ort}\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.`
+  }
+
+  const ctx = blueprint.ai_context
+  const emp = blueprint.employer
+
+  let prompt = `Du schreibst Texte für die Website einer ${blueprint.meta.name}.\n\n`
+  prompt += `PRAXIS: ${data.praxis_name} in ${data.ort}\n\n`
+  prompt += `TONALITÄT: ${ctx.tone.join(', ')}\n`
+  prompt += `ZIELGRUPPE: ${ctx.audience}\n`
+
+  if (ctx.personality?.length) {
+    prompt += `PERSÖNLICHKEIT: ${ctx.personality.join(', ')}\n`
+  }
+
+  if (ctx.key_messages.length) {
+    prompt += `\nKERNBOTSCHAFTEN:\n${ctx.key_messages.map(m => `- ${m}`).join('\n')}\n`
+  }
+
+  if (ctx.language_style) {
+    prompt += `\nSPRACHSTIL:\n`
+    if (ctx.language_style.avoid.length) prompt += `- Vermeide: ${ctx.language_style.avoid.join(', ')}\n`
+    if (ctx.language_style.prefer.length) prompt += `- Bevorzuge: ${ctx.language_style.prefer.join(', ')}\n`
+  }
+
+  if (emp.typisch) {
+    prompt += `\nFACHRICHTUNGS-KONTEXT: ${emp.typisch}\n`
+  }
+
+  if (emp.verbotene_phrasen.length) {
+    prompt += `\nVERBOTEN (diese Phrasen NICHT verwenden):\n${emp.verbotene_phrasen.map(p => `- "${p}"`).join('\n')}\n`
+  }
+
+  prompt += `\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.`
+  return prompt.trim()
+}
+
+/**
+ * Gibt den AI-Prompt für einen bestimmten Service zurück.
+ */
+export function buildServicePrompt(blueprint: Blueprint | null, serviceName: string): string | null {
+  const service = findService(blueprint, serviceName)
+  if (!service?.ai_prompt) return null
+  return service.ai_prompt
+}
+
+// ═══════════════════════════════════════════════════════════
+// Employer Helpers (ehemals employer-context.ts)
+// ═══════════════════════════════════════════════════════════
+
+/**
+ * Employer-Daten für eine Fachrichtung.
+ */
+export function getEmployerData(fachrichtung: string): EmployerData | null {
+  const bp = getBlueprint(fachrichtung)
+  return bp?.employer || null
+}
+
+/**
+ * Aufgaben für eine bestimmte Rolle in einer Fachrichtung.
+ */
+export function getAufgaben(fachrichtung: string, rolle: string): string {
+  const bp = getBlueprint(fachrichtung)
+  if (!bp?.employer?.aufgaben) return ''
+
+  // Normalize role: "MFA" → "mfa", "Facharzt für..." → "arzt"
+  const lower = rolle.toLowerCase().trim()
+  const aufgaben = bp.employer.aufgaben
+
+  // Direct match
+  if (aufgaben[lower]) return aufgaben[lower]
+
+  // Fuzzy match
+  if (lower.includes('mfa') || lower.includes('medizinische fachangestellte')) return aufgaben['mfa'] || aufgaben['zfa'] || ''
+  if (lower.includes('zfa') || lower.includes('zahnmedizinische')) return aufgaben['zfa'] || aufgaben['mfa'] || ''
+  if (lower.includes('arzt') || lower.includes('ärztin') || lower.includes('facharzt')) return aufgaben['arzt'] || ''
+  if (lower.includes('azubi') || lower.includes('auszubildend')) return aufgaben['azubi'] || ''
+  if (lower.includes('mtra') || lower.includes('radiolog')) return aufgaben['mtra'] || aufgaben['mfa'] || ''
+  if (lower.includes('therapeut')) return aufgaben['therapeut'] || aufgaben['mfa'] || ''
+
+  // Fallback: first available
+  const keys = Object.keys(aufgaben)
+  return keys.length > 0 ? aufgaben[keys[0]] : ''
+}
+
+/**
+ * Benefit-Kontext für eine Fachrichtung.
+ */
+export function getBenefitKontext(fachrichtung: string, benefitId: string): string | null {
+  const bp = getBlueprint(fachrichtung)
+  return bp?.employer?.benefit_kontexte?.[benefitId] || null
+}
+
+/**
+ * Verbotene Phrasen für eine Fachrichtung.
+ */
+export function getVerbotenePhrases(fachrichtung: string): string[] {
+  const bp = getBlueprint(fachrichtung)
+  return bp?.employer?.verbotene_phrasen || []
+}
+
+// ═══════════════════════════════════════════════════════════
+// Re-exports
+// ═══════════════════════════════════════════════════════════
+
+export type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext }
+export { HEALTHCARE_BLUEPRINTS }

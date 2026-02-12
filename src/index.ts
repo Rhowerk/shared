@@ -1,72 +1,56 @@
 // ═══════════════════════════════════════════════════════════
-// @pracio/shared — Index
-// ═══════════════════════════════════════════════════════════
-// Re-exports all modules for convenience.
-//
-// Usage:
-//   import { resolveHomepageBlocks } from '@pracio/shared'
-//   // oder gezielt:
-//   import { resolveHomepageBlocks } from '@pracio/shared/block-resolver'
+// @pracio/shared — Main Index
+// Single Source of Truth für Wizard + Portal
 // ═══════════════════════════════════════════════════════════
 
+// ── Block Resolver ──
 export {
-  // Block Resolver
-  resolveHomepageBlocks,
-  resolveKarriereBlocks,
-  resolveTeamBlocks,
-  resolveServiceDetailBlocks,
-  resolveJobDetailBlocks,
-  extractResolverInput,
-  type ResolvedBlock,
-  type BlockResolverInput,
-  type BlockRole,
+  resolveHomepageBlocks, resolveKarriereBlocks, resolveTeamBlocks,
+  resolveServiceDetailBlocks, resolveJobDetailBlocks, extractResolverInput,
+  type BlockRole, type ResolvedBlock, type BlockResolverInput,
 } from './block-resolver.ts'
 
+// ── Surface Engine ──
 export {
-  // Surface Engine
-  assignSurfaces,
-  getBlockSurfaceConfig,
-  type SurfaceMode,
-  type DividerType,
-  type ThemeSurfaces,
-  type V2ThemeData,
-  type SurfaceAssignment,
+  assignSurfaces, getBlockSurfaceConfig,
+  type SurfaceMode, type DividerType, type ThemeSurfaces, type V2ThemeData, type SurfaceAssignment,
 } from './surface-engine.ts'
 
+// ── Content Prompts ──
 export {
-  // Content Prompts
-  buildBlockPrompt,
-  buildBatchPrompt,
-  mapTonalityToPreset,
-  TONALITY_INSTRUCTIONS,
-  type TonalityPreset,
-  type PromptContext,
-  type BlockPromptRequest,
+  buildBlockPrompt, buildBatchPrompt, mapTonalityToPreset, TONALITY_INSTRUCTIONS,
+  type TonalityPreset, type PromptContext, type BlockPromptRequest,
 } from './content-prompts.ts'
 
+// ── Benefit Catalog ──
 export {
-  // Benefit Catalog
-  BENEFITS,
-  BENEFIT_CATEGORIES,
-  getBenefitsByCategory,
-  getBenefitLabels,
-  getBenefit,
-  validateBenefits,
-  type BenefitItem,
-  type BenefitCategory,
-  type BenefitCategoryDef,
+  BENEFITS, BENEFIT_CATEGORIES, getBenefitsByCategory, getBenefitLabels, getBenefit, validateBenefits,
+  type BenefitItem, type BenefitCategory, type BenefitCategoryDef,
 } from './benefit-catalog.ts'
 
+// ── Werte Catalog ──
+export { WERTE_CATALOG, getWert, getWerteLabels, type WerteDef } from './employer-context.ts'
+
+// ── Registry (ersetzt fachrichtungMapping.ts) ──
 export {
-  // Employer Context
-  WERTE_CATALOG,
-  getWert,
-  getWerteLabels,
-  getEmployerContext,
-  getAufgaben,
-  getBenefitKontext,
-  getAvailableFachrichtungen,
-  getVerbotenePhrases,
-  type WerteDef,
-  type EmployerContext,
-} from './employer-context.ts'
+  REGISTRY, INDUSTRIES, resolveFachrichtung, getRegistryEntry, getBlueprintId,
+  getFachrichtungLabel, getFeaturedFachrichtungen, getMoreFachrichtungen,
+  getAllFachrichtungen, getFachrichtungenByIndustry, getValidFachrichtungIds,
+  type RegistryEntry, type Industry,
+} from './registry.ts'
+
+// ── Blueprints ──
+export {
+  getBlueprint, getAvailableBlueprintIds, getAllBlueprints,
+  getBlueprintServices, getServicesByCategory, findService,
+  generateSEO, buildAIContext, buildServicePrompt,
+  getEmployerData, getAufgaben, getBenefitKontext, getVerbotenePhrases,
+  HEALTHCARE_BLUEPRINTS,
+  type Blueprint, type ServiceItem, type ServiceCategory,
+  type BlueprintSEO, type EmployerData, type AIContext,
+} from './blueprints/index.ts'
+
+export type {
+  ImageRef, ColorAlternative, BlueprintColors,
+  FAQItem, FAQCategory, JobTemplate, FachrichtungTitel,
+} from './blueprints/types.ts'
