@@ -43,11 +43,13 @@ export {
 export {
   getBlueprint, getAvailableBlueprintIds, getAllBlueprints,
   getBlueprintServices, getServicesByCategory, findService,
+  getBlueprintTeamPositions,
   generateSEO, buildAIContext, buildServicePrompt,
   getEmployerData, getAufgaben, getBenefitKontext, getVerbotenePhrases,
   HEALTHCARE_BLUEPRINTS,
   type Blueprint, type ServiceItem, type ServiceCategory,
   type BlueprintSEO, type EmployerData, type AIContext,
+  type TeamPositionSuggestion,
 } from './blueprints/index.js'
 
 export type {

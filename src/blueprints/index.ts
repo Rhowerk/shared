@@ -232,6 +232,143 @@ export function getVerbotenePhrases(fachrichtung: string): string[] {
 }
 
 // ═══════════════════════════════════════════════════════════
+// Team Position Helpers
+// ═══════════════════════════════════════════════════════════
+
+export interface TeamPositionSuggestion {
+  label: string
+  category: 'arzt' | 'fachpersonal' | 'verwaltung' | 'ausbildung'
+  aiPlaceholder: string  // Beispiel-Stichpunkte für KI-Input
+}
+
+/**
+ * Positions-Vorschläge für die Team-Verwaltung.
+ * Basiert auf employer.aufgaben Keys + fachrichtung_titel + jobs.templates.
+ */
+export function getBlueprintTeamPositions(fachrichtung: string): TeamPositionSuggestion[] {
+  const bp = getBlueprint(fachrichtung)
+  const positions: TeamPositionSuggestion[] = []
+  
+  // ── Ärzte-Positionen ──
+  const titel = bp?.fachrichtung_titel
+  if (titel) {
+    positions.push({
+      label: `${titel.de} / ${titel.de_female}`,
+      category: 'arzt',
+      aiPlaceholder: `z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …`,
+    })
+  } else {
+    positions.push({
+      label: 'Facharzt / Fachärztin',
+      category: 'arzt',
+      aiPlaceholder: 'z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …',
+    })
+  }
+
+  positions.push({
+    label: 'Praxisinhaber/in',
+    category: 'arzt',
+    aiPlaceholder: 'z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …',
+  })
+
+  // Weiterbildungsassistenz (wenn in jobs.templates)
+  const hasWBA = bp?.jobs?.templates?.some(t => t.id.includes('weiterbildung'))
+  if (hasWBA || bp?.employer?.aufgaben?.['arzt']) {
+    positions.push({
+      label: 'Weiterbildungsassistent/in',
+      category: 'arzt',
+      aiPlaceholder: 'z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …',
+    })
+  }
+
+  // Angestellter Arzt
+  positions.push({
+    label: 'Angestellte/r Arzt/Ärztin',
+    category: 'arzt',
+    aiPlaceholder: 'z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …',
+  })
+
+  // ── Fachpersonal ──
+  const aufgaben = bp?.employer?.aufgaben || {}
+  const aufgabenKeys = Object.keys(aufgaben)
+
+  // MFA oder ZFA je nach Fachrichtung
+  if (aufgabenKeys.includes('zfa') || fachrichtung.includes('zahn') || fachrichtung.includes('kiefer')) {
+    positions.push({
+      label: 'Zahnmedizinische Fachangestellte (ZFA)',
+      category: 'fachpersonal',
+      aiPlaceholder: `z.B.: Seit 2018 in der Praxis, ${aufgaben['zfa'] ? `Schwerpunkt: ${aufgaben['zfa'].split(',').slice(0, 2).join(', ')}` : 'Stuhlassistenz und Prophylaxe'}, Fortbildung …`,
+    })
+  } else if (aufgabenKeys.includes('mtra')) {
+    positions.push({
+      label: 'MTRA / Medizinisch-technische Radiologieassistentin',
+      category: 'fachpersonal',
+      aiPlaceholder: `z.B.: Seit 2017 im Team, ${aufgaben['mtra'] ? `spezialisiert auf ${aufgaben['mtra'].split(',').slice(0, 2).join(', ')}` : 'MRT/CT-Untersuchungen'}, Strahlenschutzkurs …`,
+    })
+  } else {
+    positions.push({
+      label: 'Medizinische Fachangestellte (MFA)',
+      category: 'fachpersonal',
+      aiPlaceholder: `z.B.: Seit 2019 im Team, ${aufgaben['mfa'] ? `Schwerpunkt: ${aufgaben['mfa'].split(',').slice(0, 2).join(', ')}` : 'Blutentnahmen, EKG, Patientenbetreuung'}, Fortbildung …`,
+    })
+  }
+
+  positions.push({
+    label: 'Leitende MFA / Praxismanagerin',
+    category: 'fachpersonal',
+    aiPlaceholder: 'z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte',
+  })
+
+  // Therapeuten (wenn in aufgaben)
+  if (aufgabenKeys.includes('therapeut')) {
+    positions.push({
+      label: 'Physiotherapeut/in',
+      category: 'fachpersonal',
+      aiPlaceholder: `z.B.: ${aufgaben['therapeut'] ? `Spezialisiert auf ${aufgaben['therapeut'].split(',').slice(0, 2).join(', ')}` : 'Manuelle Therapie, Krankengymnastik'}, … Jahre Berufserfahrung`,
+    })
+  }
+
+  // Physician Assistant (modern, in größeren Praxen)
+  positions.push({
+    label: 'Physician Assistant (PA)',
+    category: 'fachpersonal',
+    aiPlaceholder: 'z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …',
+  })
+
+  // ── Verwaltung / Empfang ──
+  positions.push({
+    label: 'Empfang / Rezeption',
+    category: 'verwaltung',
+    aiPlaceholder: 'z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf',
+  })
+
+  positions.push({
+    label: 'Praxismanager/in',
+    category: 'verwaltung',
+    aiPlaceholder: 'z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung',
+  })
+
+  positions.push({
+    label: 'Verwaltung / Abrechnung',
+    category: 'verwaltung',
+    aiPlaceholder: 'z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern',
+  })
+
+  // ── Ausbildung ──
+  const azubiLabel = aufgabenKeys.includes('zfa')
+    ? 'Auszubildende/r ZFA'
+    : 'Auszubildende/r MFA'
+
+  positions.push({
+    label: azubiLabel,
+    category: 'ausbildung',
+    aiPlaceholder: `z.B.: Im 2. Ausbildungsjahr, ${aufgaben['azubi'] ? aufgaben['azubi'].split(',').slice(0, 2).join(', ') : 'lernt alle Bereiche der Praxis kennen'}`,
+  })
+
+  return positions
+}
+
+// ═══════════════════════════════════════════════════════════
 // Re-exports
 // ═══════════════════════════════════════════════════════════
 
