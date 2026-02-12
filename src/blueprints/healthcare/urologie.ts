@@ -1,4 +1,4 @@
-import type { Blueprint } from '../types.ts'
+import type { Blueprint } from '../types.js'
 
 export const urologie: Blueprint = {
   "meta": {

@@ -9,7 +9,7 @@
 // kann die alte API bedienen.
 // ═══════════════════════════════════════════════════════════
 
-import type { ResolvedBlock, BlockRole } from './block-resolver.ts'
+import type { ResolvedBlock, BlockRole } from './block-resolver.js'
 
 // ── Types (kompatibel mit bestehendem System) ──
 
@@ -147,7 +147,7 @@ export function assignSurfaces(
  * Kann 1:1 als Drop-in Replacement verwendet werden:
  *
  *   // Vorher:
- *   import { getBlockSurfaceConfig } from './blockSurfaceRules'
+ *   import { getBlockSurfaceConfig } from './blockSurfaceRules.js'
  *
  *   // Nachher:
  *   import { getBlockSurfaceConfig } from '@pracio/shared/surface-engine'

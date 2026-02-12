@@ -3,9 +3,9 @@
 // Single Source of Truth für alle Blueprint-Daten
 // ═══════════════════════════════════════════════════════════
 
-import type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext } from './types.ts'
-import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.ts'
-import { getBlueprintId } from '../registry.ts'
+import type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext } from './types.js'
+import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.js'
+import { getBlueprintId } from '../registry.js'
 
 // ── All blueprints across all industries ──
 

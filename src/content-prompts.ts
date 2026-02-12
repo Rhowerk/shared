@@ -7,9 +7,9 @@
 //   Single → Portal Dashboard ("Neuen Vorschlag" für einen Block)
 // ═══════════════════════════════════════════════════════════
 
-import type { ResolvedBlock } from './block-resolver.ts'
-import { getEmployerContext, getWert, type EmployerContext } from './employer-context.ts'
-import { getBenefitLabels } from './benefit-catalog.ts'
+import type { ResolvedBlock } from './block-resolver.js'
+import { getEmployerContext, getWert, type EmployerContext } from './employer-context.js'
+import { getBenefitLabels } from './benefit-catalog.js'
 
 // ── Types ──
 

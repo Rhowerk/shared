@@ -1,4 +1,4 @@
-import type { Blueprint } from '../types.ts'
+import type { Blueprint } from '../types.js'
 
 export const kinderarzt: Blueprint = {
   "meta": {
@@ -57,13 +57,13 @@ export const kinderarzt: Blueprint = {
       {
         "id": "kinderarzt-hero-1",
         "local": "/images/healthcare/kinderarzt/hero-01.png",
-        "unsplash": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1920&q=80",
+        "url": "https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=1920&q=80",
         "alt": "Freundliche Kinderärztin untersucht lachendes Kind"
       },
       {
         "id": "kinderarzt-hero-2",
         "local": "/images/healthcare/kinderarzt/hero-02.png",
-        "unsplash": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&q=80",
+        "url": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1920&q=80",
         "alt": "Helles, modernes Behandlungszimmer"
       }
     ],
@@ -71,13 +71,13 @@ export const kinderarzt: Blueprint = {
       {
         "id": "kinderarzt-team",
         "local": "/images/healthcare/kinderarzt/team-01.png",
-        "unsplash": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1024&q=80",
+        "url": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1024&q=80",
         "alt": "Kinderarzt-Team in freundlicher Atmosphäre"
       },
       {
         "id": "kinderarzt-behandlung",
         "local": "/images/healthcare/kinderarzt/behandlung-01.png",
-        "unsplash": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1024&q=80",
+        "url": "https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?w=1024&q=80",
         "alt": "Einfühlsame Untersuchung eines Kindes"
       }
     ],
@@ -85,7 +85,7 @@ export const kinderarzt: Blueprint = {
       {
         "id": "kinderarzt-leistungen",
         "local": "/images/healthcare/kinderarzt/leistungen-01.png",
-        "unsplash": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1024&q=80",
+        "url": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=1024&q=80",
         "alt": "Kinderärztliche Vorsorgeuntersuchung"
       }
     ],
@@ -93,7 +93,7 @@ export const kinderarzt: Blueprint = {
       {
         "id": "kinderarzt-banner",
         "local": "/images/healthcare/kinderarzt/banner-01.png",
-        "unsplash": "https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=1920&q=80",
+        "url": "https://images.unsplash.com/photo-1566004100631-35d015d6a491?w=1920&q=80",
         "alt": "Glückliche Familie mit Kind"
       }
     ]
