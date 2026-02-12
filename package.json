@@ -1,0 +1,39 @@
+{
+  "name": "@pracio/shared",
+  "version": "1.0.0",
+  "description": "Shared modules for Pracio Wizard + Portal: block-resolver, surface-engine, content-prompts, benefit-catalog, employer-context",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./block-resolver": "./dist/block-resolver.js",
+    "./surface-engine": "./dist/surface-engine.js",
+    "./content-prompts": "./dist/content-prompts.js",
+    "./benefit-catalog": "./dist/benefit-catalog.js",
+    "./employer-context": "./dist/employer-context.js"
+  },
+  "typesVersions": {
+    "*": {
+      "block-resolver": ["dist/block-resolver.d.ts"],
+      "surface-engine": ["dist/surface-engine.d.ts"],
+      "content-prompts": ["dist/content-prompts.d.ts"],
+      "benefit-catalog": ["dist/benefit-catalog.d.ts"],
+      "employer-context": ["dist/employer-context.d.ts"]
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-strip-types --experimental-transform-types --test tests/shared.test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "license": "UNLICENSED",
+  "private": true
+}
