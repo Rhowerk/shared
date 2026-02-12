@@ -1,37 +1,25 @@
 {
   "name": "@pracio/shared",
-  "version": "1.0.0",
-  "description": "Shared modules for Pracio Wizard + Portal: block-resolver, surface-engine, content-prompts, benefit-catalog, employer-context",
+  "version": "2.0.0",
+  "description": "Shared modules for Pracio Wizard + Portal",
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./block-resolver": "./dist/block-resolver.js",
-    "./surface-engine": "./dist/surface-engine.js",
-    "./content-prompts": "./dist/content-prompts.js",
-    "./benefit-catalog": "./dist/benefit-catalog.js",
-    "./employer-context": "./dist/employer-context.js"
-  },
-  "typesVersions": {
-    "*": {
-      "block-resolver": ["dist/block-resolver.d.ts"],
-      "surface-engine": ["dist/surface-engine.d.ts"],
-      "content-prompts": ["dist/content-prompts.d.ts"],
-      "benefit-catalog": ["dist/benefit-catalog.d.ts"],
-      "employer-context": ["dist/employer-context.d.ts"]
-    }
+    ".": "./src/index.ts",
+    "./registry": "./src/registry.ts",
+    "./blueprints": "./src/blueprints/index.ts",
+    "./block-resolver": "./src/block-resolver.ts",
+    "./surface-engine": "./src/surface-engine.ts",
+    "./content-prompts": "./src/content-prompts.ts",
+    "./benefit-catalog": "./src/benefit-catalog.ts",
+    "./employer-context": "./src/employer-context.ts"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "test": "node --experimental-strip-types --experimental-transform-types --test tests/shared.test.ts"
-  },
-  "devDependencies": {
-    "typescript": "^5.4.0"
+    "test": "node --experimental-strip-types --experimental-transform-types --test tests/shared.test.ts",
+    "dry-test": "node --experimental-strip-types --experimental-transform-types dry-test-provision.ts"
   },
   "files": [
-    "dist",
     "src"
   ],
   "license": "UNLICENSED",
