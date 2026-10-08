@@ -80,27 +80,27 @@ export const kardiologie: Blueprint = {
         {
           "name": "Kardiologische Untersuchung",
           "icon": "heart",
-          "default_description": "Bei der kardiologischen Untersuchung erfassen wir Ihren Herzstatus umfassend.\nWir hören Ihr Herz ab, messen den Blutdruck und beurteilen Ihre\nkardiovaskuläre Gesundheit."
+          "default_description": "Die kardiologische Untersuchung umfasst Anamnese, körperliche Untersuchung, Blutdruckmessung und EKG. Je nach Fragestellung folgen weitere Untersuchungen wie Herzultraschall oder Belastungstest."
         },
         {
           "name": "EKG / Belastungs-EKG",
           "icon": "activity",
-          "default_description": "Das EKG zeichnet die elektrische Aktivität Ihres Herzens auf.\nBeim Belastungs-EKG prüfen wir zusätzlich, wie Ihr Herz unter\nkörperlicher Anstrengung reagiert."
+          "default_description": "Das EKG zeichnet die elektrische Aktivität des Herzens auf. Beim Belastungs-EKG wird zusätzlich auf dem Fahrradergometer geprüft, wie Herz und Kreislauf auf körperliche Anstrengung reagieren."
         },
         {
           "name": "Echokardiographie (Herzultraschall)",
           "icon": "monitor",
-          "default_description": "Mit dem Herzultraschall sehen wir Ihr Herz bei der Arbeit.\nWir beurteilen Größe, Pumpfunktion und Herzklappen - schmerzfrei\nund ohne Strahlenbelastung."
+          "default_description": "Der Herzultraschall zeigt Größe, Pumpfunktion und Herzklappen des Herzens. Die Untersuchung kommt ohne Strahlenbelastung aus."
         },
         {
           "name": "Langzeit-EKG",
           "icon": "clock",
-          "default_description": "Das Langzeit-EKG überwacht Ihren Herzrhythmus über 24 Stunden oder länger.\nSo erkennen wir auch Rhythmusstörungen, die nur gelegentlich auftreten."
+          "default_description": "Ein kleines Aufzeichnungsgerät erfasst den Herzrhythmus über 24 Stunden oder länger im Alltag. So lassen sich auch Rhythmusstörungen erkennen, die nur zeitweise auftreten."
         },
         {
           "name": "Langzeit-Blutdruckmessung",
           "icon": "trending-up",
-          "default_description": "Die 24-Stunden-Blutdruckmessung zeigt uns Ihr Blutdruckprofil im Alltag.\nSo können wir Bluthochdruck besser einschätzen und die Therapie optimieren."
+          "default_description": "Ein Messgerät zeichnet den Blutdruck über 24 Stunden in regelmäßigen Abständen auf, auch nachts. Das Blutdruckprofil hilft bei Diagnose und Therapieanpassung."
         }
       ]
     },
@@ -111,12 +111,12 @@ export const kardiologie: Blueprint = {
         {
           "name": "Herzschrittmacher-Kontrolle",
           "icon": "cpu",
-          "default_description": "Wir kontrollieren regelmäßig die Funktion Ihres Herzschrittmachers oder\nDefibrillators. Die Untersuchung ist schmerzfrei und gibt Ihnen Sicherheit."
+          "default_description": "Regelmäßige Kontrollen von Herzschrittmachern und implantierten Defibrillatoren prüfen Batterie, Sonden und Einstellungen. Bei Bedarf werden die Einstellungen angepasst."
         },
         {
           "name": "Gefäßdiagnostik",
           "icon": "git-branch",
-          "default_description": "Mit der Gefäßdiagnostik untersuchen wir Ihre Arterien auf Verengungen\nund Ablagerungen. Früherkennung hilft, Herzinfarkt und Schlaganfall\nvorzubeugen."
+          "default_description": "Ultraschalluntersuchungen der Arterien, etwa der Halsschlagadern, zeigen Ablagerungen und Verengungen. Die Befunde fließen in die Einschätzung des Herz-Kreislauf-Risikos ein."
         }
       ]
     },
@@ -127,22 +127,23 @@ export const kardiologie: Blueprint = {
         {
           "name": "Herzinsuffizienz-Behandlung",
           "icon": "heart",
-          "default_description": "Bei Herzschwäche entwickeln wir einen individuellen Behandlungsplan.\nMit modernen Medikamenten und Lebensstiländerungen verbessern wir\nIhre Belastbarkeit und Lebensqualität."
+          "default_description": "Bei einer Herzschwäche (Herzinsuffizienz) pumpt das Herz nicht mehr ausreichend Blut durch den Körper. Die Behandlung umfasst Medikamente, regelmäßige Kontrollen und Empfehlungen zu Bewegung und Lebensstil."
         },
         {
           "name": "Koronare Herzerkrankung",
           "icon": "alert-triangle",
-          "default_description": "Bei verengten Herzkranzgefäßen ist schnelles Handeln wichtig.\nWir diagnostizieren präzise und koordinieren Ihre Behandlung\nmit Kliniken und Spezialisten."
+          "default_description": "Bei der koronaren Herzkrankheit sind die Herzkranzgefäße verengt. Zur Betreuung gehören Diagnostik, medikamentöse Therapie, die Behandlung von Risikofaktoren und bei Bedarf die Abstimmung mit Kliniken für weitere Eingriffe."
         },
         {
           "name": "Herzrhythmusstörungen",
           "icon": "zap",
-          "default_description": "Herzstolpern, Herzrasen oder unregelmäßiger Puls beunruhigen viele Patienten.\nWir klären die Ursache und finden die richtige Therapie für Ihren Rhythmus."
+          "default_description": "Herzstolpern, Herzrasen oder ein unregelmäßiger Puls können auf Herzrhythmusstörungen hinweisen. Mit EKG und Langzeitaufzeichnungen wird die Ursache abgeklärt und die Behandlung geplant."
         },
         {
           "name": "Sportkardiologie",
           "icon": "award",
-          "default_description": "Sportler haben besondere Anforderungen an ihr Herz. Wir untersuchen\nIhre Sporttauglichkeit und begleiten Sie bei der Leistungsoptimierung."
+          "default_description": "Kardiologische Untersuchung vor oder während sportlicher Aktivität, etwa mit EKG, Belastungstest und Herzultraschall. Die Ergebnisse helfen, die Belastbarkeit einzuschätzen; ohne Beschwerden oder Krankheitsverdacht ist die Untersuchung in der Regel eine Selbstzahlerleistung.",
+          "igel": true
         }
       ]
     }
@@ -157,10 +158,10 @@ export const kardiologie: Blueprint = {
     ],
     "audience": "Patienten mit Herzproblemen oder Risikofaktoren.\nOft besorgt, suchen Sicherheit und kompetente Betreuung.",
     "key_messages": [
-      "Ihr Herz in besten Händen",
-      "Modernste Herzdiagnostik",
-      "Vorsorge schützt vor Herzinfarkt",
-      "Individuelle Therapiekonzepte"
+      "Herzgesundheit verständlich erklärt",
+      "Abklärung von Herzbeschwerden",
+      "Vorsorge und Behandlung von Risikofaktoren",
+      "Langfristige Begleitung bei Herzerkrankungen"
     ]
   },
   "seo": {
@@ -214,7 +215,7 @@ export const kardiologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "EKG, Echokardiografie, Belastungstests, Herzrhythmusstörungen",
+    "typisch": "EKG, Herzultraschall, Belastungstests, Herzrhythmusstörungen, Langzeitbetreuung",
     "aufgaben": {
       "mfa": "EKG anlegen, Langzeit-EKG/RR, Belastungs-EKG-Assistenz, Gerinnungsmanagement",
       "arzt": "Echokardiografie, Belastungsdiagnostik, Rhythmologie, Herzinsuffizienz",

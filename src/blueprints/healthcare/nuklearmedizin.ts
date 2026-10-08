@@ -80,17 +80,17 @@ export const nuklearmedizin: Blueprint = {
         {
           "name": "Schilddrüsen-Szintigraphie",
           "icon": "monitor",
-          "default_description": "Die Szintigraphie zeigt die Funktion Ihrer Schilddrüse bildlich.\nWir erkennen heiße und kalte Knoten und können die optimale\nBehandlung planen."
+          "default_description": "Die Schilddrüsenszintigraphie zeigt mit einer schwach radioaktiven Substanz, wie aktiv das Schilddrüsengewebe ist. So lassen sich Knoten als funktionell aktiv (warm oder heiß) oder inaktiv (kalt) einordnen."
         },
         {
           "name": "Schilddrüsen-Sonographie",
           "icon": "search",
-          "default_description": "Im Ultraschall beurteilen wir Größe, Struktur und Knoten\nIhrer Schilddrüse. Schnell, schmerzfrei und ohne\nStrahlenbelastung."
+          "default_description": "Im Ultraschall werden Größe, Gewebestruktur und Knoten der Schilddrüse beurteilt. Die Untersuchung kommt ohne Strahlenbelastung aus."
         },
         {
           "name": "Radioiodtherapie",
           "icon": "shield",
-          "default_description": "Bei Schilddrüsenüberfunktion oder gutartigen Knoten kann die\nRadioiodtherapie eine schonende Alternative zur Operation sein.\nWir beraten Sie ausführlich."
+          "default_description": "Die Radioiodtherapie wird bei Schilddrüsenüberfunktion oder gutartigen Knoten eingesetzt und ist eine Alternative zur Operation. Die Behandlung erfolgt stationär auf einer nuklearmedizinischen Therapiestation; Eignung und Ablauf werden vorab besprochen."
         }
       ]
     },
@@ -101,22 +101,22 @@ export const nuklearmedizin: Blueprint = {
         {
           "name": "Skelett-Szintigraphie",
           "icon": "bone",
-          "default_description": "Die Knochenszintigraphie zeigt Entzündungen, Metastasen und\nFrakturen im gesamten Skelett. Eine wichtige Untersuchung\nin der Orthopädie und Onkologie."
+          "default_description": "Die Skelettszintigraphie stellt Bereiche mit erhöhtem Knochenstoffwechsel im gesamten Skelett dar. Eingesetzt wird sie etwa bei Verdacht auf Entzündungen, Metastasen oder im Röntgen nicht sichtbare Frakturen."
         },
         {
           "name": "Myokard-Szintigraphie",
           "icon": "heart",
-          "default_description": "Die Herzszintigraphie zeigt die Durchblutung Ihres Herzmuskels\nunter Belastung und in Ruhe. So erkennen wir Durchblutungsstörungen\nfrühzeitig und zuverlässig."
+          "default_description": "Die Myokardszintigraphie zeigt die Durchblutung des Herzmuskels in Ruhe und unter Belastung. Damit lassen sich Durchblutungsstörungen bei koronarer Herzkrankheit erkennen und einordnen."
         },
         {
           "name": "PET/CT Befundung",
           "icon": "layers",
-          "default_description": "PET/CT kombiniert Stoffwechsel- und Schnittbilddiagnostik.\nIn der Onkologie unverzichtbar für Staging, Therapiekontrolle\nund Nachsorge."
+          "default_description": "Die PET/CT kombiniert die Darstellung von Stoffwechselvorgängen mit der Computertomographie. In der Onkologie wird sie für Stadieneinteilung, Therapiekontrolle und Nachsorge eingesetzt."
         },
         {
           "name": "Radiosynoviorthese (RSO)",
           "icon": "target",
-          "default_description": "Bei chronischen Gelenkentzündungen, die auf andere Therapien\nnicht ansprechen, kann die Radiosynoviorthese die entzündete\nGelenkschleimhaut schonend veröden."
+          "default_description": "Bei der Radiosynoviorthese wird eine radioaktive Substanz in ein entzündetes Gelenk gespritzt, um die entzündete Gelenkschleimhaut zu veröden. Das Verfahren kommt bei chronischen Gelenkentzündungen in Frage, wenn andere Behandlungen nicht ausreichend wirken."
         }
       ]
     }
@@ -131,10 +131,10 @@ export const nuklearmedizin: Blueprint = {
     ],
     "audience": "Schilddrüsenpatienten, Patienten mit Knochen- oder Herzdiagnostik,\nonkologische Patienten zur PET/CT-Untersuchung.",
     "key_messages": [
-      "Präzise Diagnostik mit modernster Technik",
-      "Schilddrüse kompetent untersucht und behandelt",
-      "Minimale Strahlenbelastung – maximale Aussagekraft",
-      "Nuklearmedizinische Therapie unter einem Dach"
+      "Bildgebende Diagnostik mit Radiopharmaka",
+      "Schilddrüsendiagnostik und -therapie",
+      "Strahlenschutz und Aufklärung zur Strahlenbelastung",
+      "Verständliche Erklärung des Untersuchungsablaufs"
     ]
   },
   "seo": {
@@ -189,7 +189,7 @@ export const nuklearmedizin: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Szintigrafie, Schilddrüsendiagnostik, Radiojodtherapie, PET/CT",
+    "typisch": "Szintigrafie, Schilddrüsendiagnostik, Strahlenschutz",
     "aufgaben": {
       "mtra": "Radiopharmakon-Vorbereitung, Kamera-Bedienung, Patientenlagerung, Strahlenschutz",
       "arzt": "Befundung, Indikationsstellung, Radiojodtherapie, Schilddrüsen-Sono",

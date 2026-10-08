@@ -39,14 +39,30 @@ export declare function generateSEO(blueprint: Blueprint | null, data: {
     description: string;
     keywords: string[];
 };
+/** Zweck des Prompts: Patienten-Website (Standard) oder Karriere/Stellenanzeigen. */
+export type AIContextZweck = 'website' | 'karriere';
+export interface AIContextOptions {
+    /** 'karriere': ohne Patienten-Kernbotschaften, Zielgruppe Bewerberinnen und Bewerber. */
+    zweck?: AIContextZweck;
+}
+/** Kennzeichnung für Fachrichtungswissen, das keine Aussage über die konkrete Praxis ist. */
+export declare const HINTERGRUND_HINWEIS = "HINTERGRUND zur Fachrichtung \u2013 nicht als Leistung, Ausstattung oder T\u00E4tigkeit DIESER Praxis nennen";
 /**
  * Baut den System-Prompt für Claude aus Blueprint ai_context + employer.
  * Ersetzt die alte buildAIContext() aus blueprintHelpers.ts.
+ *
+ * Kernbotschaften und `employer.typisch` beschreiben die FACHRICHTUNG, nicht die
+ * Praxis. Sie werden deshalb ausdrücklich als Hintergrund gekennzeichnet, damit
+ * die KI daraus keine Leistungen, Geräte oder Tätigkeiten der Praxis ableitet.
+ *
+ * Ohne `options` (oder mit `zweck: 'website'`) entspricht der Aufbau dem
+ * bisherigen Prompt. Mit `zweck: 'karriere'` entfallen Patienten-Zielgruppe,
+ * Patienten-Kernbotschaften und der patientenbezogene Sprachstil.
  */
 export declare function buildAIContext(blueprint: Blueprint | null, data: {
     praxis_name: string;
     ort: string;
-}): string;
+}, options?: AIContextOptions): string;
 /**
  * Gibt den AI-Prompt für einen bestimmten Service zurück.
  */

@@ -78,12 +78,12 @@ export const psychotherapie = {
                 {
                     "name": "Psychotherapeutische Sprechstunde",
                     "icon": "message-circle",
-                    "default_description": "In der psychotherapeutischen Sprechstunde lernen wir uns kennen.\nSie schildern Ihre Beschwerden und wir besprechen, ob und welche\nTherapie für Sie sinnvoll ist. Dieser erste Schritt ist wichtig."
+                    "default_description": "Die psychotherapeutische Sprechstunde ist der erste Kontakt zur Abklärung psychischer Beschwerden. Dabei wird eingeschätzt, ob eine Psychotherapie oder eine andere Unterstützung angezeigt ist; für gesetzlich Versicherte ist sie vor Beginn einer Therapie in der Regel verpflichtend."
                 },
                 {
                     "name": "Diagnostik / Erstgespräch",
                     "icon": "clipboard-check",
-                    "default_description": "Im Erstgespräch erfassen wir Ihre aktuelle Situation und Ihre Geschichte.\nGemeinsam entwickeln wir ein Verständnis für Ihre Beschwerden und\nlegen die Therapieziele fest."
+                    "default_description": "In den ersten Gesprächen (probatorische Sitzungen) werden aktuelle Beschwerden, Lebensgeschichte und Ziele erfasst. Daraus ergeben sich Diagnose, Behandlungsplan und die Entscheidung über das passende Verfahren."
                 }
             ]
         },
@@ -94,22 +94,22 @@ export const psychotherapie = {
                 {
                     "name": "Verhaltenstherapie",
                     "icon": "target",
-                    "default_description": "Die Verhaltenstherapie hilft Ihnen, belastende Denk- und Verhaltensmuster\nzu erkennen und zu verändern. Praktische Übungen unterstützen Sie dabei,\nneue Wege im Alltag zu gehen."
+                    "default_description": "Die Verhaltenstherapie setzt an belastenden Denk- und Verhaltensmustern an. Mit Gesprächen und praktischen Übungen werden neue Bewältigungsstrategien für den Alltag erarbeitet."
                 },
                 {
                     "name": "Tiefenpsychologische Therapie",
                     "icon": "layers",
-                    "default_description": "In der tiefenpsychologischen Therapie verstehen wir gemeinsam,\nwie vergangene Erfahrungen Ihr heutiges Erleben beeinflussen.\nDieses Verständnis ermöglicht Veränderung."
+                    "default_description": "Die tiefenpsychologisch fundierte Psychotherapie betrachtet, wie frühere Erfahrungen und unbewusste Konflikte das heutige Erleben beeinflussen. Ziel ist es, diese Zusammenhänge zu verstehen und aktuelle Schwierigkeiten zu bearbeiten."
                 },
                 {
                     "name": "Trauma-Therapie (EMDR)",
                     "icon": "shield",
-                    "default_description": "EMDR ist ein wirksames Verfahren zur Verarbeitung traumatischer\nErlebnisse. Die Methode hilft, belastende Erinnerungen zu verarbeiten\nund neue Perspektiven zu entwickeln."
+                    "default_description": "EMDR (Eye Movement Desensitization and Reprocessing) ist ein Verfahren zur Behandlung von Traumafolgestörungen. Belastende Erinnerungen werden dabei mithilfe von Augenbewegungen oder anderen Reizen schrittweise bearbeitet."
                 },
                 {
                     "name": "Achtsamkeitsbasierte Therapie",
                     "icon": "sun",
-                    "default_description": "Achtsamkeit hilft, den gegenwärtigen Moment bewusst wahrzunehmen.\nDiese Fähigkeit kann bei Stress, Depressionen und Ängsten\nnachhaltig entlasten."
+                    "default_description": "Achtsamkeitsbasierte Verfahren üben, den gegenwärtigen Moment bewusst und ohne Bewertung wahrzunehmen. Eingesetzt werden sie etwa bei Stress, wiederkehrenden Depressionen oder Ängsten, häufig ergänzend zu anderen Verfahren."
                 }
             ]
         },
@@ -120,27 +120,28 @@ export const psychotherapie = {
                 {
                     "name": "Depression-Behandlung",
                     "icon": "cloud",
-                    "default_description": "Depression ist gut behandelbar. In der Therapie arbeiten wir an\nden Ursachen, stärken Ihre Ressourcen und entwickeln Strategien\ngegen die Antriebslosigkeit."
+                    "default_description": "Eine Depression zeigt sich unter anderem durch anhaltende Niedergeschlagenheit, Antriebslosigkeit und Interessenverlust. Die Psychotherapie arbeitet an auslösenden und aufrechterhaltenden Faktoren und stärkt vorhandene Ressourcen."
                 },
                 {
                     "name": "Angststörungen",
                     "icon": "alert-circle",
-                    "default_description": "Ob Panikattacken, soziale Ängste oder Phobien - Angststörungen\nlassen sich wirksam behandeln. Wir helfen Ihnen, die Angst\nzu überwinden und wieder frei zu leben."
+                    "default_description": "Zu den Angststörungen gehören Panikstörung, soziale Angst, generalisierte Angst und spezifische Phobien. In der Therapie werden Auslöser verstanden und Wege erarbeitet, mit der Angst umzugehen."
                 },
                 {
                     "name": "Burnout / Erschöpfung",
                     "icon": "battery-low",
-                    "default_description": "Burnout entsteht oft schleichend. In der Therapie finden wir\nheraus, was Sie erschöpft hat und entwickeln Wege zu neuer\nEnergie und besserer Balance."
+                    "default_description": "Anhaltende Erschöpfung entwickelt sich oft schleichend, häufig im Zusammenhang mit Belastungen in Beruf oder Familie. In der Therapie werden Ursachen betrachtet und Wege zu Entlastung und Ausgleich erarbeitet."
                 },
                 {
                     "name": "Paartherapie",
                     "icon": "users",
-                    "default_description": "Beziehungsprobleme belasten beide Partner. In der Paartherapie\nverbessern Sie Ihre Kommunikation und finden gemeinsam neue\nWege miteinander."
+                    "default_description": "Die Paartherapie richtet sich an Paare mit Konflikten oder Kommunikationsschwierigkeiten. In gemeinsamen Sitzungen werden Muster in der Beziehung betrachtet und neue Wege miteinander erarbeitet. Paartherapie ist keine Leistung der gesetzlichen Krankenversicherung.",
+                    "igel": true
                 },
                 {
                     "name": "Krisenintervention",
                     "icon": "phone",
-                    "default_description": "In akuten Krisen brauchen Sie schnelle Unterstützung.\nWir bieten kurzfristige Termine, um Sie durch schwierige\nSituationen zu begleiten."
+                    "default_description": "Krisenintervention bietet Unterstützung in akuten seelischen Krisen, etwa nach Verlusten oder belastenden Ereignissen. Ziel ist die Stabilisierung und die Klärung, welche weitere Hilfe sinnvoll ist. In akuten Notfällen sind der ärztliche Bereitschaftsdienst (116 117) und der Notruf 112 erreichbar."
                 }
             ]
         },
@@ -151,12 +152,12 @@ export const psychotherapie = {
                 {
                     "name": "Kinder- und Jugendpsychotherapie",
                     "icon": "baby",
-                    "default_description": "Kinder und Jugendliche brauchen altersgerechte Therapie.\nMit spielerischen und kreativen Methoden helfen wir jungen\nMenschen, ihre Probleme zu bewältigen."
+                    "default_description": "Die Kinder- und Jugendlichenpsychotherapie richtet sich an junge Menschen bis 21 Jahre und bezieht Eltern oder Bezugspersonen mit ein. Je nach Alter kommen spielerische, kreative und gesprächsbasierte Methoden zum Einsatz."
                 },
                 {
                     "name": "Gruppentherapie",
                     "icon": "users",
-                    "default_description": "In der Gruppentherapie lernen Sie von anderen Betroffenen\nund erleben, dass Sie nicht allein sind. Die Gruppe bietet\nUnterstützung und neue Perspektiven."
+                    "default_description": "In der Gruppentherapie arbeiten mehrere Teilnehmende unter therapeutischer Leitung an ähnlichen Themen. Der Austausch mit anderen kann neue Perspektiven eröffnen und entlasten."
                 }
             ]
         }
@@ -172,9 +173,9 @@ export const psychotherapie = {
         ],
         "audience": "Menschen mit psychischen Belastungen wie Depressionen, Ängsten oder Burnout.\nDer erste Schritt zur Therapie ist oft schwer - Hürden abbauen wichtig.",
         "key_messages": [
-            "Der erste Schritt braucht Mut - wir sind für Sie da",
+            "Der erste Schritt ist oft der schwerste",
             "Vertrauliche und wertschätzende Atmosphäre",
-            "Individuelle Therapie für Ihre Bedürfnisse",
+            "Behandlung mit anerkannten Therapieverfahren",
             "Psychische Gesundheit ist genauso wichtig wie körperliche"
         ]
     },
@@ -223,7 +224,7 @@ export const psychotherapie = {
         }
     },
     "employer": {
-        "typisch": "Verhaltenstherapie, Tiefenpsychologie, Traumatherapie, Gruppentherapie",
+        "typisch": "Gesprächsbasierte Psychotherapie, Diagnostik, anerkannte Therapieverfahren",
         "aufgaben": {
             "mfa": "Terminmanagement, Patientenkoordination, Abrechnung, Testverfahren-Vorbereitung",
             "arzt": "Diagnostische Gespräche, Psychotherapie, Medikation, Krisenintervention",

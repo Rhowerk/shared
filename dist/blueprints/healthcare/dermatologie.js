@@ -78,17 +78,17 @@ export const dermatologie = {
                 {
                     "name": "Hautkrebs-Screening",
                     "icon": "search",
-                    "default_description": "Das Hautkrebs-Screening ist eine wichtige Vorsorgeuntersuchung zur Früherkennung\nvon Hautkrebs. Wir untersuchen Ihre Haut systematisch auf verdächtige Veränderungen\nund Muttermale. Ab 35 Jahren übernimmt die Krankenkasse diese Untersuchung alle 2 Jahre."
+                    "default_description": "Beim Hautkrebs-Screening wird die gesamte Haut auf verdächtige Veränderungen und auffällige Muttermale untersucht. Gesetzlich Versicherte haben ab 35 Jahren alle zwei Jahre Anspruch auf diese Früherkennungsuntersuchung."
                 },
                 {
                     "name": "Dermatologische Untersuchung",
                     "icon": "clipboard-check",
-                    "default_description": "Bei der dermatologischen Untersuchung begutachten wir Ihre Haut umfassend und\ndiagnostizieren Hauterkrankungen aller Art. Mit modernsten Verfahren wie der\nAuflichtmikroskopie erkennen wir auch kleinste Veränderungen."
+                    "default_description": "Untersuchung von Haut, Haaren und Nägeln zur Abklärung von Hautveränderungen und Hauterkrankungen. Bei Bedarf kommen Verfahren wie die Auflichtmikroskopie (Dermatoskopie) zum Einsatz."
                 },
                 {
                     "name": "Allergologie / Allergietests",
                     "icon": "flower",
-                    "default_description": "Wir führen verschiedene Allergietests durch, um Auslöser für Ihre Beschwerden\nzu identifizieren. Ob Pricktest, Blutuntersuchung oder Epikutantest - wir finden\ndie Ursache Ihrer Allergie."
+                    "default_description": "Allergietests wie Pricktest, Epikutantest oder Blutuntersuchungen helfen, Auslöser allergischer Beschwerden einzugrenzen. Auf Basis der Ergebnisse werden Behandlung und Vermeidungsstrategien besprochen."
                 }
             ]
         },
@@ -99,22 +99,22 @@ export const dermatologie = {
                 {
                     "name": "Akne-Behandlung",
                     "icon": "sparkles",
-                    "default_description": "Akne ist mehr als ein kosmetisches Problem. Wir bieten individuelle Behandlungskonzepte\nvon der Hautpflege über medikamentöse Therapie bis hin zu modernen Verfahren,\num Ihre Haut nachhaltig zu verbessern."
+                    "default_description": "Akne ist eine häufige Hauterkrankung, die nicht nur Jugendliche betrifft. Die Behandlung richtet sich nach dem Schweregrad und reicht von äußerlich angewendeten Wirkstoffen bis zu Tabletten."
                 },
                 {
                     "name": "Neurodermitis-Therapie",
                     "icon": "heart",
-                    "default_description": "Neurodermitis erfordert eine ganzheitliche Behandlung. Wir entwickeln einen\nindividuellen Therapieplan, der Hautpflege, Ernährung und moderne Medikamente\nkombiniert, um Ihre Lebensqualität zu verbessern."
+                    "default_description": "Neurodermitis (atopische Dermatitis) ist eine chronische, in Schüben verlaufende Hauterkrankung. Die Behandlung umfasst Basispflege, entzündungshemmende Wirkstoffe und je nach Schwere weitere Therapieformen."
                 },
                 {
                     "name": "Psoriasis-Behandlung",
                     "icon": "activity",
-                    "default_description": "Bei Schuppenflechte bieten wir moderne Therapieoptionen von der lokalen Behandlung\nbis zu Biologika. Unser Ziel ist es, Schübe zu reduzieren und Ihre Haut\nlangfristig zu beruhigen."
+                    "default_description": "Schuppenflechte (Psoriasis) ist eine chronisch-entzündliche Erkrankung der Haut, die auch Gelenke betreffen kann. Je nach Ausprägung kommen äußerliche Behandlungen, Lichttherapie oder Medikamente bis hin zu Biologika in Frage."
                 },
                 {
                     "name": "Geschlechtskrankheiten (STI)",
                     "icon": "shield",
-                    "default_description": "Wir bieten diskrete Diagnostik und Behandlung von sexuell übertragbaren\nInfektionen. Vertraulichkeit und ein einfühlsamer Umgang sind uns besonders wichtig."
+                    "default_description": "Diagnostik und Behandlung sexuell übertragbarer Infektionen wie Chlamydien, Syphilis oder Herpes. Die Untersuchung unterliegt wie jede ärztliche Behandlung der Schweigepflicht."
                 }
             ]
         },
@@ -125,22 +125,25 @@ export const dermatologie = {
                 {
                     "name": "Laserbehandlung",
                     "icon": "zap",
-                    "default_description": "Mit modernsten Lasersystemen behandeln wir Pigmentflecken, Äderchen, Narben\nund Hautunebenheiten. Die Behandlung ist schonend und führt zu sichtbaren Ergebnissen."
+                    "default_description": "Laserbehandlungen werden in der Dermatologie zum Beispiel bei Pigmentflecken, erweiterten Äderchen oder Narben eingesetzt. Vor der Behandlung werden Eignung, Ablauf, mögliche Nebenwirkungen und Kosten besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Ästhetische Dermatologie",
                     "icon": "sparkles",
-                    "default_description": "Unsere ästhetischen Behandlungen helfen Ihnen, sich in Ihrer Haut wohlzufühlen.\nVon der Faltenbehandlung bis zur Hautverjüngung bieten wir bewährte Verfahren."
+                    "default_description": "Ästhetische Behandlungen beziehen sich auf das Erscheinungsbild der Haut, etwa bei Falten oder Zeichen der Hautalterung. Es handelt sich um Selbstzahlerleistungen, denen eine Beratung zu Möglichkeiten, Grenzen und Risiken vorausgeht.",
+                    "igel": true
                 },
                 {
                     "name": "Botox & Filler",
                     "icon": "droplet",
-                    "default_description": "Mit Botulinumtoxin und Fillern glätten wir Falten und stellen Volumen wieder her.\nNatürliche Ergebnisse und Ihre Zufriedenheit stehen im Mittelpunkt."
+                    "default_description": "Botulinumtoxin und Hyaluronsäure-Filler werden zur Behandlung von Mimikfalten und Volumenverlust eingesetzt. Die Wirkung ist zeitlich begrenzt; Ablauf, Risiken und Kosten werden vorab besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Operative Dermatologie",
                     "icon": "scissors",
-                    "default_description": "Kleine operative Eingriffe führen wir ambulant in unserer Praxis durch.\nVon der Muttermalentfernung bis zur Behandlung von Hautveränderungen."
+                    "default_description": "Kleinere operative Eingriffe an der Haut, etwa die Entfernung von Muttermalen, Zysten oder verdächtigen Hautveränderungen. Das entnommene Gewebe wird in der Regel feingeweblich untersucht."
                 }
             ]
         }
@@ -155,10 +158,10 @@ export const dermatologie = {
         ],
         "audience": "Patienten mit Hautproblemen, von Akne über Allergien bis Hautkrebs-Vorsorge.\nOft unsicher, suchen kompetente und diskrete Beratung.",
         "key_messages": [
-            "Hautgesundheit für alle Altersgruppen",
-            "Modernste Diagnostik und Behandlung",
-            "Hautkrebs-Früherkennung rettet Leben",
-            "Ästhetische Dermatologie auf Wunsch"
+            "Hautgesundheit in allen Lebensphasen",
+            "Früherkennung von Hautkrebs",
+            "Behandlung chronischer Hauterkrankungen",
+            "Ästhetische Behandlungen nur nach ausführlicher Beratung"
         ]
     },
     "seo": {
@@ -220,7 +223,7 @@ export const dermatologie = {
         }
     },
     "employer": {
-        "typisch": "Hautkrebs-Screening, Allergologie, ästhetische Dermatologie, chronische Hauterkrankungen",
+        "typisch": "Hautkrebs-Screening, Allergologie, entzündliche und chronische Hauterkrankungen",
         "aufgaben": {
             "mfa": "Lichttherapie, Allergietests, Wundversorgung, Hautkrebs-Screening-Assistenz",
             "arzt": "Dermatoskopie, operative Eingriffe, Ästhetik, Allergologie",

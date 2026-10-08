@@ -105,19 +105,19 @@ export const kinderarzt = {
                     "name": "Vorsorgeuntersuchungen U1-J2",
                     "icon": "clipboard-check",
                     "ai_prompt": "Beschreibe die U-Untersuchungen für Eltern verständlich.\nBetone: Früherkennung, Entwicklungsbegleitung, Impfplan\nLänge: 2-3 Sätze",
-                    "default_description": "Die regelmäßigen Vorsorgeuntersuchungen von U1 bis J2 sind wichtig\nfür die gesunde Entwicklung Ihres Kindes. Wir erkennen frühzeitig\nmögliche Auffälligkeiten und begleiten Sie mit kompetenter Beratung."
+                    "default_description": "Die Vorsorgeuntersuchungen begleiten die körperliche, geistige und soziale Entwicklung von der Geburt bis ins Jugendalter. Dabei werden Wachstum, Entwicklung, Hören und Sehen geprüft und Fragen der Eltern besprochen. U10, U11 und J2 übernehmen nicht alle Krankenkassen."
                 },
                 {
                     "name": "Impfungen",
                     "icon": "syringe",
                     "ai_prompt": "Erkläre das Impfangebot kindgerecht und beruhigend für Eltern.\nErwähne STIKO-Empfehlungen ohne Fachjargon.",
-                    "default_description": "Impfungen schützen Ihr Kind vor gefährlichen Krankheiten.\nWir beraten Sie zu allen empfohlenen Impfungen und führen\ndiese in einer kindgerechten, einfühlsamen Atmosphäre durch."
+                    "default_description": "Impfungen nach den Empfehlungen der Ständigen Impfkommission (STIKO) vom Säuglings- bis zum Jugendalter. Dazu gehören die Beratung der Eltern und die Überprüfung des Impfstatus."
                 },
                 {
                     "name": "Entwicklungsdiagnostik",
                     "icon": "trending-up",
                     "ai_prompt": "Beschreibe die Entwicklungsdiagnostik positiv und ohne Ängste.",
-                    "default_description": "Mit gezielten Untersuchungen erfassen wir den Entwicklungsstand\nIhres Kindes. Bei Bedarf unterstützen wir mit Förderempfehlungen\nund arbeiten eng mit Therapeuten zusammen."
+                    "default_description": "Bei Fragen zur motorischen, sprachlichen oder sozialen Entwicklung wird der Entwicklungsstand mit standardisierten Tests erfasst. Bei Bedarf folgen Empfehlungen zu Förderung oder Therapie, etwa Logopädie oder Ergotherapie."
                 }
             ]
         },
@@ -128,14 +128,14 @@ export const kinderarzt = {
                 {
                     "name": "Akutsprechstunde",
                     "icon": "clock",
-                    "ai_prompt": "Beschreibe die Akutsprechstunde als schnelle, unkomplizierte Hilfe.",
-                    "default_description": "Bei akuten Erkrankungen sind wir für Sie da. In unserer\nAkutsprechstunde behandeln wir Ihr Kind schnell und kompetent –\nauch ohne Termin."
+                    "ai_prompt": "Beschreibe sachlich, wofür die Akutsprechstunde gedacht ist (plötzlich auftretende Erkrankungen). Keine Zusagen zu Wartezeiten, Terminen oder Erreichbarkeit.",
+                    "default_description": "Die Akutsprechstunde ist für plötzlich auftretende Erkrankungen wie Fieber, Infekte oder Schmerzen gedacht. Dabei werden die Beschwerden abgeklärt und das weitere Vorgehen mit den Eltern besprochen."
                 },
                 {
                     "name": "Infektionsbehandlung",
                     "icon": "thermometer",
                     "ai_prompt": "Erkläre die Behandlung von Kinderkrankheiten einfühlsam.",
-                    "default_description": "Erkältungen, Magen-Darm-Infekte oder Kinderkrankheiten –\nwir diagnostizieren sicher und behandeln sanft, damit Ihr\nKind schnell wieder gesund wird."
+                    "default_description": "Diagnostik und Behandlung von Infekten im Kindesalter wie Erkältungen, Mittelohrentzündung, Magen-Darm-Infekten oder Kinderkrankheiten. Dazu gehören Hinweise für die Pflege zu Hause und dazu, wann eine erneute Vorstellung sinnvoll ist."
                 }
             ]
         },
@@ -147,18 +147,18 @@ export const kinderarzt = {
                     "name": "Allergologie",
                     "icon": "flower",
                     "ai_prompt": "Beschreibe Allergiediagnostik und -behandlung bei Kindern.",
-                    "default_description": "Allergien nehmen bei Kindern zu. Wir bieten Allergietests\nund individuelle Behandlungskonzepte, um Beschwerden zu\nlindern und Lebensqualität zu verbessern."
+                    "default_description": "Abklärung von Allergien bei Kindern, etwa gegen Pollen, Nahrungsmittel oder Hausstaubmilben. Auf Basis der Testergebnisse werden Behandlung und Maßnahmen im Alltag besprochen."
                 },
                 {
                     "name": "Ernährungsberatung",
                     "icon": "apple",
-                    "default_description": "Eine gesunde Ernährung legt den Grundstein fürs Leben.\nWir beraten Sie zu altersgerechter Ernährung und unterstützen\nbei Gewichtsproblemen oder Unverträglichkeiten."
+                    "default_description": "Beratung zu altersgerechter Ernährung von der Beikost bis ins Jugendalter. Themen sind auch Unverträglichkeiten, Gewichtsentwicklung und Essverhalten."
                 },
                 {
                     "name": "ADHS-Diagnostik",
                     "icon": "brain",
                     "ai_prompt": "Beschreibe ADHS-Diagnostik sensibel und entstigmatisierend.",
-                    "default_description": "Bei Verdacht auf ADHS führen wir eine umfassende Diagnostik durch.\nGemeinsam entwickeln wir einen Behandlungsplan, der Ihr Kind\noptimal unterstützt."
+                    "default_description": "Bei Verdacht auf ADHS umfasst die Diagnostik Gespräche mit Kind und Eltern, Fragebögen und Informationen aus Kita oder Schule. Auf dieser Grundlage wird ein Behandlungsplan besprochen, der je nach Situation verschiedene Bausteine enthält."
                 }
             ]
         }
@@ -225,10 +225,10 @@ export const kinderarzt = {
             "nahbar"
         ],
         "key_messages": [
-            "Wir behandeln jedes Kind individuell",
-            "Moderne Medizin in kindgerechter Atmosphäre",
-            "Eltern sind wichtige Partner",
-            "Vorsorge ist der beste Schutz"
+            "Kinder und Jugendliche individuell betrachten",
+            "Kindgerechter Umgang",
+            "Eltern als Partner einbeziehen",
+            "Vorsorge und Impfungen nach aktuellen Empfehlungen"
         ],
         "language_style": {
             "avoid": [
@@ -238,8 +238,8 @@ export const kinderarzt = {
                 "komplizierte Satzstrukturen"
             ],
             "prefer": [
-                "Ihr Kind statt das Kind",
-                "wir begleiten Sie",
+                "Eltern direkt ansprechen (Ihr bzw. dein Kind statt das Kind, je nach Anrede)",
+                "Perspektive (ich/wir) gemäß Praxiseinstellung",
                 "positive Formulierungen",
                 "konkrete Beispiele"
             ]
@@ -323,7 +323,7 @@ export const kinderarzt = {
                             }
                         ]
                     },
-                    "ai_prompt": "Schreibe einen Willkommenstext für eine Kinderarztpraxis.\n- H2: Begrüßung\n- 2-3 Sätze über die Praxis\nBetone: Einfühlungsvermögen, moderne Ausstattung, Begleitung"
+                    "ai_prompt": "Schreibe einen Willkommenstext für eine Kinderarztpraxis.\n- H2: Begrüßung\n- 2-3 Sätze über die Praxis\nBetone: Einfühlungsvermögen, Begleitung der Familie. Keine Ausstattung nennen, die nicht angegeben ist."
                 },
                 {
                     "type": "block_imagelist",

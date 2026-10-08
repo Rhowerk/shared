@@ -79,22 +79,22 @@ export const schmerztherapie = {
                 {
                     "name": "Multimodale Schmerztherapie",
                     "icon": "layers",
-                    "default_description": "In der multimodalen Schmerztherapie kombinieren wir medikamentöse,\ninterventionelle und psychologische Verfahren. Dieser ganzheitliche\nAnsatz ist bei chronischen Schmerzen am wirksamsten."
+                    "default_description": "Die multimodale Schmerztherapie verbindet medizinische, körperliche und psychologische Behandlungsbausteine. Das Konzept wird vor allem bei chronischen Schmerzen eingesetzt, bei denen mehrere Faktoren zusammenwirken."
                 },
                 {
                     "name": "Infiltrationstherapie",
                     "icon": "target",
-                    "default_description": "Mit gezielten Injektionen bringen wir schmerzlindernde Medikamente\ndirekt an den Schmerzursprung. Wirbelsäulennahe Infiltrationen,\nNervenblockaden und Triggerpunkt-Injektionen."
+                    "default_description": "Bei der Infiltrationstherapie werden schmerzlindernde oder entzündungshemmende Medikamente gezielt an die Schmerzquelle gespritzt, etwa an Nervenwurzeln, Gelenke oder Triggerpunkte."
                 },
                 {
                     "name": "Medikamentöse Schmerztherapie",
                     "icon": "pill",
-                    "default_description": "Wir finden die richtige Medikation für Ihre Schmerzen – individuell\ndosiert, mit möglichst wenig Nebenwirkungen. Regelmäßige\nKontrollen sichern den Therapieerfolg."
+                    "default_description": "Die medikamentöse Schmerztherapie wird an Schmerzart, Begleiterkrankungen und Verträglichkeit angepasst. Regelmäßige Kontrollen dienen der Überprüfung von Wirkung und Nebenwirkungen."
                 },
                 {
                     "name": "TENS / Neurostimulation",
                     "icon": "zap",
-                    "default_description": "Elektrische Nervenstimulation kann Schmerzsignale blockieren.\nWir probieren verschiedene Verfahren mit Ihnen aus und finden\ndas optimale Stimulationsprogramm."
+                    "default_description": "Bei der transkutanen elektrischen Nervenstimulation (TENS) werden über Hautelektroden schwache Stromimpulse abgegeben, die die Schmerzweiterleitung beeinflussen sollen. Das Gerät kann nach einer Einweisung auch zu Hause angewendet werden."
                 }
             ]
         },
@@ -105,17 +105,17 @@ export const schmerztherapie = {
                 {
                     "name": "Rückenschmerz-Behandlung",
                     "icon": "activity",
-                    "default_description": "Rückenschmerzen sind die häufigste Ursache für Arztbesuche.\nWir klären die Ursache ab und erstellen einen individuellen\nBehandlungsplan für dauerhafte Linderung."
+                    "default_description": "Chronische Rückenschmerzen haben oft mehrere Ursachen. Nach der Abklärung wird ein Behandlungsplan erstellt, der Bewegung, Medikamente, Injektionen und psychologische Unterstützung kombinieren kann."
                 },
                 {
                     "name": "Kopfschmerz / Migräne",
                     "icon": "cloud",
-                    "default_description": "Migräne und chronische Kopfschmerzen können den Alltag massiv\nbeeinträchtigen. Wir setzen auf moderne Prophylaxe,\nAkuttherapie und interventionelle Verfahren."
+                    "default_description": "Migräne und chronische Kopfschmerzen können den Alltag stark einschränken. Die Behandlung umfasst Akuttherapie, vorbeugende Maßnahmen und den Umgang mit Auslösern."
                 },
                 {
                     "name": "Nervenschmerzen (Neuralgie)",
                     "icon": "zap",
-                    "default_description": "Nervenschmerzen brennen, stechen oder kribbeln. Ob nach Gürtelrose,\nbei Diabetes oder nach Operationen – wir kennen die\nspeziellen Behandlungsmöglichkeiten."
+                    "default_description": "Nervenschmerzen äußern sich oft brennend, stechend oder einschießend, zum Beispiel nach einer Gürtelrose, bei Diabetes oder nach Operationen. Zur Behandlung werden spezielle Medikamente und weitere Verfahren eingesetzt."
                 }
             ]
         }
@@ -130,10 +130,10 @@ export const schmerztherapie = {
         ],
         "audience": "Chronische Schmerzpatienten, Rückenschmerz-Betroffene, Migräniker,\nPatienten mit Nervenschmerzen, Patienten nach erfolglosen Vorbehandlungen.",
         "key_messages": [
-            "Chronische Schmerzen sind behandelbar",
-            "Multimodal zum Erfolg – Körper und Seele",
-            "Ihr Weg zurück in ein aktives Leben",
-            "Wir nehmen Ihre Schmerzen ernst"
+            "Chronische Schmerzen ernst nehmen",
+            "Multimodaler Ansatz aus Körper und Psyche",
+            "Mehr Aktivität und Lebensqualität im Alltag als Ziel",
+            "Gemeinsame Therapieplanung"
         ]
     },
     "seo": {
@@ -195,7 +195,7 @@ export const schmerztherapie = {
         }
     },
     "employer": {
-        "typisch": "Multimodale Schmerztherapie, Interventionen, Medikamente, Psychosomatik",
+        "typisch": "Multimodale Schmerztherapie, medikamentöse Einstellung, interdisziplinäre Zusammenarbeit",
         "aufgaben": {
             "mfa": "Schmerzanamnese-Vorbereitung, Infusionstherapie, TENS-Einweisung",
             "arzt": "Diagnostik, Nervenblockaden, Medikamenteneinstellung, multimodale Therapie",

@@ -81,12 +81,12 @@ export const phlebologie: Blueprint = {
         {
           "name": "Venen-Diagnostik / Duplexsonographie",
           "icon": "monitor",
-          "default_description": "Mit der farbcodierten Duplexsonographie untersuchen wir Ihre Venen\nschmerzfrei und präzise. Wir erkennen Krampfadern, Klappendefekte\nund Thrombosen zuverlässig."
+          "default_description": "Die farbcodierte Duplexsonographie stellt Venen und den Blutfluss im Ultraschall dar. Damit lassen sich Krampfadern, undichte Venenklappen und Thrombosen beurteilen."
         },
         {
           "name": "Thrombose-Diagnostik",
           "icon": "search",
-          "default_description": "Bei Verdacht auf Thrombose reagieren wir schnell. Mit Ultraschall\nund Laborwerten stellen wir die Diagnose sicher und leiten\nsofort die richtige Behandlung ein."
+          "default_description": "Bei Verdacht auf eine Venenthrombose werden Ultraschall und Laborwerte zur Abklärung eingesetzt. Je nach Befund folgt eine Behandlung mit gerinnungshemmenden Medikamenten und Kompression."
         }
       ]
     },
@@ -97,27 +97,28 @@ export const phlebologie: Blueprint = {
         {
           "name": "Krampfader-Behandlung (Varikose)",
           "icon": "shield",
-          "default_description": "Krampfadern sind mehr als ein kosmetisches Problem. Wir bieten\nmoderne, schonende Verfahren wie Laser, Radiofrequenz und\nVerödung für gesunde, schöne Beine."
+          "default_description": "Krampfadern (Varizen) sind erweiterte Venen mit undichten Venenklappen und können Beschwerden wie schwere oder geschwollene Beine verursachen. Behandlungsmöglichkeiten sind Kompression, Verödung, kathetergestützte Verfahren wie Laser oder Radiofrequenz und die Operation."
         },
         {
           "name": "Sklerotherapie (Verödung)",
           "icon": "syringe",
-          "default_description": "Bei der Sklerotherapie veröden wir Krampfadern und Besenreiser\nmit einem speziellen Mittel. Ambulant, schmerzarm und\nohne Narkose – Sie sind sofort wieder mobil."
+          "default_description": "Bei der Sklerotherapie wird ein Verödungsmittel, flüssig oder als Schaum, in die erkrankte Vene gespritzt. Die Behandlung erfolgt ohne Narkose; anschließend wird meist ein Kompressionsstrumpf getragen."
         },
         {
           "name": "Endovenöse Lasertherapie",
           "icon": "zap",
-          "default_description": "Die Lasertherapie verschließt Krampfadern von innen – ohne\nOP-Schnitt. Minimal-invasiv, ambulant und mit sehr guten\nkosmetischen Ergebnissen."
+          "default_description": "Bei der endovenösen Lasertherapie wird die erkrankte Vene über einen Katheter von innen verschlossen, ohne größeren Hautschnitt. Der Eingriff erfolgt in örtlicher Betäubung; ob die Krankenkasse die Kosten übernimmt, hängt von Kasse und Vertrag ab."
         },
         {
           "name": "Besenreiser-Behandlung",
           "icon": "star",
-          "default_description": "Störende Besenreiser entfernen wir mit feiner Verödung oder\nLaserbehandlung. Mehrere Sitzungen können nötig sein,\ndie Ergebnisse sind überzeugend."
+          "default_description": "Besenreiser sind feine, erweiterte Venen in der Haut, die meist keine gesundheitlichen Beschwerden verursachen. Behandelt werden können sie mit Verödung oder Laser, oft in mehreren Sitzungen; als kosmetische Behandlung ist das eine Selbstzahlerleistung.",
+          "igel": true
         },
         {
           "name": "Kompressionstherapie",
           "icon": "heart",
-          "default_description": "Die richtige Kompression ist die Basis der Venentherapie.\nWir verordnen passende Kompressionsstrümpfe und beraten\nSie zur korrekten Anwendung."
+          "default_description": "Medizinische Kompressionsstrümpfe unterstützen den Rückfluss des Blutes in den Venen. Zur Versorgung gehören Verordnung, Auswahl der Kompressionsklasse und Hinweise zum richtigen Anziehen."
         }
       ]
     }
@@ -132,10 +133,10 @@ export const phlebologie: Blueprint = {
     ],
     "audience": "Patienten mit Krampfadern, Besenreisern, schweren Beinen,\nThrombose-Vorgeschichte, Lymphödemen.",
     "key_messages": [
-      "Schöne und gesunde Beine",
-      "Krampfadern schonend behandeln",
-      "Moderne Verödungs- und Laserverfahren",
-      "Venengesundheit auf höchstem Niveau"
+      "Venengesundheit und Beschwerden der Beine",
+      "Abklärung von Krampfadern und Thrombosen",
+      "Behandlungsmöglichkeiten verständlich erklärt",
+      "Kompression als Basis der Venentherapie"
     ]
   },
   "seo": {
@@ -183,7 +184,7 @@ export const phlebologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Krampfadern, Kompressionstherapie, Besenreiser, venöse Insuffizienz",
+    "typisch": "Krampfadern, Kompressionstherapie, venöse Insuffizienz, Thrombose",
     "aufgaben": {
       "mfa": "Duplexsonografie-Assistenz, Kompressionsversorgung, Sklerotherapie-Assistenz",
       "arzt": "Duplexsonografie, Sklerotherapie, Laser-Therapie, OP-Indikation",

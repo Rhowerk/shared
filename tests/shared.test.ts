@@ -907,3 +907,141 @@ describe('DRY-RUN: Provisioning-Simulation', () => {
     console.log('\n✓ Legacy-API (getBlockSurfaceConfig) funktioniert identisch')
   })
 })
+
+
+// ╔══════════════════════════════════════════════════════════╗
+// ║  BLUEPRINTS: Vorlagentexte, IGeL, KI-Kontext, Aufgaben   ║
+// ╚══════════════════════════════════════════════════════════╝
+
+import {
+  getAllBlueprints, getBlueprint, getBlueprintServices, findService,
+  buildAIContext, getAufgaben as getBlueprintAufgaben, HINTERGRUND_HINWEIS,
+} from '../src/blueprints/index.ts'
+import { getAufgaben as getLegacyAufgaben } from '../src/employer-context.ts'
+
+// Vorlagentexte werden teils wörtlich übernommen → keine Anrede/Perspektive,
+// keine HWG-heiklen Werbeversprechen.
+const VERBOTEN_IN_VORLAGEN: Array<[string, RegExp]> = [
+  ['wir/uns/unser', /\b(wir|Wir|uns|unser\w*|Unser\w*)\b/],
+  ['Sie/Ihr', /\b(Sie|Ihr|Ihre|Ihren|Ihrem|Ihrer|Ihres|Ihnen)\b/],
+  ['ich/mein', /\b(ich|Ich|mich|mein\w*|Mein\w*)\b/],
+  ['du/dein', /\b(du|Du|dich|dir|Dir|dein\w*|Dein\w*)\b/],
+  ['schnell', /schnell/i],
+  ['sofort', /sofort/i],
+  ['beste', /\bbest(e|en|er|es|möglich\w*)\b/i],
+  ['modern/modernste', /\bmodern/i],
+  ['schmerzfrei', /schmerzfrei/i],
+  ['garantiert', /garantier/i],
+  ['schonend/sanft', /schonend|\bsanft/i],
+  ['perfekt/optimal', /perfekt|\boptimal/i],
+  ['kurzfristig', /kurzfristig/i],
+  ['rettet Leben', /rettet/i],
+]
+
+describe('blueprints: Leistungs-Vorlagentexte', () => {
+  test('alle default_description sind neutral und HWG-sauber', () => {
+    const fehler: string[] = []
+    for (const [id, bp] of Object.entries(getAllBlueprints())) {
+      for (const s of getBlueprintServices(bp)) {
+        assert.ok(s.default_description.trim().length > 40, `${id}/${s.name}: Text zu kurz`)
+        for (const [label, re] of VERBOTEN_IN_VORLAGEN) {
+          if (re.test(s.default_description)) fehler.push(`${id}/${s.name}: „${label}“ → ${s.default_description}`)
+        }
+      }
+    }
+    assert.deepEqual(fehler, [], `Verbotene Formulierungen:\n${fehler.join('\n')}`)
+  })
+
+  test('IGeL-Markierung: eindeutige Selbstzahlerleistungen sind markiert', () => {
+    const zahn = getBlueprint('zahnarzt')
+    assert.equal(findService(zahn, 'Bleaching / Zahnaufhellung')?.igel, true)
+    assert.equal(findService(zahn, 'Veneers')?.igel, true)
+    assert.equal(findService(zahn, 'Wurzelbehandlung')?.igel, undefined)
+    assert.equal(findService(getBlueprint('dermatologie'), 'Botox & Filler')?.igel, true)
+    assert.equal(findService(getBlueprint('orthopaedie'), 'Stoßwellentherapie')?.igel, true)
+  })
+
+  test('igel ist, wenn gesetzt, immer boolean true', () => {
+    for (const [id, bp] of Object.entries(getAllBlueprints())) {
+      for (const s of getBlueprintServices(bp)) {
+        if ('igel' in s) assert.equal(s.igel, true, `${id}/${s.name}: igel muss true oder weggelassen sein`)
+      }
+    }
+  })
+})
+
+describe('blueprints: buildAIContext', () => {
+  const data = { praxis_name: 'Testpraxis', ort: 'Leipzig' }
+
+  test('ohne Zweck: wie bisher, Kernbotschaften + Kontext als Hintergrund gekennzeichnet', () => {
+    const bp = getBlueprint('orthopaedie')!
+    const p = buildAIContext(bp, data)
+    assert.ok(p.startsWith('Du schreibst Texte für die Website einer'))
+    assert.ok(p.includes('PRAXIS: Testpraxis in Leipzig'))
+    assert.ok(p.includes(`ZIELGRUPPE: ${bp.ai_context.audience}`))
+    assert.ok(p.includes(`KERNBOTSCHAFTEN DER FACHRICHTUNG (${HINTERGRUND_HINWEIS})`))
+    for (const m of bp.ai_context.key_messages) assert.ok(p.includes(`- ${m}`))
+    assert.ok(p.includes(`FACHRICHTUNGS-KONTEXT (${HINTERGRUND_HINWEIS}): ${bp.employer.typisch}`))
+    assert.ok(p.includes('SPRACHSTIL:'))
+    assert.ok(p.endsWith('patientenfreundlich.'))
+  })
+
+  test('zweck website entspricht dem Aufruf ohne Option', () => {
+    const bp = getBlueprint('zahnarzt')
+    assert.equal(buildAIContext(bp, data, { zweck: 'website' }), buildAIContext(bp, data))
+  })
+
+  test('zweck karriere: ohne Patienten-Kernbotschaften, Zielgruppe Bewerber', () => {
+    const bp = getBlueprint('zahnarzt')!
+    const p = buildAIContext(bp, data, { zweck: 'karriere' })
+    assert.ok(p.includes('Karriereseite und Stellenanzeigen'))
+    assert.ok(p.includes('ZIELGRUPPE: Bewerberinnen und Bewerber'))
+    assert.ok(!p.includes(bp.ai_context.audience), 'Patienten-Zielgruppe darf nicht drin sein')
+    assert.ok(!p.includes('KERNBOTSCHAFTEN'))
+    for (const m of bp.ai_context.key_messages) assert.ok(!p.includes(m), `Kernbotschaft im Karriere-Prompt: ${m}`)
+    assert.ok(!p.includes('SPRACHSTIL:'))
+    assert.ok(p.includes(`FACHRICHTUNGS-KONTEXT (${HINTERGRUND_HINWEIS})`))
+    assert.ok(p.endsWith('bewerberorientiert.'))
+  })
+
+  test('ohne Blueprint: Fallback je Zweck', () => {
+    assert.ok(buildAIContext(null, data).includes('patientenfreundlich'))
+    const k = buildAIContext(null, data, { zweck: 'karriere' })
+    assert.ok(k.includes('Bewerberinnen und Bewerber'))
+    assert.ok(!k.includes('patientenfreundlich'))
+  })
+
+  test('Kernbotschaften und typisch ohne Ausstattungs-/Verfügbarkeitsversprechen', () => {
+    const re = /schnell|sofort|modern|beste|sichtbar|sanft|schonend|rettet|High-Tech|in besten Händen/i
+    for (const [id, bp] of Object.entries(getAllBlueprints())) {
+      for (const m of bp.ai_context.key_messages) assert.ok(!re.test(m), `${id} Kernbotschaft: ${m}`)
+      assert.ok(!re.test(bp.employer.typisch), `${id} typisch: ${bp.employer.typisch}`)
+    }
+  })
+})
+
+describe('blueprints: getAufgaben', () => {
+  test('Auszubildende/r zur ZFA bekommt Azubi-Aufgaben, nicht ZFA-Aufgaben', () => {
+    const bp = getBlueprint('zahnarzt')!
+    const azubi = getBlueprintAufgaben('zahnarzt', 'Auszubildende/r zur ZFA (m/w/d)')
+    assert.equal(azubi, bp.employer.aufgaben['azubi'])
+    assert.notEqual(azubi, bp.employer.aufgaben['zfa'])
+    assert.equal(getBlueprintAufgaben('zahnarzt', 'Ausbildung zur Zahnmedizinischen Fachangestellten'), bp.employer.aufgaben['azubi'])
+    assert.equal(getBlueprintAufgaben('zahnarzt', 'Azubi'), bp.employer.aufgaben['azubi'])
+  })
+
+  test('Fachkräfte und Ärzte werden weiter korrekt zugeordnet', () => {
+    const z = getBlueprint('zahnarzt')!
+    assert.equal(getBlueprintAufgaben('zahnarzt', 'Zahnmedizinische Fachangestellte (ZFA)'), z.employer.aufgaben['zfa'])
+    const o = getBlueprint('orthopaedie')!
+    assert.equal(getBlueprintAufgaben('orthopaedie', 'MFA (m/w/d)'), o.employer.aufgaben['mfa'])
+    assert.equal(getBlueprintAufgaben('orthopaedie', 'Auszubildende/r MFA'), o.employer.aufgaben['azubi'])
+    assert.equal(getBlueprintAufgaben('orthopaedie', 'Facharzt/Fachärztin für Orthopädie'), o.employer.aufgaben['arzt'])
+  })
+
+  test('Legacy employer-context: Azubi ZFA ebenfalls korrekt', () => {
+    const azubi = getLegacyAufgaben('zahnarzt', 'Auszubildende/r zur ZFA')
+    assert.ok(azubi.includes('lernen') || azubi.includes('Grundlagen'), `Legacy Azubi ZFA: ${azubi}`)
+    assert.ok(getLegacyAufgaben('zahnarzt', 'Zahnmedizinische Fachangestellte').includes('Stuhlassistenz'))
+  })
+})

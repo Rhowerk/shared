@@ -80,17 +80,17 @@ export const hno: Blueprint = {
         {
           "name": "HNO-ärztliche Untersuchung",
           "icon": "stethoscope",
-          "default_description": "Bei der HNO-ärztlichen Untersuchung begutachten wir Ohren, Nase, Nasennebenhöhlen,\nMundhöhle, Rachen und Kehlkopf. Mit modernen Geräten können wir auch\nschwer einsehbare Bereiche untersuchen."
+          "default_description": "Die HNO-ärztliche Untersuchung umfasst Ohren, Nase, Nasennebenhöhlen, Mundhöhle, Rachen und Kehlkopf. Mit Endoskop oder Mikroskop lassen sich auch schwer einsehbare Bereiche beurteilen."
         },
         {
           "name": "Hörtest / Audiometrie",
           "icon": "ear",
-          "default_description": "Mit dem Hörtest bestimmen wir Ihr Hörvermögen präzise. Die Audiometrie\nzeigt uns, welche Frequenzen Sie gut hören und wo eventuell Einschränkungen\nbestehen. Grundlage für die optimale Behandlung."
+          "default_description": "Die Audiometrie misst das Hörvermögen über verschiedene Tonhöhen und Lautstärken. Das Ergebnis zeigt, ob und in welchem Bereich eine Hörminderung vorliegt, und ist Grundlage für Behandlung oder Hörgeräteversorgung."
         },
         {
           "name": "Endoskopie Nase & Rachen",
           "icon": "eye",
-          "default_description": "Mit der Nasen- und Rachenendoskopie können wir das Innere der Nase,\ndie Nasennebenhöhlen und den Rachenraum genau untersuchen. Die Untersuchung\ndauert nur wenige Minuten."
+          "default_description": "Mit einem dünnen Endoskop werden Nase, die Zugänge der Nasennebenhöhlen und der Rachen untersucht. Die Untersuchung dauert in der Regel nur wenige Minuten."
         }
       ]
     },
@@ -101,12 +101,12 @@ export const hno: Blueprint = {
         {
           "name": "Allergietestung",
           "icon": "flower",
-          "default_description": "Wir führen verschiedene Allergietests durch, um die Auslöser Ihrer\nBeschwerden zu finden. Ob Heuschnupfen, Hausstaubmilben oder Tierhaare -\nwir identifizieren Ihre Allergene."
+          "default_description": "Allergietests helfen, Auslöser von Beschwerden wie Heuschnupfen oder Reaktionen auf Hausstaubmilben und Tierhaare einzugrenzen. Je nach Fragestellung kommen Haut- oder Bluttests zum Einsatz."
         },
         {
           "name": "Hyposensibilisierung",
           "icon": "shield",
-          "default_description": "Mit der Hyposensibilisierung behandeln wir die Ursache Ihrer Allergie.\nÜber einen längeren Zeitraum gewöhnen wir Ihren Körper an das Allergen\nund reduzieren so Ihre Beschwerden dauerhaft."
+          "default_description": "Bei der Hyposensibilisierung (spezifische Immuntherapie) wird das Allergen über einen Zeitraum von meist drei Jahren regelmäßig verabreicht, als Spritze oder Tablette. Ziel ist es, die allergische Reaktion abzuschwächen."
         }
       ]
     },
@@ -117,27 +117,27 @@ export const hno: Blueprint = {
         {
           "name": "Schwindel-Diagnostik",
           "icon": "activity",
-          "default_description": "Schwindel kann viele Ursachen haben. Mit speziellen Untersuchungen\nfinden wir heraus, ob Ihr Gleichgewichtsorgan betroffen ist und\nwelche Behandlung Ihnen hilft."
+          "default_description": "Schwindel kann vom Gleichgewichtsorgan, aber auch von anderen Organen ausgehen. Spezielle Untersuchungen des Gleichgewichtssystems helfen, die Ursache einzugrenzen und die Behandlung zu planen."
         },
         {
           "name": "Tinnitus-Behandlung",
           "icon": "volume-2",
-          "default_description": "Ohrgeräusche können sehr belastend sein. Wir klären die Ursachen ab\nund bieten verschiedene Therapieansätze, um Ihren Tinnitus zu lindern\nund Ihre Lebensqualität zu verbessern."
+          "default_description": "Ohrgeräusche (Tinnitus) können unterschiedliche Ursachen haben. Nach Hördiagnostik und Untersuchung werden Behandlungs- und Bewältigungsansätze besprochen."
         },
         {
           "name": "Schnarch-Therapie / Schlafapnoe",
           "icon": "moon",
-          "default_description": "Schnarchen und Atemaussetzer stören nicht nur den Partner, sondern\ngefährden Ihre Gesundheit. Wir untersuchen die Ursachen und finden\ndie passende Therapie für erholsamen Schlaf."
+          "default_description": "Schnarchen und nächtliche Atemaussetzer (Schlafapnoe) werden durch die Untersuchung der oberen Atemwege und gegebenenfalls eine Schlafuntersuchung abgeklärt. Je nach Ursache kommen unterschiedliche Behandlungen in Frage."
         },
         {
           "name": "Stimm- und Sprachstörungen",
           "icon": "mic",
-          "default_description": "Bei Heiserkeit, Stimmstörungen oder Sprechproblemen untersuchen wir\nKehlkopf und Stimmbänder. Oft können wir mit einfachen Maßnahmen\noder Stimmtherapie helfen."
+          "default_description": "Bei anhaltender Heiserkeit oder Stimmstörungen werden Kehlkopf und Stimmlippen untersucht. Je nach Befund kommen Stimmtherapie, Medikamente oder eine weitere Abklärung in Frage."
         },
         {
           "name": "Ohrreinigung / Cerumen-Entfernung",
           "icon": "droplet",
-          "default_description": "Verstopfte Ohren durch Ohrenschmalz reinigen wir schonend und professionell.\nDie Behandlung ist schnell und bringt sofortige Erleichterung."
+          "default_description": "Ohrenschmalz kann den Gehörgang verschließen und das Hören beeinträchtigen. Die Entfernung erfolgt unter Sicht mit feinen Instrumenten, Absaugung oder Spülung."
         }
       ]
     }
@@ -152,10 +152,10 @@ export const hno: Blueprint = {
     ],
     "audience": "Patienten mit Hör-, Nasen- oder Halsproblemen.\nVon Kindern mit Ohrenschmerzen bis Senioren mit Hörgeräten.",
     "key_messages": [
-      "Wieder gut hören können",
-      "Frei atmen, besser leben",
-      "Moderne Diagnostik für präzise Ergebnisse",
-      "Allergien effektiv behandeln"
+      "Hören, Riechen, Schmecken und Atmen im Alltag",
+      "Abklärung von Hör- und Gleichgewichtsstörungen",
+      "Allergien der oberen Atemwege",
+      "Patienten vom Kindesalter bis ins hohe Alter"
     ]
   },
   "seo": {
@@ -210,7 +210,7 @@ export const hno: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Audiometrie, Allergologie, Schlafmedizin, operative HNO",
+    "typisch": "Hördiagnostik, Allergologie, Erkrankungen von Ohr, Nase und Hals",
     "aufgaben": {
       "mfa": "Hörtest, Allergietest, Endoskopie-Assistenz, Infusionen, Schwindel-Diagnostik",
       "arzt": "Endoskopie, Audiometrie, operative HNO, Allergologie, Schlafmedizin",

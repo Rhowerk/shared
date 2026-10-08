@@ -81,22 +81,22 @@ export const endokrinologie: Blueprint = {
         {
           "name": "Diabetes mellitus Typ 1 & 2",
           "icon": "droplet",
-          "default_description": "Diabetes erfordert eine maßgeschneiderte Therapie. Wir optimieren\nIhre Einstellung, schulen Sie im Umgang mit der Erkrankung\nund begleiten Sie langfristig."
+          "default_description": "Betreuung bei Diabetes mellitus Typ 1 und Typ 2 mit Therapieeinstellung, regelmäßigen Kontrollen und Schulung zum Umgang mit der Erkrankung. Ziel sind eine gute Stoffwechseleinstellung im Alltag und die Vorbeugung von Folgeerkrankungen."
         },
         {
           "name": "Insulinpumpen-Therapie",
           "icon": "settings",
-          "default_description": "Moderne Insulinpumpen und Patchpumpen bieten Flexibilität im Alltag.\nWir beraten Sie bei der Auswahl, stellen die Pumpe ein\nund sind bei Fragen für Sie da."
+          "default_description": "Bei der Insulinpumpentherapie gibt eine Pumpe Insulin kontinuierlich über einen feinen Katheter ab. Dazu gehören die Beratung zur Eignung, die Einstellung der Pumpe und die Schulung im Umgang damit."
         },
         {
           "name": "CGM / Glukose-Sensoren",
           "icon": "monitor",
-          "default_description": "Kontinuierliche Glukosemessung zeigt Ihren Blutzuckerverlauf lückenlos.\nWir werten die Daten gemeinsam aus und passen Ihre Therapie\noptimal an."
+          "default_description": "Glukosesensoren messen den Zuckerwert im Unterhautgewebe fortlaufend. Die aufgezeichneten Verläufe werden ausgewertet und für die Anpassung der Therapie genutzt."
         },
         {
           "name": "Diabetische Fußambulanz",
           "icon": "heart",
-          "default_description": "Der diabetische Fuß erfordert besondere Aufmerksamkeit. In unserer\nFußambulanz untersuchen, behandeln und beraten wir Sie,\num Komplikationen vorzubeugen."
+          "default_description": "Beim diabetischen Fußsyndrom können Nervenschäden und Durchblutungsstörungen zu schlecht heilenden Wunden führen. Regelmäßige Fußuntersuchungen, Wundbehandlung und Beratung zu Schuhversorgung und Fußpflege gehören zur Betreuung."
         }
       ]
     },
@@ -107,22 +107,22 @@ export const endokrinologie: Blueprint = {
         {
           "name": "Schilddrüsen-Diagnostik & Therapie",
           "icon": "activity",
-          "default_description": "Über- oder Unterfunktion, Knoten oder Entzündung – wir klären\nSchilddrüsenerkrankungen umfassend ab und finden die richtige\nBehandlung für Sie."
+          "default_description": "Abklärung von Schilddrüsenerkrankungen wie Über- und Unterfunktion, Knoten oder Entzündungen anhand von Blutwerten und Bildgebung. Je nach Befund werden Behandlung und Kontrollabstände festgelegt."
         },
         {
           "name": "Schilddrüsen-Sonographie",
           "icon": "monitor",
-          "default_description": "Mit dem Ultraschall beurteilen wir Größe, Struktur und\nDurchblutung Ihrer Schilddrüse. Knoten können so frühzeitig\nerkannt und kontrolliert werden."
+          "default_description": "Die Ultraschalluntersuchung zeigt Größe und Gewebestruktur der Schilddrüse. Knoten lassen sich damit ohne Strahlenbelastung erkennen und im Verlauf kontrollieren."
         },
         {
           "name": "Hormonelle Störungen",
           "icon": "clipboard",
-          "default_description": "Hormone steuern zahlreiche Körperfunktionen. Bei Störungen\nder Nebennieren, Hypophyse oder Geschlechtshormone führen\nwir eine gezielte Diagnostik und Therapie durch."
+          "default_description": "Hormone steuern zahlreiche Körperfunktionen. Bei Verdacht auf Störungen von Nebennieren, Hirnanhangsdrüse oder Geschlechtshormonen erfolgen gezielte Labor- und Funktionstests sowie die Besprechung der Behandlungsmöglichkeiten."
         },
         {
           "name": "Osteoporose-Diagnostik (DXA)",
           "icon": "bone",
-          "default_description": "Mit der Knochendichtemessung (DXA) erkennen wir Osteoporose\nfrühzeitig. So können wir rechtzeitig behandeln und\nKnochenbrüche verhindern."
+          "default_description": "Die Knochendichtemessung (DXA) bestimmt die Mineraldichte des Knochens, meist an Lendenwirbelsäule und Hüfte. Das Ergebnis hilft, eine Osteoporose zu erkennen und das Bruchrisiko einzuschätzen. Ohne Knochenbruch oder begründeten Verdacht ist die Messung meist eine Selbstzahlerleistung."
         }
       ]
     }
@@ -137,10 +137,10 @@ export const endokrinologie: Blueprint = {
     ],
     "audience": "Diabetes-Patienten (Typ 1 und 2), Schilddrüsenerkrankte,\nPatienten mit hormonellen Störungen, Adipositas-Betroffene.",
     "key_messages": [
-      "Diabetes individuell und modern behandeln",
-      "Schilddrüse in Balance",
-      "Hormone verstehen – Gesundheit steuern",
-      "Ihr Partner für Stoffwechsel und Ernährung"
+      "Diabetes-Betreuung mit Blick auf den Alltag",
+      "Abklärung von Schilddrüsenerkrankungen",
+      "Hormone und Stoffwechsel verständlich erklärt",
+      "Langfristige Begleitung chronischer Erkrankungen"
     ]
   },
   "seo": {
@@ -195,7 +195,7 @@ export const endokrinologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Schilddrüse, Diabetes-Management, Hormontherapie, Stoffwechsel",
+    "typisch": "Schilddrüse, Diabetes, Hormonstörungen, Stoffwechsel",
     "aufgaben": {
       "mfa": "Schilddrüsen-Sono-Assistenz, Blutzucker-Schulung, Labor, CGM-Einweisung",
       "arzt": "Schilddrüsen-Sonografie, Diabetes-Einstellung, Hormon-Diagnostik",

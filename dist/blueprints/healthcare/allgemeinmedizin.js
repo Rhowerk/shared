@@ -89,17 +89,17 @@ export const allgemeinmedizin = {
                 {
                     "name": "Gesundheits-Check-up",
                     "icon": "clipboard-check",
-                    "default_description": "Der regelmäßige Gesundheits-Check-up erkennt Risikofaktoren\nfrühzeitig. Ab 35 Jahren haben Sie alle drei Jahre Anspruch\nauf diese wichtige Vorsorgeuntersuchung."
+                    "default_description": "Der Gesundheits-Check-up dient der Früherkennung von Risikofaktoren und häufigen Erkrankungen wie Bluthochdruck, Diabetes oder Nierenerkrankungen. Gesetzlich Versicherte haben ab 35 Jahren alle drei Jahre Anspruch darauf, zwischen 18 und 34 Jahren einmalig."
                 },
                 {
                     "name": "Krebsvorsorge",
                     "icon": "shield",
-                    "default_description": "Früherkennung rettet Leben. Wir beraten Sie zu den\nempfohlenen Krebsvorsorgeuntersuchungen und führen\ndiese in unserer Praxis durch."
+                    "default_description": "Die gesetzliche Krebsfrüherkennung umfasst je nach Alter und Geschlecht unterschiedliche Untersuchungen, zum Beispiel der Haut oder des Darms. Im Gespräch wird geklärt, welche Untersuchungen empfohlen sind und wo sie durchgeführt werden."
                 },
                 {
                     "name": "Impfungen",
                     "icon": "syringe",
-                    "default_description": "Aktueller Impfschutz für jedes Alter. Wir beraten Sie\nzu empfohlenen Impfungen und prüfen Ihren Impfstatus –\nauch für Reiseimpfungen."
+                    "default_description": "Impfungen nach den Empfehlungen der Ständigen Impfkommission (STIKO) für Kinder, Erwachsene und ältere Menschen. Dazu gehören die Überprüfung des Impfstatus und die Beratung zu Auffrischungen sowie zu Reiseimpfungen."
                 }
             ]
         },
@@ -110,17 +110,17 @@ export const allgemeinmedizin = {
                 {
                     "name": "Akutsprechstunde",
                     "icon": "clock",
-                    "default_description": "Bei akuten Beschwerden sind wir für Sie da.\nIn unserer Akutsprechstunde erhalten Sie schnelle\nHilfe ohne lange Wartezeiten."
+                    "default_description": "Die Akutsprechstunde ist für plötzlich auftretende Beschwerden wie Fieber, Infekte oder Schmerzen gedacht. Dabei werden die Beschwerden abgeklärt und das weitere Vorgehen besprochen."
                 },
                 {
                     "name": "Infektionsbehandlung",
                     "icon": "thermometer",
-                    "default_description": "Erkältungen, Grippe, Magen-Darm – wir diagnostizieren\nsicher und behandeln effektiv, damit Sie schnell\nwieder gesund werden."
+                    "default_description": "Diagnostik und Behandlung von Infekten wie Erkältung, Grippe oder Magen-Darm-Erkrankungen. Dazu gehören die Untersuchung, bei Bedarf Laborwerte und die Besprechung der passenden Behandlung."
                 },
                 {
                     "name": "Wundversorgung",
                     "icon": "bandage",
-                    "default_description": "Kleinere Verletzungen versorgen wir professionell\ndirekt in der Praxis – schnell, sauber und fachgerecht."
+                    "default_description": "Versorgung kleinerer Verletzungen wie Schnitt- oder Schürfwunden sowie Kontrolle und Verbandswechsel im Heilungsverlauf. Bei Bedarf gehört auch die Überprüfung des Tetanusschutzes dazu."
                 }
             ]
         },
@@ -131,17 +131,17 @@ export const allgemeinmedizin = {
                 {
                     "name": "Diabetes-Behandlung",
                     "icon": "droplet",
-                    "default_description": "Diabetes erfordert eine gute Einstellung und regelmäßige\nKontrollen. Im DMP-Programm begleiten wir Sie langfristig\nfür eine optimale Stoffwechsellage."
+                    "default_description": "Langfristige Betreuung bei Diabetes mellitus mit regelmäßigen Kontrollen von Blutzucker, Langzeitwert und möglichen Folgeerkrankungen. Strukturierte Behandlungsprogramme (DMP) der Krankenkassen können die Betreuung ergänzen."
                 },
                 {
                     "name": "Bluthochdruck",
                     "icon": "heart",
-                    "default_description": "Hoher Blutdruck schädigt Herz und Gefäße.\nMit der richtigen Behandlung und Lebensstiländerungen\nbringen wir Ihren Blutdruck ins Gleichgewicht."
+                    "default_description": "Diagnostik und Behandlung von Bluthochdruck mit Messungen, Ursachenabklärung und Therapieplanung. Neben Medikamenten spielen Bewegung, Ernährung und regelmäßige Kontrollen eine Rolle."
                 },
                 {
                     "name": "Schilddrüsenerkrankungen",
                     "icon": "neck",
-                    "default_description": "Schilddrüsenprobleme beeinflussen den ganzen Körper.\nWir diagnostizieren und behandeln Über- und Unterfunktion\nsowie Knotenbildungen."
+                    "default_description": "Abklärung und Behandlung von Schilddrüsenerkrankungen wie Über- und Unterfunktion oder Knoten. Grundlage sind Blutwerte und bei Bedarf eine Ultraschalluntersuchung."
                 }
             ]
         },
@@ -152,17 +152,17 @@ export const allgemeinmedizin = {
                 {
                     "name": "Labordiagnostik",
                     "icon": "test-tube",
-                    "default_description": "Blutuntersuchungen geben wichtige Hinweise auf Ihren\nGesundheitszustand. Wir bieten umfassende Labordiagnostik\ndirekt in unserer Praxis."
+                    "default_description": "Blut- und Urinuntersuchungen liefern Hinweise zu Stoffwechsel, Organfunktionen und Entzündungen. Die Ergebnisse werden im Gespräch erläutert und in die weitere Behandlung einbezogen."
                 },
                 {
                     "name": "EKG",
                     "icon": "activity",
-                    "default_description": "Das EKG zeigt, wie Ihr Herz arbeitet.\nBei Verdacht auf Herzrhythmusstörungen oder zur\nVorsorge führen wir diese Untersuchung durch."
+                    "default_description": "Das Elektrokardiogramm (EKG) zeichnet die elektrische Aktivität des Herzens auf. Es wird zum Beispiel bei Herzrhythmusstörungen, Brustschmerzen oder im Rahmen von Vorsorgeuntersuchungen eingesetzt."
                 },
                 {
                     "name": "Lungenfunktionstest",
                     "icon": "wind",
-                    "default_description": "Bei Atembeschwerden oder zur Kontrolle von Asthma\nund COPD prüfen wir Ihre Lungenfunktion mit\nmodernen Messgeräten."
+                    "default_description": "Die Lungenfunktionsprüfung (Spirometrie) misst Atemvolumen und Atemfluss. Die Untersuchung wird bei Atembeschwerden sowie zur Verlaufskontrolle bei Asthma und COPD eingesetzt."
                 }
             ]
         }
@@ -215,10 +215,10 @@ export const allgemeinmedizin = {
             "ganzheitlich denkend"
         ],
         "key_messages": [
-            "Wir kennen Sie und Ihre Geschichte",
-            "Hausarzt für die ganze Familie",
-            "Vorsorge ist die beste Medizin",
-            "Persönliche Betreuung auf Augenhöhe"
+            "Hausärztliche Versorgung als erste Anlaufstelle",
+            "Begleitung über viele Jahre und Lebensphasen",
+            "Vorsorge und Früherkennung",
+            "Persönliches Gespräch und verständliche Erklärungen"
         ],
         "language_style": {
             "avoid": [
@@ -228,7 +228,7 @@ export const allgemeinmedizin = {
             ],
             "prefer": [
                 "persönliche Ansprache",
-                "Ihr Hausarzt, wir begleiten Sie",
+                "direkte Ansprache in der eingestellten Anrede und Perspektive",
                 "alltagsnahe Erklärungen"
             ]
         }
@@ -377,7 +377,7 @@ export const allgemeinmedizin = {
         }
     },
     "employer": {
-        "typisch": "Breites Spektrum, Langzeit-Patienten, Prävention, Hausbesuche, erste Anlaufstelle",
+        "typisch": "Breites Spektrum, Langzeit-Betreuung, Prävention, erste Anlaufstelle",
         "aufgaben": {
             "mfa": "Blutabnahme, EKG, Lungenfunktion, Impfungen, Wundversorgung, Patientenannahme, DMP-Dokumentation",
             "arzt": "Diagnostik, Langzeit-Betreuung chronischer Patienten, Vorsorge, Hausbesuche, Überweisungsmanagement",

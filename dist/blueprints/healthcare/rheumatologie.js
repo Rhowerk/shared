@@ -79,17 +79,17 @@ export const rheumatologie = {
                 {
                     "name": "Rheumatologische Diagnostik",
                     "icon": "search",
-                    "default_description": "Mit gezielter Labor- und Bildgebungsdiagnostik identifizieren wir\nrheumatische Erkrankungen frühzeitig. Je schneller die Diagnose,\ndesto besser können wir Gelenkschäden verhindern."
+                    "default_description": "Labor- und Bildgebungsuntersuchungen dienen der Abklärung entzündlich-rheumatischer Erkrankungen. Eine frühe Diagnose ist wichtig, weil sich bleibende Gelenkschäden durch eine rechtzeitige Behandlung oft begrenzen lassen."
                 },
                 {
                     "name": "Gelenksonographie",
                     "icon": "monitor",
-                    "default_description": "Der Ultraschall zeigt uns Entzündungen in Gelenken und Sehnen\nin Echtzeit. Schmerzfrei und ohne Strahlung können wir den\nTherapieerfolg direkt kontrollieren."
+                    "default_description": "Der Ultraschall zeigt Entzündungen in Gelenken, Sehnenscheiden und Schleimbeuteln. Die Untersuchung kommt ohne Strahlenbelastung aus und eignet sich auch für Verlaufskontrollen."
                 },
                 {
                     "name": "Rheuma-Labor",
                     "icon": "test-tube",
-                    "default_description": "Spezielle Laboruntersuchungen wie Rheumafaktor, Anti-CCP und\nEntzündungsmarker helfen uns, die genaue Art Ihrer rheumatischen\nErkrankung zu bestimmen."
+                    "default_description": "Laborwerte wie Rheumafaktor, Anti-CCP-Antikörper und Entzündungsmarker helfen, eine rheumatische Erkrankung einzuordnen und den Verlauf zu beurteilen."
                 }
             ]
         },
@@ -100,17 +100,17 @@ export const rheumatologie = {
                 {
                     "name": "Rheumatoide Arthritis",
                     "icon": "shield",
-                    "default_description": "Die häufigste entzündliche Gelenkerkrankung lässt sich heute\ngut behandeln. Mit modernen Medikamenten können wir die\nEntzündung stoppen und Ihre Gelenke schützen."
+                    "default_description": "Die rheumatoide Arthritis ist die häufigste entzündliche Gelenkerkrankung. Die Behandlung mit Basismedikamenten und gegebenenfalls Biologika zielt darauf ab, die Entzündung zu kontrollieren und die Gelenke zu schützen."
                 },
                 {
                     "name": "Spondyloarthritis / Morbus Bechterew",
                     "icon": "activity",
-                    "default_description": "Rückenschmerzen und Steifigkeit – Morbus Bechterew betrifft\nvor allem die Wirbelsäule. Wir setzen auf Bewegungstherapie\nkombiniert mit modernen Medikamenten."
+                    "default_description": "Die axiale Spondyloarthritis (Morbus Bechterew) betrifft vor allem Wirbelsäule und Kreuz-Darmbein-Gelenke und führt zu entzündlichen Rückenschmerzen und Steifigkeit. Bewegungstherapie und Medikamente sind die wichtigsten Bausteine der Behandlung."
                 },
                 {
                     "name": "Kollagenosen (Lupus, Sklerodermie)",
                     "icon": "heart",
-                    "default_description": "Systemische Autoimmunerkrankungen erfordern eine individuelle\nLangzeitbetreuung. Wir koordinieren Ihre Behandlung und\npassen die Therapie regelmäßig an."
+                    "default_description": "Kollagenosen wie Lupus oder Sklerodermie sind systemische Autoimmunerkrankungen, die mehrere Organe betreffen können. Die Betreuung umfasst regelmäßige Kontrollen und eine an die Krankheitsaktivität angepasste Therapie, oft in Abstimmung mit anderen Fachrichtungen."
                 }
             ]
         },
@@ -121,12 +121,12 @@ export const rheumatologie = {
                 {
                     "name": "Biologika-Therapie",
                     "icon": "syringe",
-                    "default_description": "Biologika und Biosimilars greifen gezielt in den Entzündungsprozess\nein. In unserer Praxis führen wir Infusionen und Injektionen\ndurch und überwachen den Therapieverlauf."
+                    "default_description": "Biologika und Biosimilars sind biotechnologisch hergestellte Medikamente, die gezielt in den Entzündungsprozess eingreifen. Verabreicht werden sie als Spritze oder Infusion; die Therapie erfordert regelmäßige Kontrollen."
                 },
                 {
                     "name": "Gelenkpunktion / Infiltration",
                     "icon": "target",
-                    "default_description": "Bei akuten Gelenkentzündungen können wir mit einer gezielten\nGelenkpunktion Flüssigkeit entnehmen und entzündungshemmende\nMedikamente direkt ins Gelenk spritzen."
+                    "default_description": "Bei der Gelenkpunktion wird Flüssigkeit aus einem entzündeten Gelenk entnommen und untersucht. Bei Bedarf kann dabei ein entzündungshemmendes Medikament direkt ins Gelenk gegeben werden."
                 }
             ]
         }
@@ -141,10 +141,10 @@ export const rheumatologie = {
         ],
         "audience": "Patienten mit rheumatoider Arthritis, Morbus Bechterew, Lupus,\nFibromyalgie, Gicht und anderen Autoimmunerkrankungen.",
         "key_messages": [
-            "Rheuma ist behandelbar – wir finden die richtige Therapie",
-            "Moderne Biologika und zielgerichtete Therapien",
-            "Beweglichkeit erhalten – Lebensqualität steigern",
-            "Frühdiagnostik verhindert Gelenkschäden"
+            "Frühe Diagnose entzündlich-rheumatischer Erkrankungen",
+            "Therapie nach aktuellen Leitlinien",
+            "Beweglichkeit und Alltag im Blick",
+            "Langfristige Begleitung chronischer Erkrankungen"
         ]
     },
     "seo": {
@@ -199,7 +199,7 @@ export const rheumatologie = {
         }
     },
     "employer": {
-        "typisch": "Gelenksonografie, Immundiagnostik, Biologika, Autoimmunerkrankungen",
+        "typisch": "Immundiagnostik, Gelenksonografie, Basistherapie und Biologika, Autoimmunerkrankungen",
         "aufgaben": {
             "mfa": "Gelenksonografie-Assistenz, Infusionstherapie (Biologika), Labormanagement",
             "arzt": "Gelenksonografie, Immundiagnostik, Biologika-Einstellung",

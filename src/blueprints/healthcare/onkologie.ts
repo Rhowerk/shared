@@ -81,17 +81,17 @@ export const onkologie: Blueprint = {
         {
           "name": "Chemotherapie",
           "icon": "syringe",
-          "default_description": "In unserer Tagesklinik führen wir Chemotherapien in angenehmer\nAtmosphäre durch. Unser erfahrenes Team begleitet Sie sicher\nund einfühlsam durch jede Behandlung."
+          "default_description": "Chemotherapien werden nach festgelegten Therapieprotokollen verabreicht, häufig ambulant als Infusion. Begleitend gehören Kontrollen der Blutwerte und die Behandlung von Nebenwirkungen dazu."
         },
         {
           "name": "Immuntherapie",
           "icon": "shield",
-          "default_description": "Immuntherapien aktivieren Ihr körpereigenes Abwehrsystem gegen\nden Krebs. Wir setzen modernste Checkpoint-Inhibitoren und\nAntikörpertherapien ein."
+          "default_description": "Immuntherapien wie Checkpoint-Hemmer sollen das körpereigene Immunsystem gegen Tumorzellen aktivieren. Ob eine Immuntherapie in Frage kommt, hängt von Tumorart und Befunden ab."
         },
         {
           "name": "Zielgerichtete Therapie",
           "icon": "target",
-          "default_description": "Zielgerichtete Medikamente greifen gezielt in die Wachstumswege\nvon Tumorzellen ein. Dank molekularer Diagnostik finden wir\ndie passende Therapie für Ihren Tumor."
+          "default_description": "Zielgerichtete Medikamente greifen in bestimmte Wachstumssignale von Tumorzellen ein. Voraussetzung ist meist eine molekulare Untersuchung des Tumorgewebes."
         }
       ]
     },
@@ -102,22 +102,22 @@ export const onkologie: Blueprint = {
         {
           "name": "Onkologische Diagnostik",
           "icon": "search",
-          "default_description": "Modernste Diagnostik ist die Grundlage jeder Therapie.\nMit Bildgebung, Labor und molekularen Analysen bestimmen wir\nArt und Stadium Ihrer Erkrankung präzise."
+          "default_description": "Bildgebung, Laboruntersuchungen und Gewebeanalysen bestimmen Art und Ausbreitung einer Tumorerkrankung. Die Ergebnisse bilden die Grundlage für die Therapieplanung, oft abgestimmt in einer interdisziplinären Tumorkonferenz."
         },
         {
           "name": "Hämatologische Diagnostik",
           "icon": "droplet",
-          "default_description": "Bluterkrankungen wie Lymphome, Leukämien und Anämien\ndiagnostizieren wir mit speziellen Blutuntersuchungen,\nKnochenmarkpunktionen und Flusszytometrie."
+          "default_description": "Erkrankungen des Blutes und des lymphatischen Systems wie Anämien, Lymphome oder Leukämien werden mit Blutuntersuchungen, Knochenmarkpunktion und speziellen Laborverfahren abgeklärt."
         },
         {
           "name": "Tumornachsorge",
           "icon": "calendar",
-          "default_description": "Nach abgeschlossener Therapie begleiten wir Sie in der\nstrukturierten Nachsorge. Regelmäßige Kontrollen geben\nSicherheit und erkennen Veränderungen frühzeitig."
+          "default_description": "Nach abgeschlossener Behandlung finden Nachsorgeuntersuchungen in festgelegten Abständen statt. Ziel ist es, Veränderungen früh zu erkennen und Spätfolgen der Therapie zu behandeln."
         },
         {
           "name": "Palliativmedizin",
           "icon": "heart",
-          "default_description": "Wenn Heilung nicht mehr möglich ist, steht Ihre Lebensqualität\nim Mittelpunkt. Wir lindern Beschwerden und unterstützen\nSie und Ihre Angehörigen."
+          "default_description": "Die Palliativmedizin richtet sich an Menschen mit fortgeschrittener, nicht heilbarer Erkrankung. Im Mittelpunkt stehen die Linderung von Beschwerden, die Lebensqualität und die Unterstützung der Angehörigen."
         }
       ]
     }
@@ -132,10 +132,10 @@ export const onkologie: Blueprint = {
     ],
     "audience": "Krebspatienten in Diagnostik, Therapie und Nachsorge.\nPatienten mit hämatologischen Erkrankungen. Angehörige.",
     "key_messages": [
-      "An Ihrer Seite – durch jede Phase der Behandlung",
-      "Individuelle Therapiekonzepte auf neuestem Stand",
-      "Moderne Immuntherapie und zielgerichtete Behandlung",
-      "Nachsorge für ein gutes Leben nach der Therapie"
+      "Begleitung durch alle Phasen der Behandlung",
+      "Therapie nach aktuellen Leitlinien",
+      "Einbeziehung von Angehörigen",
+      "Nachsorge und Lebensqualität"
     ]
   },
   "seo": {
@@ -197,7 +197,7 @@ export const onkologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Chemotherapie, Immuntherapie, Tumorboards, Palliativmedizin",
+    "typisch": "Systemische Tumortherapie, Begleittherapie, Nachsorge, interdisziplinäre Zusammenarbeit",
     "aufgaben": {
       "mfa": "Chemotherapie-Vorbereitung, Port-Versorgung, Blutbildkontrolle",
       "arzt": "Therapieplanung, Chemotherapie-Protokolle, Tumorboards, Palliativ",

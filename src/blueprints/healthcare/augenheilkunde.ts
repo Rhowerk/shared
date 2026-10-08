@@ -80,27 +80,28 @@ export const augenheilkunde: Blueprint = {
         {
           "name": "Augenärztliche Untersuchung",
           "icon": "eye",
-          "default_description": "Bei der augenärztlichen Untersuchung prüfen wir Sehschärfe, Augendruck\nund Augengesundheit umfassend. Mit modernen Geräten erkennen wir\nauch kleinste Veränderungen."
+          "default_description": "Die augenärztliche Untersuchung umfasst je nach Anlass Sehschärfe, Augeninnendruck, vordere Augenabschnitte und Augenhintergrund. Ziel ist es, Veränderungen am Auge zu erkennen und einzuordnen."
         },
         {
           "name": "Sehtest / Refraktion",
           "icon": "search",
-          "default_description": "Wir bestimmen Ihre Sehstärke präzise und ermitteln die optimale\nBrillen- oder Kontaktlinsenstärke. Grundlage für entspanntes Sehen\nin allen Entfernungen."
+          "default_description": "Bei der Refraktionsbestimmung wird die Sehstärke für Ferne und Nähe ermittelt. Das Ergebnis ist Grundlage für die Verordnung oder Anpassung einer Brille oder von Kontaktlinsen."
         },
         {
           "name": "Augendruckmessung (Glaukom)",
           "icon": "gauge",
-          "default_description": "Die Augendruckmessung ist wichtig zur Früherkennung des Grünen Stars.\nErhöhter Augendruck kann den Sehnerv schädigen - regelmäßige\nKontrollen schützen Ihr Augenlicht."
+          "default_description": "Die Messung des Augeninnendrucks ist ein Baustein der Glaukom-Diagnostik. Zusammen mit der Untersuchung des Sehnervs hilft sie, einen Grünen Star früh zu erkennen. Ohne konkreten Verdacht ist die Untersuchung in der Regel eine Selbstzahlerleistung."
         },
         {
           "name": "Netzhautuntersuchung",
           "icon": "sun",
-          "default_description": "Mit der Netzhautuntersuchung erkennen wir Erkrankungen wie\nMakuladegeneration oder diabetische Veränderungen frühzeitig.\nOft nutzen wir dafür spezielle Tropfen zur Pupillenerweiterung."
+          "default_description": "Untersuchung des Augenhintergrunds, häufig nach Erweiterung der Pupillen mit Augentropfen. Damit lassen sich Erkrankungen wie Makuladegeneration oder diabetische Netzhautveränderungen erkennen und im Verlauf kontrollieren. Nach den Tropfen ist das Sehen für einige Stunden eingeschränkt, Autofahren ist dann nicht möglich."
         },
         {
           "name": "Führerschein-Sehtest",
           "icon": "car",
-          "default_description": "Für den Führerschein benötigen Sie einen Sehtest. Wir prüfen\nIhre Sehschärfe und stellen die erforderliche Bescheinigung aus."
+          "default_description": "Für die Fahrerlaubnis ist ein Nachweis über ausreichendes Sehvermögen erforderlich. Je nach Führerscheinklasse umfasst die Untersuchung Sehschärfe und weitere Sehfunktionen; das Ergebnis wird bescheinigt.",
+          "igel": true
         }
       ]
     },
@@ -111,22 +112,23 @@ export const augenheilkunde: Blueprint = {
         {
           "name": "Grauer Star Vorsorge (Katarakt)",
           "icon": "cloud",
-          "default_description": "Beim Grauen Star trübt sich die Augenlinse. Wir erkennen die\nVeränderungen früh und beraten Sie, wann eine Operation sinnvoll ist."
+          "default_description": "Beim Grauen Star (Katarakt) trübt sich die Augenlinse, das Sehen wird zunehmend verschwommen und blendempfindlich. Die Untersuchung klärt das Ausmaß der Trübung; im Gespräch wird besprochen, ob und wann eine Operation sinnvoll ist."
         },
         {
           "name": "Grüner Star Vorsorge (Glaukom)",
           "icon": "alert-triangle",
-          "default_description": "Der Grüne Star schädigt schleichend den Sehnerv. Mit regelmäßiger\nVorsorge erkennen wir die Erkrankung früh und können das Fortschreiten\naufhalten."
+          "default_description": "Beim Grünen Star (Glaukom) wird der Sehnerv über längere Zeit geschädigt, oft ohne frühe Beschwerden. Die Früherkennung umfasst die Messung des Augeninnendrucks und die Beurteilung des Sehnervs. Ohne konkreten Verdacht ist sie eine Selbstzahlerleistung.",
+          "igel": true
         },
         {
           "name": "Makuladegeneration (AMD)",
           "icon": "target",
-          "default_description": "Die altersbedingte Makuladegeneration betrifft das Zentrum der Netzhaut.\nFrüherkennung und moderne Therapien können das Sehvermögen erhalten."
+          "default_description": "Die altersabhängige Makuladegeneration betrifft die Stelle des schärfsten Sehens in der Netzhaut. Diagnostik und Verlaufskontrollen erfolgen über die Untersuchung des Augenhintergrunds und gegebenenfalls Bildgebung; je nach Form kommen unterschiedliche Behandlungen in Frage."
         },
         {
           "name": "Trockenes Auge Behandlung",
           "icon": "droplet",
-          "default_description": "Trockene Augen sind unangenehm und weit verbreitet. Wir finden\ndie Ursache und empfehlen die passende Behandlung - von Tropfen\nbis zu speziellen Therapien."
+          "default_description": "Trockene Augen äußern sich durch Brennen, Fremdkörpergefühl oder gerötete Augen. Nach Abklärung der Ursache werden Behandlungsmöglichkeiten wie Tränenersatzmittel oder Lidrandpflege besprochen."
         }
       ]
     },
@@ -137,22 +139,23 @@ export const augenheilkunde: Blueprint = {
         {
           "name": "Kontaktlinsenanpassung",
           "icon": "circle",
-          "default_description": "Kontaktlinsen müssen perfekt sitzen. Wir passen Ihre Linsen\nindividuell an und zeigen Ihnen die richtige Handhabung und Pflege."
+          "default_description": "Bei der Kontaktlinsenanpassung werden Hornhaut und Sehstärke vermessen und passende Linsen ausgewählt. Dazu gehören die Einweisung in Handhabung und Pflege sowie Kontrollen des Sitzes.",
+          "igel": true
         },
         {
           "name": "Kinderaugenheilkunde",
           "icon": "baby",
-          "default_description": "Kinderaugen brauchen besondere Aufmerksamkeit. Wir untersuchen\nspielerisch und erkennen Sehschwächen, Schielen und andere\nProbleme frühzeitig."
+          "default_description": "Augenuntersuchungen bei Kindern, angepasst an Alter und Entwicklung. Ziel ist es, Sehschwächen, Schielen oder andere Auffälligkeiten früh zu erkennen, da sich das Sehen im Kindesalter noch entwickelt."
         },
         {
           "name": "Schielen (Strabismus)",
           "icon": "move",
-          "default_description": "Schielen sollte früh behandelt werden. Wir diagnostizieren die\nArt des Schielens und besprechen Behandlungsoptionen wie Brille,\nAbdecken oder Operation."
+          "default_description": "Schielen (Strabismus) kann bei Kindern die Entwicklung des Sehens beeinträchtigen und tritt auch bei Erwachsenen auf. Nach der Diagnostik werden Behandlungsmöglichkeiten wie Brille, Abklebetherapie oder eine Operation besprochen."
         },
         {
           "name": "Laserbehandlung",
           "icon": "zap",
-          "default_description": "Mit modernen Lasern behandeln wir verschiedene Augenerkrankungen.\nVon der Netzhautbehandlung bis zur refraktiven Chirurgie -\nwir beraten Sie zu den Möglichkeiten."
+          "default_description": "Laserverfahren werden in der Augenheilkunde für unterschiedliche Zwecke eingesetzt, etwa bei Netzhauterkrankungen, beim Nachstar oder zur Korrektur von Fehlsichtigkeit. Welche Behandlung in Frage kommt, hängt vom Befund ab."
         }
       ]
     }
@@ -167,10 +170,10 @@ export const augenheilkunde: Blueprint = {
     ],
     "audience": "Patienten aller Altersgruppen - von Kindern mit Sehschwäche\nbis Senioren mit Grauem Star oder Makuladegeneration.",
     "key_messages": [
-      "Klare Sicht für mehr Lebensqualität",
-      "Modernste Diagnostik für präzise Ergebnisse",
-      "Grauer und Grüner Star Früherkennung",
-      "Kompetente Brillen- und Kontaktlinsenberatung"
+      "Sehen als Teil der Lebensqualität",
+      "Früherkennung von Grünem Star, Grauem Star und Netzhauterkrankungen",
+      "Verständliche Erklärung von Befunden",
+      "Beratung zu Brille und Kontaktlinsen"
     ]
   },
   "seo": {
@@ -225,7 +228,7 @@ export const augenheilkunde: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Sehtest, Augeninnendruckmessung, OCT, Netzhaut-Diagnostik",
+    "typisch": "Sehtest, Augeninnendruckmessung, Netzhaut-Diagnostik, Behandlung von Augenerkrankungen",
     "aufgaben": {
       "mfa": "Sehtest, Augeninnendruck, OCT-Aufnahmen, Gesichtsfeldprüfung, Tropfen",
       "arzt": "Spaltlampe, OCT-Befundung, Netzhaut-Diagnostik, Laser, Katarakt-OP",

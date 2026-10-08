@@ -88,17 +88,17 @@ export const zahnarzt = {
                 {
                     "name": "Professionelle Zahnreinigung (PZR)",
                     "icon": "sparkles",
-                    "default_description": "Die professionelle Zahnreinigung entfernt Beläge und Verfärbungen\ngründlich und schützt vor Karies und Parodontitis.\nFür ein sauberes, frisches Mundgefühl."
+                    "default_description": "Bei der professionellen Zahnreinigung werden harte und weiche Beläge sowie Verfärbungen entfernt, auch in den Zahnzwischenräumen. Anschließend werden die Zähne poliert und meist fluoridiert. Gesetzliche Krankenkassen übernehmen die Kosten nicht regulär, einige beteiligen sich mit Zuschüssen."
                 },
                 {
                     "name": "Vorsorgeuntersuchung",
                     "icon": "search",
-                    "default_description": "Regelmäßige Kontrollen sind der beste Schutz vor größeren Problemen.\nWir erkennen Karies und Zahnfleischerkrankungen frühzeitig."
+                    "default_description": "Bei der zahnärztlichen Kontrolluntersuchung werden Zähne, Zahnfleisch und Mundschleimhaut auf Karies, Zahnfleischerkrankungen und andere Veränderungen untersucht. Regelmäßige Kontrollen sind zudem Voraussetzung für das Bonusheft."
                 },
                 {
                     "name": "Kinderzahnheilkunde",
                     "icon": "baby",
-                    "default_description": "Spielerisch und behutsam führen wir die Kleinsten an die\nZahnpflege heran. Denn gesunde Milchzähne sind die Basis\nfür gesunde bleibende Zähne."
+                    "default_description": "Zahnärztliche Betreuung von Kindern mit Früherkennungsuntersuchungen, Fluoridierung und Fissurenversiegelung. Dazu gehört die Anleitung von Kindern und Eltern zur Zahnpflege."
                 }
             ]
         },
@@ -109,17 +109,20 @@ export const zahnarzt = {
                 {
                     "name": "Bleaching / Zahnaufhellung",
                     "icon": "sun",
-                    "default_description": "Strahlend weiße Zähne für ein selbstbewusstes Lächeln.\nUnser professionelles Bleaching ist schonend und zeigt\nsofort sichtbare Ergebnisse."
+                    "default_description": "Beim Bleaching werden verfärbte Zähne mit einem Aufhellungsgel aufgehellt, in der Praxis oder mit individuell angefertigten Schienen zu Hause. Das Ergebnis hängt von Ausgangsfarbe und Ursache der Verfärbung ab; vorhandene Füllungen und Kronen hellen nicht mit auf.",
+                    "igel": true
                 },
                 {
                     "name": "Veneers",
                     "icon": "layers",
-                    "default_description": "Hauchdünne Keramikschalen für perfekte Frontzähne.\nVeneers korrigieren Form, Farbe und kleine Fehlstellungen\nfür ein harmonisches Lächeln."
+                    "default_description": "Veneers sind dünne Keramikschalen, die auf die Vorderseite von Frontzähnen geklebt werden. Damit lassen sich Form, Farbe und kleinere Stellungsabweichungen verändern; dafür wird meist etwas Zahnsubstanz abgetragen.",
+                    "igel": true
                 },
                 {
                     "name": "Invisalign",
                     "icon": "move",
-                    "default_description": "Die unsichtbare Zahnkorrektur für Erwachsene.\nTransparente Schienen richten Ihre Zähne diskret und\nkomfortabel aus."
+                    "default_description": "Bei der Aligner-Therapie werden Zahnfehlstellungen mit einer Folge transparenter, herausnehmbarer Kunststoffschienen schrittweise korrigiert. Die Schienen werden in der Regel täglich 20 bis 22 Stunden getragen.",
+                    "igel": true
                 }
             ]
         },
@@ -130,17 +133,18 @@ export const zahnarzt = {
                 {
                     "name": "Implantate",
                     "icon": "pin",
-                    "default_description": "Zahnimplantate sind die hochwertigste Form des Zahnersatzes.\nSie sehen aus wie natürliche Zähne und halten ein Leben lang."
+                    "default_description": "Zahnimplantate sind künstliche Zahnwurzeln aus Titan oder Keramik, die im Kieferknochen einheilen und Kronen, Brücken oder Prothesen tragen. Voraussetzungen, Alternativen und Kosten werden vor der Behandlung besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Kronen & Brücken",
                     "icon": "crown",
-                    "default_description": "Wenn Zähne stark beschädigt oder verloren sind, stellen\nKronen und Brücken Funktion und Ästhetik wieder her."
+                    "default_description": "Kronen überdecken stark beschädigte Zähne, Brücken ersetzen fehlende Zähne und werden an den Nachbarzähnen befestigt. Beides dient der Wiederherstellung von Kaufunktion und Aussehen."
                 },
                 {
                     "name": "Prothesen",
                     "icon": "smile",
-                    "default_description": "Moderne Prothesen sitzen sicher und sehen natürlich aus.\nWir finden die beste Lösung für Ihre Bedürfnisse."
+                    "default_description": "Teil- und Vollprothesen ersetzen mehrere oder alle Zähne eines Kiefers. Je nach Situation werden sie mit Klammern, Teleskopen oder Implantaten befestigt."
                 }
             ]
         },
@@ -151,17 +155,17 @@ export const zahnarzt = {
                 {
                     "name": "Wurzelbehandlung",
                     "icon": "target",
-                    "default_description": "Dank moderner Technik können wir auch stark entzündete\nZähne oft noch retten. Unsere Wurzelbehandlungen sind\nschonend und präzise."
+                    "default_description": "Bei einer Wurzelbehandlung wird entzündetes oder abgestorbenes Gewebe aus dem Wurzelkanal entfernt, der Kanal gereinigt und verschlossen. Ziel ist es, den Zahn zu erhalten."
                 },
                 {
                     "name": "Parodontitisbehandlung",
                     "icon": "shield",
-                    "default_description": "Parodontitis gefährdet nicht nur die Zähne, sondern den\nganzen Körper. Wir behandeln Zahnfleischerkrankungen\ngründlich und nachhaltig."
+                    "default_description": "Parodontitis ist eine chronische Entzündung des Zahnhalteapparats, die unbehandelt zu Zahnlockerung und Zahnverlust führen kann. Die Behandlung umfasst die Reinigung der Zahnfleischtaschen und eine Nachsorge in regelmäßigen Abständen."
                 },
                 {
                     "name": "Schmerzbehandlung",
                     "icon": "heart",
-                    "default_description": "Bei akuten Zahnschmerzen sind wir schnell für Sie da.\nEinfühlsame Behandlung bringt rasche Linderung."
+                    "default_description": "Bei akuten Zahnschmerzen wird die Ursache abgeklärt, etwa eine Entzündung des Zahnnervs oder ein Abszess. Ziel der Erstbehandlung ist die Linderung der Beschwerden; die weitere Behandlung wird anschließend geplant."
                 }
             ]
         }
@@ -211,7 +215,7 @@ export const zahnarzt = {
             "einfühlsam",
             "vertrauenswürdig"
         ],
-        "audience": "Erwachsene Patienten, teils mit Zahnarztangst.\nSuchen schmerzarme, moderne Behandlung.\nInteressiert an Ästhetik und Prophylaxe.",
+        "audience": "Erwachsene Patienten, teils mit Zahnarztangst.\nWünschen sich verständliche Erklärungen und eine ruhige Behandlung.\nInteressiert an Ästhetik und Prophylaxe.",
         "personality": [
             "kompetent",
             "geduldig",
@@ -219,10 +223,10 @@ export const zahnarzt = {
             "ästhetisch orientiert"
         ],
         "key_messages": [
-            "Moderne Technik für sanfte Behandlung",
+            "Vorsorge statt Reparatur",
             "Ästhetik und Funktion im Einklang",
-            "Angstpatienten willkommen",
-            "Vorsorge statt Reparatur"
+            "Verständnis für Patienten mit Zahnarztangst",
+            "Behandlungsschritte verständlich erklärt"
         ],
         "language_style": {
             "avoid": [
@@ -232,7 +236,7 @@ export const zahnarzt = {
             ],
             "prefer": [
                 "positive Formulierungen",
-                "sanft, schonend, schmerzfrei",
+                "ruhige, erklärende Sprache zum Ablauf",
                 "moderne Begriffe"
             ]
         }
@@ -389,7 +393,7 @@ export const zahnarzt = {
         }
     },
     "employer": {
-        "typisch": "Prophylaxe, Füllungen, Prothetik, Angstpatienten, ästhetische Zahnheilkunde",
+        "typisch": "Prophylaxe, Füllungen, Zahnersatz, Zahnerhaltung",
         "aufgaben": {
             "zfa": "Assistenz am Stuhl, Röntgen, Abdrücke, Prophylaxe, Aufbereitung, Abrechnung",
             "arzt": "Zahnerhaltung, Prothetik, Chirurgie, Implantologie, Ästhetik",

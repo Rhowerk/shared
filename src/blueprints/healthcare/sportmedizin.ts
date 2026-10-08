@@ -80,17 +80,20 @@ export const sportmedizin: Blueprint = {
         {
           "name": "Sportmedizinische Untersuchung",
           "icon": "clipboard-check",
-          "default_description": "Die sportmedizinische Grunduntersuchung prüft Ihre Belastbarkeit\nund deckt Risikofaktoren auf. Basis für sicheres Training\nund optimale Leistung."
+          "default_description": "Die sportmedizinische Untersuchung umfasst Anamnese, körperliche Untersuchung und je nach Fragestellung EKG oder Belastungstest. Ziel ist es, die Belastbarkeit einzuschätzen und gesundheitliche Risiken beim Sport zu erkennen.",
+          "igel": true
         },
         {
           "name": "Leistungsdiagnostik",
           "icon": "activity",
-          "default_description": "Mit Spiroergometrie und Laktatstufentest bestimmen wir Ihre\nindividuelle Leistungsfähigkeit. Die Ergebnisse ermöglichen\nein exakt gesteuertes Training."
+          "default_description": "Mit Spiroergometrie oder Laktatstufentest wird die körperliche Leistungsfähigkeit gemessen. Die Ergebnisse dienen als Grundlage zur Bestimmung von Trainingsbereichen.",
+          "igel": true
         },
         {
           "name": "Sporttauglichkeitsuntersuchung",
           "icon": "check-circle",
-          "default_description": "Für Verein, Wettkampf oder Tauchschein – wir prüfen Ihre\nSporttauglichkeit gründlich und stellen die erforderlichen\nAtteste aus."
+          "default_description": "Für Vereinssport, Wettkämpfe oder Tauchsport wird häufig eine ärztliche Bescheinigung der Sporttauglichkeit verlangt. Untersuchungsumfang und Attest richten sich nach Sportart und Vorgaben des Verbands.",
+          "igel": true
         }
       ]
     },
@@ -101,17 +104,18 @@ export const sportmedizin: Blueprint = {
         {
           "name": "Sportverletzungen",
           "icon": "bandage",
-          "default_description": "Schnelle und kompetente Versorgung bei Sportverletzungen.\nVon Muskelverletzungen über Bänderrisse bis Knochenbrüche –\nwir bringen Sie zurück in den Sport."
+          "default_description": "Diagnostik und Behandlung von Sportverletzungen wie Muskelverletzungen, Bänderrissen oder Knochenbrüchen. Dazu gehört die Planung der schrittweisen Rückkehr zum Sport."
         },
         {
           "name": "Trainingsberatung",
           "icon": "trending-up",
-          "default_description": "Basierend auf Ihren Leistungsdaten erstellen wir individuelle\nTrainingsempfehlungen. Für effizientes Training mit dem\nrichtigen Puls in jeder Zone."
+          "default_description": "Auf Grundlage von Leistungsdaten und Gesundheitszustand werden Empfehlungen zu Trainingsumfang und Belastungsintensität erarbeitet, etwa zu Herzfrequenzbereichen.",
+          "igel": true
         },
         {
           "name": "Sportorthopädie",
           "icon": "bone",
-          "default_description": "Überlastungsschäden, Gelenkprobleme und Fehlstellungen behandeln\nwir konservativ und sportartspezifisch. Ziel: schmerzfrei\nund leistungsfähig zurück zum Sport."
+          "default_description": "Behandlung von Überlastungsschäden, Gelenkbeschwerden und Fehlstellungen bei sportlich aktiven Menschen. Die Therapie berücksichtigt die Anforderungen der jeweiligen Sportart."
         }
       ]
     }
@@ -126,10 +130,10 @@ export const sportmedizin: Blueprint = {
     ],
     "audience": "Sportler aller Leistungsklassen, Breitensportler, Vereinssportler,\nPatienten mit Sportverletzungen, Wiedereinsteiger.",
     "key_messages": [
-      "Medizin für Ihren Sport",
-      "Leistung kennen – Leistung steigern",
-      "Verletzungen vorbeugen und schnell zurückkommen",
-      "Sporttauglichkeit professionell geprüft"
+      "Medizin für Sportlerinnen und Sportler aller Leistungsklassen",
+      "Belastbarkeit und Gesundheit im Sport",
+      "Verletzungen vorbeugen und die Rückkehr zum Sport planen",
+      "Sporttauglichkeit ärztlich beurteilt"
     ]
   },
   "seo": {
@@ -184,7 +188,7 @@ export const sportmedizin: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Leistungsdiagnostik, Sportverletzungen, Prävention, Trainingsberatung",
+    "typisch": "Sportmedizinische Untersuchung, Sportverletzungen, Prävention, Trainingsberatung",
     "aufgaben": {
       "mfa": "Belastungs-EKG-Assistenz, Laktatmessung, Tapingverbände, Ultraschall",
       "arzt": "Leistungsdiagnostik, Sportverletzungen, Trainingsplanung, Prävention",

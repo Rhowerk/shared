@@ -80,17 +80,17 @@ export const gastroenterologie: Blueprint = {
         {
           "name": "Gastroskopie (Magenspiegelung)",
           "icon": "search",
-          "default_description": "Bei der Magenspiegelung untersuchen wir die Speiseröhre, den Magen\nund den Zwölffingerdarm mit einem flexiblen Endoskop. Auf Wunsch\nführen wir die Untersuchung im Dämmerschlaf durch."
+          "default_description": "Bei der Magenspiegelung werden Speiseröhre, Magen und Zwölffingerdarm mit einem flexiblen Endoskop untersucht. Dabei können Gewebeproben entnommen werden; ob eine Beruhigungsspritze (Sedierung) gegeben wird, wird vorab besprochen."
         },
         {
           "name": "Koloskopie (Darmspiegelung)",
           "icon": "search",
-          "default_description": "Die Darmspiegelung ist die wichtigste Methode zur Darmkrebsvorsorge.\nWir können dabei Polypen sofort erkennen und entfernen, bevor sie\nsich zu Krebs entwickeln."
+          "default_description": "Die Darmspiegelung dient der Abklärung von Beschwerden und der Darmkrebsfrüherkennung. Polypen können in der Regel während der Untersuchung entfernt werden. Gesetzlich Versicherte haben ab 50 Jahren Anspruch auf die Vorsorge-Darmspiegelung."
         },
         {
           "name": "Kapselendoskopie",
           "icon": "pill",
-          "default_description": "Mit der Kapselendoskopie können wir den Dünndarm untersuchen,\nder für herkömmliche Endoskope nicht erreichbar ist. Sie schlucken\neine kleine Kamerakapsel, die Bilder sendet."
+          "default_description": "Bei der Kapselendoskopie wird eine kleine Kamerakapsel geschluckt, die auf dem Weg durch den Verdauungstrakt Bilder aufnimmt. Das Verfahren dient vor allem der Untersuchung des Dünndarms, der mit herkömmlichen Endoskopen schwer erreichbar ist."
         }
       ]
     },
@@ -101,17 +101,17 @@ export const gastroenterologie: Blueprint = {
         {
           "name": "Abdomensonographie",
           "icon": "monitor",
-          "default_description": "Mit der Ultraschalluntersuchung des Bauchraums beurteilen wir\nLeber, Gallenblase, Bauchspeicheldrüse, Nieren und weitere Organe\nschmerzfrei und ohne Strahlenbelastung."
+          "default_description": "Die Ultraschalluntersuchung des Bauchraums zeigt Organe wie Leber, Gallenblase, Bauchspeicheldrüse, Milz und Nieren. Die Untersuchung kommt ohne Strahlenbelastung aus."
         },
         {
           "name": "Laktose- & Fruktose-Atemtest",
           "icon": "wind",
-          "default_description": "Der Atemtest zeigt zuverlässig, ob Sie eine Unverträglichkeit gegen\nLaktose oder Fruktose haben. Die Untersuchung ist unkompliziert\nund dauert etwa 2–3 Stunden."
+          "default_description": "Der H2-Atemtest prüft, ob Milchzucker (Laktose) oder Fruchtzucker (Fruktose) vertragen wird. Nach dem Trinken einer Testlösung wird über mehrere Stunden die Atemluft gemessen."
         },
         {
           "name": "Helicobacter-Diagnostik",
           "icon": "search",
-          "default_description": "Helicobacter pylori kann Magenschleimhautentzündungen und Geschwüre\nverursachen. Mit verschiedenen Testverfahren weisen wir den Keim\nsicher nach und leiten die Behandlung ein."
+          "default_description": "Helicobacter pylori ist ein Bakterium, das Magenschleimhautentzündungen und Geschwüre verursachen kann. Der Nachweis erfolgt per Atemtest, Stuhltest oder Gewebeprobe; bei positivem Befund wird die Behandlung besprochen."
         }
       ]
     },
@@ -122,17 +122,17 @@ export const gastroenterologie: Blueprint = {
         {
           "name": "Chronisch-entzündliche Darmerkrankungen (CED)",
           "icon": "shield",
-          "default_description": "Morbus Crohn und Colitis ulcerosa erfordern eine individuelle\nLangzeitbetreuung. Wir setzen auf moderne Therapien inklusive\nBiologika für eine bestmögliche Lebensqualität."
+          "default_description": "Morbus Crohn und Colitis ulcerosa sind chronisch-entzündliche Darmerkrankungen, die in Schüben verlaufen. Die Betreuung umfasst Diagnostik, Verlaufskontrollen und eine an die Krankheitsaktivität angepasste Therapie, bei Bedarf auch mit Biologika."
         },
         {
           "name": "Lebererkrankungen / Hepatologie",
           "icon": "activity",
-          "default_description": "Von Fettleber über Hepatitis bis Leberzirrhose – wir diagnostizieren\nund behandeln alle Lebererkrankungen und begleiten Sie\nbei der Therapie langfristig."
+          "default_description": "Diagnostik und Betreuung bei Lebererkrankungen wie Fettleber, Virushepatitis oder Leberzirrhose. Grundlage sind Laborwerte, Ultraschall und gegebenenfalls weitere Untersuchungen."
         },
         {
           "name": "Reizdarmsyndrom",
           "icon": "heart",
-          "default_description": "Das Reizdarmsyndrom verursacht Bauchschmerzen, Blähungen und\nStuhlunregelmäßigkeiten. Wir schließen andere Ursachen aus und\nfinden die passende Behandlungsstrategie für Sie."
+          "default_description": "Das Reizdarmsyndrom äußert sich durch Bauchschmerzen, Blähungen und veränderten Stuhlgang. Nach Ausschluss anderer Ursachen werden Behandlungsmöglichkeiten wie Ernährungsanpassung und Medikamente besprochen."
         }
       ]
     }
@@ -147,10 +147,10 @@ export const gastroenterologie: Blueprint = {
     ],
     "audience": "Patienten mit Magen-Darm-Beschwerden, chronisch-entzündlichen Darmerkrankungen,\nLebererkrankungen. Darmkrebsvorsorge-Patienten ab 50 Jahren.",
     "key_messages": [
-      "Darmkrebsvorsorge rettet Leben",
-      "Schonende Endoskopie mit modernster Technik",
-      "Chronische Darmerkrankungen kompetent behandeln",
-      "Verdauung verstehen – Lebensqualität gewinnen"
+      "Darmkrebsvorsorge als wichtige Früherkennung",
+      "Endoskopische Untersuchungen mit verständlicher Aufklärung",
+      "Begleitung bei chronischen Darm- und Lebererkrankungen",
+      "Verdauungsbeschwerden ernst nehmen und abklären"
     ]
   },
   "seo": {
@@ -205,7 +205,7 @@ export const gastroenterologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Endoskopie, Sonografie, Leber-Diagnostik, CED",
+    "typisch": "Endoskopie, Sonografie, Darm- und Lebererkrankungen",
     "aufgaben": {
       "mfa": "Endoskopie-Assistenz, Sedierung-Überwachung, Blutabnahme, Infusionstherapie",
       "arzt": "Gastroskopie, Koloskopie, Sonografie, CED-Management, Hepatologie",

@@ -85,7 +85,7 @@ const EMPLOYER_CONTEXTS = {
     },
     orthopaedie: {
         fachrichtung: 'Orthopädie',
-        typisch: 'Manuelle Therapie, OP-Planung, Reha-Begleitung, sichtbare Behandlungserfolge',
+        typisch: 'Diagnostik und konservative Therapie des Bewegungsapparats, Gelenk- und Rückenbeschwerden, Sportverletzungen',
         aufgaben: {
             mfa: 'Röntgen-Assistenz, Gipsverbände und Schienen, Injektionsvorbereitung, Stoßwellentherapie-Assistenz, Nachsorge-Koordination',
             arzt: 'Konservative und operative Therapie, Gelenksonografie, Schmerztherapie, Sportmedizin, manuelle Medizin',
@@ -104,7 +104,7 @@ const EMPLOYER_CONTEXTS = {
     },
     zahnarzt: {
         fachrichtung: 'Zahnmedizin',
-        typisch: 'Ästhetik und Funktion, Prophylaxe, moderne Technik, sichtbare Ergebnisse bei jedem Patienten',
+        typisch: 'Prophylaxe, Füllungen, Zahnersatz, Zahnerhaltung',
         aufgaben: {
             zfa: 'Stuhlassistenz, Prophylaxe eigenständig durchführen, Röntgen, Abdrucknahme, Hygiene-Management, Abrechnung',
             zahnarzt: 'Konservierende Zahnheilkunde, Prothetik, Implantologie, Endodontie, ästhetische Zahnheilkunde',
@@ -248,7 +248,7 @@ const EMPLOYER_CONTEXTS = {
     },
     augenheilkunde: {
         fachrichtung: 'Augenheilkunde',
-        typisch: 'Sehkraft erhalten und verbessern, High-Tech-Diagnostik, Lasermedizin, Kombination aus Chirurgie und Konservativ',
+        typisch: 'Sehtest, Augeninnendruckmessung, Netzhaut-Diagnostik, Behandlung von Augenerkrankungen',
         aufgaben: {
             mfa: 'Sehtest, Augeninnendruckmessung, OCT-Aufnahmen, Tropfen verabreichen, Kontaktlinsen-Anpassung assistieren',
             arzt: 'Spaltlampen-Untersuchung, OCT-Befundung, IVOM-Therapie, Laserbehandlung, Katarakt-OP-Planung',
@@ -285,7 +285,7 @@ const EMPLOYER_CONTEXTS = {
     // ── Weitere Fachrichtungen (kompakter) ──
     physiotherapie: {
         fachrichtung: 'Physiotherapie',
-        typisch: 'Patientennahe Arbeit, kreative Therapieansätze, Eigenverantwortung, sichtbare Fortschritte',
+        typisch: 'Patientennahe Arbeit, kreative Therapieansätze, Eigenverantwortung',
         aufgaben: {
             therapeut: 'Manuelle Therapie, Krankengymnastik, Lymphdrainage, Gruppentherapie, Reha-Begleitung',
             empfang: 'Terminplanung, Rezeptverwaltung, Patienten-Betreuung, Abrechnung',
@@ -376,15 +376,17 @@ export function getEmployerContext(fachrichtung) {
 /** Aufgabenbeschreibung für eine Rolle in einer Fachrichtung */
 export function getAufgaben(fachrichtung, rolle) {
     const ctx = getEmployerContext(fachrichtung);
-    // Rolle normalisieren: "MFA" → "mfa", "Zahnmedizinische Fachangestellte" → "zfa"
-    const normalizedRolle = rolle.toLowerCase()
-        .replace(/medizinische.?r?\s*fachangestellte.?r?/i, 'mfa')
-        .replace(/zahnmedizinische.?r?\s*fachangestellte.?r?/i, 'zfa')
-        .replace(/auszubildende.?r?/i, 'azubi')
-        .replace(/fach.?rzt.*|.?rzt.*/i, 'arzt')
-        .replace(/therapeut.*/i, 'therapeut')
-        .replace(/mtra|mtla/i, 'mtra')
-        .trim();
+    // Rolle normalisieren: "MFA" → "mfa", "Zahnmedizinische Fachangestellte" → "zfa".
+    // Reihenfolge wichtig: Ausbildung vor Fachkraft („Auszubildende/r zur ZFA“ → azubi),
+    // ZFA vor MFA („zahnmedizinische“ enthält „medizinische“).
+    const lower = rolle.toLowerCase().trim();
+    const normalizedRolle = /azubi|auszubildend|ausbildung/.test(lower) ? 'azubi'
+        : /\bzfa\b|zahnmedizinische/.test(lower) ? 'zfa'
+            : /\bmfa\b|medizinische.?r?\s*fachangestellte/.test(lower) ? 'mfa'
+                : /mtra|mtla/.test(lower) ? 'mtra'
+                    : /therapeut/.test(lower) ? 'therapeut'
+                        : /rzt|ärztin/.test(lower) ? 'arzt'
+                            : lower;
     return ctx.aufgaben[normalizedRolle]
         || ctx.aufgaben['mfa'] // Fallback auf MFA
         || FALLBACK_CONTEXT.aufgaben['mfa'];

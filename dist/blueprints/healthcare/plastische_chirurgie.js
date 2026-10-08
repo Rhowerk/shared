@@ -79,17 +79,20 @@ export const plastische_chirurgie = {
                 {
                     "name": "Botox-Behandlung",
                     "icon": "syringe",
-                    "default_description": "Botox glättet Mimikfalten natürlich und effektiv.\nDie Behandlung dauert nur wenige Minuten und ist sofort\nalltagstauglich. Ergebnis nach wenigen Tagen sichtbar."
+                    "default_description": "Botulinumtoxin wird in kleinen Mengen in bestimmte Gesichtsmuskeln gespritzt und schwächt diese vorübergehend ab, wodurch sich Mimikfalten glätten können. Die Wirkung hält in der Regel einige Monate an.",
+                    "igel": true
                 },
                 {
                     "name": "Hyaluronsäure-Filler",
                     "icon": "droplet",
-                    "default_description": "Mit Hyaluronsäure modellieren wir Lippen, gleichen Falten aus\nund geben dem Gesicht verlorenes Volumen zurück.\nNatürlich und harmonisch."
+                    "default_description": "Hyaluronsäure-Filler werden zur Behandlung von Falten oder zum Volumenaufbau eingesetzt, etwa an Lippen oder Wangen. Hyaluronsäure wird vom Körper mit der Zeit abgebaut, die Wirkung ist daher zeitlich begrenzt.",
+                    "igel": true
                 },
                 {
                     "name": "Fadenlift",
                     "icon": "arrow-up",
-                    "default_description": "Das Fadenlift strafft erschlaffte Gesichtspartien ohne Operation.\nSpezielle Fäden werden unter die Haut eingebracht und\nsorgen für einen natürlichen Liftingeffekt."
+                    "default_description": "Beim Fadenlifting werden spezielle Fäden unter die Haut eingebracht, um erschlaffte Gesichtspartien anzuheben. Das Verfahren kommt ohne Operation aus, die Wirkung ist zeitlich begrenzt.",
+                    "igel": true
                 }
             ]
         },
@@ -100,22 +103,24 @@ export const plastische_chirurgie = {
                 {
                     "name": "Brustvergrößerung / Bruststraffung",
                     "icon": "heart",
-                    "default_description": "Ob Vergrößerung, Verkleinerung oder Straffung – wir finden\ndie optimale Lösung für eine harmonische Brustform.\nAusführliche Beratung und modernste Techniken."
+                    "default_description": "Brustvergrößerung und Bruststraffung verändern Größe, Form oder Position der Brust, etwa mit Implantaten oder Eigengewebe. Vor dem Eingriff werden Möglichkeiten, Risiken und Kosten ausführlich besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Fettabsaugung (Liposuktion)",
                     "icon": "minus-circle",
-                    "default_description": "Hartnäckige Fettpolster, die trotz Sport und Ernährung bleiben,\nentfernen wir mit moderner Liposuktion. Für eine definierte\nKörpersilhouette."
+                    "default_description": "Bei der Fettabsaugung wird Fettgewebe an umschriebenen Körperstellen über feine Kanülen entfernt. Das Verfahren ersetzt keine Gewichtsabnahme; Eignung, Risiken und Kosten werden vorab besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Lidstraffung (Blepharoplastik)",
                     "icon": "eye",
-                    "default_description": "Schwere Oberlider oder Tränensäcke lassen Sie müde wirken.\nDie Lidstraffung schenkt Ihnen einen wachen, frischen Blick –\nmit nahezu unsichtbaren Narben."
+                    "default_description": "Bei der Lidstraffung wird überschüssige Haut, gegebenenfalls auch Fettgewebe, an Ober- oder Unterlidern entfernt. Schränken die Oberlider das Gesichtsfeld ein, kann eine medizinische Indikation bestehen; sonst ist der Eingriff eine Selbstzahlerleistung."
                 },
                 {
                     "name": "Nasenkorrektur (Rhinoplastik)",
                     "icon": "user",
-                    "default_description": "Die Nase prägt das Gesicht entscheidend. Wir korrigieren\nForm und Funktion so, dass das Ergebnis natürlich aussieht\nund zu Ihrem Gesicht passt."
+                    "default_description": "Die Nasenkorrektur verändert Form oder Funktion der Nase, etwa bei Höckern, Schiefstand oder behinderter Nasenatmung. Rein ästhetische Korrekturen sind Selbstzahlerleistungen."
                 }
             ]
         }
@@ -130,10 +135,10 @@ export const plastische_chirurgie = {
         ],
         "audience": "Patienten, die ihr Äußeres harmonisieren möchten.\nNatürliche Ergebnisse statt übertriebener Veränderung.\nAuch rekonstruktive Patienten nach Unfällen oder Operationen.",
         "key_messages": [
-            "Natürliche Ergebnisse – für Ihr Wohlbefinden",
-            "Chirurgische Expertise und ästhetisches Gespür",
             "Ausführliche Beratung vor jedem Eingriff",
-            "Ihre Zufriedenheit ist unser höchster Anspruch"
+            "Realistische Erwartungen und Aufklärung über Risiken",
+            "Ästhetische und rekonstruktive Chirurgie",
+            "Diskretion"
         ]
     },
     "seo": {
@@ -195,7 +200,7 @@ export const plastische_chirurgie = {
         }
     },
     "employer": {
-        "typisch": "Ästhetik, Rekonstruktion, Handchirurgie, Verbrennungschirurgie",
+        "typisch": "Ästhetische und rekonstruktive Chirurgie, Beratung, Nachsorge",
         "aufgaben": {
             "mfa": "OP-Vorbereitung, Fotodokumentation, Beratungstermine, Nachsorge",
             "arzt": "Ästhetische OPs, Rekonstruktion, Handchirurgie, Injektionsbehandlungen",

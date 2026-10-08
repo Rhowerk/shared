@@ -81,17 +81,17 @@ export const nephrologie: Blueprint = {
         {
           "name": "Nierendiagnostik",
           "icon": "search",
-          "default_description": "Mit Blut- und Urinuntersuchungen sowie Bildgebung beurteilen wir\ndie Funktion Ihrer Nieren. Frühzeitige Erkennung ermöglicht\neine rechtzeitige Behandlung."
+          "default_description": "Blut- und Urinuntersuchungen sowie Ultraschall geben Aufschluss über die Nierenfunktion. Ziel ist es, Nierenerkrankungen früh zu erkennen und ihre Ursache einzuordnen."
         },
         {
           "name": "Nierensonographie",
           "icon": "monitor",
-          "default_description": "Der Ultraschall zeigt uns Größe, Form und Durchblutung Ihrer\nNieren. Zysten, Steine und andere Veränderungen erkennen wir\nsofort und schmerzfrei."
+          "default_description": "Die Ultraschalluntersuchung zeigt Größe, Form und Gewebe der Nieren. Zysten, Steine oder ein Harnstau lassen sich so ohne Strahlenbelastung darstellen."
         },
         {
           "name": "Bluthochdruck / Hypertonie",
           "icon": "heart",
-          "default_description": "Bluthochdruck und Nieren beeinflussen sich gegenseitig. Wir klären\ndie Ursachen ab und behandeln Ihren Blutdruck optimal,\num Ihre Nieren zu schützen."
+          "default_description": "Bluthochdruck und Nierenfunktion beeinflussen sich gegenseitig. Zur Betreuung gehören die Abklärung möglicher Ursachen und eine Blutdruckeinstellung, die die Nieren berücksichtigt."
         }
       ]
     },
@@ -102,12 +102,12 @@ export const nephrologie: Blueprint = {
         {
           "name": "Dialyse (Hämodialyse)",
           "icon": "activity",
-          "default_description": "In unserem Dialysezentrum bieten wir moderne Hämodialyse in\nangenehmer Atmosphäre. Unser erfahrenes Team sorgt für eine\nsichere und komfortable Behandlung."
+          "default_description": "Bei der Hämodialyse übernimmt ein Dialysegerät die Reinigung des Blutes, wenn die Nieren dazu nicht mehr ausreichend in der Lage sind. Die Behandlung findet in der Regel dreimal pro Woche über mehrere Stunden statt."
         },
         {
           "name": "Peritonealdialyse",
           "icon": "home",
-          "default_description": "Die Bauchfelldialyse ermöglicht Ihnen die Behandlung zu Hause.\nWir schulen Sie umfassend und begleiten Sie mit regelmäßigen\nKontrollen in unserer Praxis."
+          "default_description": "Bei der Bauchfelldialyse dient das Bauchfell als Filter; die Behandlung wird nach einer Schulung selbstständig zu Hause durchgeführt. Regelmäßige Kontrollen begleiten die Therapie."
         }
       ]
     },
@@ -118,12 +118,12 @@ export const nephrologie: Blueprint = {
         {
           "name": "Chronische Nierenerkrankung",
           "icon": "shield",
-          "default_description": "Bei chronischer Nierenerkrankung verlangsamen wir den Verlauf\nund erhalten Ihre Nierenfunktion so lange wie möglich.\nIndividuelle Therapie und engmaschige Kontrolle."
+          "default_description": "Bei einer chronischen Nierenerkrankung lässt die Nierenfunktion über Jahre nach. Ziel der Betreuung ist es, das Fortschreiten zu verlangsamen und Begleiterkrankungen zu behandeln, mit regelmäßigen Kontrollen."
         },
         {
           "name": "Transplantations-Nachsorge",
           "icon": "heart",
-          "default_description": "Nach einer Nierentransplantation begleiten wir Sie langfristig.\nRegelmäßige Kontrollen der Transplantatfunktion und\nMedikamenteneinstellung für optimale Ergebnisse."
+          "default_description": "Nach einer Nierentransplantation sind regelmäßige Kontrollen der Transplantatfunktion und die Einstellung der Medikamente gegen eine Abstoßung erforderlich. Die Nachsorge erfolgt in Abstimmung mit dem Transplantationszentrum."
         }
       ]
     }
@@ -138,10 +138,10 @@ export const nephrologie: Blueprint = {
     ],
     "audience": "Patienten mit chronischer Nierenerkrankung, Dialysepatienten,\nTransplantierte, Bluthochdruck-Patienten mit Nierenbeteiligung.",
     "key_messages": [
-      "Ihre Nieren in besten Händen",
-      "Dialyse mit Lebensqualität",
-      "Transplantations-Nachsorge kompetent begleitet",
-      "Chronische Nierenerkrankung frühzeitig erkennen"
+      "Nierenfunktion erhalten und den Verlauf begleiten",
+      "Dialyseverfahren verständlich erklärt",
+      "Nachsorge nach Nierentransplantation",
+      "Chronische Nierenerkrankung früh erkennen"
     ]
   },
   "seo": {
@@ -203,7 +203,7 @@ export const nephrologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Dialyse, Transplantation-Nachsorge, Bluthochdruck, Nierenbiopsie",
+    "typisch": "Chronische Nierenerkrankungen, Bluthochdruck, Dialyse, Transplantationsnachsorge",
     "aufgaben": {
       "mfa": "Dialyse-Betreuung, Shunt-Pflege, Blutabnahme, Infusionstherapie",
       "arzt": "Dialyse-Verordnung, Nierenbiopsie, Transplant-Nachsorge",

@@ -88,17 +88,17 @@ export const orthopaedie = {
                 {
                     "name": "Rückenschmerzen",
                     "icon": "spine",
-                    "default_description": "Rückenschmerzen haben viele Ursachen. Mit gezielter Diagnostik\nfinden wir den Ursprung und behandeln individuell –\nob mit Physiotherapie, Injektionen oder anderen Methoden."
+                    "default_description": "Rückenschmerzen können von Muskeln, Gelenken, Bandscheiben oder Nerven ausgehen. Nach Untersuchung und gegebenenfalls Bildgebung werden Behandlungsmöglichkeiten wie Physiotherapie, Medikamente oder Injektionen besprochen."
                 },
                 {
                     "name": "Bandscheibenprobleme",
                     "icon": "disc",
-                    "default_description": "Bandscheibenvorfälle müssen nicht immer operiert werden.\nWir bieten konservative und minimalinvasive Therapien\nfür eine schnelle Schmerzlinderung."
+                    "default_description": "Ein Bandscheibenvorfall kann Rückenschmerzen und ausstrahlende Beschwerden in Arme oder Beine verursachen. In vielen Fällen wird zunächst konservativ behandelt; ob eine Operation nötig ist, hängt vom Befund ab."
                 },
                 {
                     "name": "Skoliose",
                     "icon": "curved-arrow",
-                    "default_description": "Wirbelsäulenverkrümmungen erfordern individuelle Therapiekonzepte.\nWir behandeln Kinder, Jugendliche und Erwachsene mit\nmaßgeschneiderten Ansätzen."
+                    "default_description": "Bei einer Skoliose ist die Wirbelsäule seitlich verkrümmt und verdreht. Die Behandlung richtet sich nach Ausmaß und Alter und kann Physiotherapie, ein Korsett oder in ausgeprägten Fällen eine Operation umfassen."
                 }
             ]
         },
@@ -109,17 +109,17 @@ export const orthopaedie = {
                 {
                     "name": "Knieschmerzen",
                     "icon": "knee",
-                    "default_description": "Das Knie ist ein komplexes Gelenk. Ob Arthrose, Meniskusschaden\noder Kreuzbandriss – wir diagnostizieren präzise und\nbehandeln effektiv."
+                    "default_description": "Knieschmerzen können durch Arthrose, Meniskus- oder Bandverletzungen entstehen. Nach Untersuchung und Bildgebung werden konservative und operative Behandlungsmöglichkeiten besprochen."
                 },
                 {
                     "name": "Hüftbeschwerden",
                     "icon": "hip",
-                    "default_description": "Hüftschmerzen schränken die Lebensqualität stark ein.\nVon Arthrose bis Hüftdysplasie bieten wir moderne\nBehandlungsmöglichkeiten."
+                    "default_description": "Hüftbeschwerden haben unterschiedliche Ursachen, etwa Arthrose, Entzündungen oder angeborene Fehlstellungen wie die Hüftdysplasie. Die Behandlung reicht von Physiotherapie und Medikamenten bis zum Gelenkersatz."
                 },
                 {
                     "name": "Schulter & Arm",
                     "icon": "shoulder",
-                    "default_description": "Schulterprobleme wie Impingement, Frozen Shoulder oder\nRotatorenmanschettenriss behandeln wir mit bewährten\nkonservativen und operativen Methoden."
+                    "default_description": "Schulterbeschwerden wie ein Engpasssyndrom (Impingement), eine Schultersteife oder Sehnenrisse der Rotatorenmanschette schränken die Beweglichkeit ein. Je nach Befund kommen konservative oder operative Behandlungen in Frage."
                 }
             ]
         },
@@ -130,12 +130,13 @@ export const orthopaedie = {
                 {
                     "name": "Sportverletzungen",
                     "icon": "running",
-                    "default_description": "Schnelle Hilfe bei Sportverletzungen. Wir behandeln\nHobby- und Leistungssportler und begleiten Sie\nzurück zur vollen Belastbarkeit."
+                    "default_description": "Diagnostik und Behandlung von Verletzungen und Überlastungsschäden beim Sport, etwa an Bändern, Muskeln oder Sehnen. Dazu gehört die Planung der schrittweisen Rückkehr zur sportlichen Belastung."
                 },
                 {
                     "name": "Leistungsdiagnostik",
                     "icon": "chart-line",
-                    "default_description": "Mit moderner Diagnostik analysieren wir Ihre\nsportliche Leistungsfähigkeit und optimieren\nIhr Training."
+                    "default_description": "Die Leistungsdiagnostik misst die körperliche Leistungsfähigkeit, etwa mit Belastungstests und Laktatmessung. Die Ergebnisse dienen als Grundlage für die Trainingssteuerung.",
+                    "igel": true
                 }
             ]
         },
@@ -146,17 +147,18 @@ export const orthopaedie = {
                 {
                     "name": "Stoßwellentherapie",
                     "icon": "zap",
-                    "default_description": "Die Stoßwellentherapie lindert Schmerzen bei\nFersensporn, Tennisarm und Kalkschulter –\nohne Operation, ambulant und effektiv."
+                    "default_description": "Bei der Stoßwellentherapie werden energiereiche Schallwellen auf schmerzendes Gewebe gerichtet, zum Beispiel bei Fersensporn, Tennisarm oder Kalkschulter. Gesetzliche Krankenkassen übernehmen die Kosten nur beim Fersenschmerz unter bestimmten Voraussetzungen.",
+                    "igel": true
                 },
                 {
                     "name": "Akupunktur",
                     "icon": "needle",
-                    "default_description": "Akupunktur ergänzt unsere Behandlungen bei\nchronischen Schmerzen und fördert die\nSelbstheilung des Körpers."
+                    "default_description": "Akupunktur wird ergänzend bei chronischen Schmerzen eingesetzt. Gesetzliche Krankenkassen übernehmen sie bei chronischen Rückenschmerzen und bei Kniegelenksarthrose."
                 },
                 {
                     "name": "Infiltrationstherapie",
                     "icon": "syringe",
-                    "default_description": "Gezielte Injektionen mit entzündungshemmenden\nMedikamenten oder Hyaluronsäure bringen schnelle\nLinderung direkt am Ort des Schmerzes."
+                    "default_description": "Bei der Infiltrationstherapie werden Medikamente wie örtliche Betäubungsmittel oder Kortison gezielt an Gelenke, Sehnen oder Nervenwurzeln gespritzt. Ziel ist die Linderung von Schmerzen und Entzündung. Injektionen mit Hyaluronsäure sind in der Regel eine Selbstzahlerleistung."
                 }
             ]
         }
@@ -197,7 +199,7 @@ export const orthopaedie = {
             "zuversichtlich",
             "aktiv"
         ],
-        "audience": "Patienten mit Schmerzen im Bewegungsapparat.\nSportler mit Verletzungen.\nMenschen mit chronischen Beschwerden.\nSuchen schnelle Hilfe und langfristige Lösungen.",
+        "audience": "Patienten mit Schmerzen im Bewegungsapparat.\nSportler mit Verletzungen.\nMenschen mit chronischen Beschwerden.\nSuchen Abklärung ihrer Beschwerden und langfristige Behandlungsmöglichkeiten.",
         "personality": [
             "sportlich",
             "lösungsorientiert",
@@ -205,10 +207,10 @@ export const orthopaedie = {
             "pragmatisch"
         ],
         "key_messages": [
-            "Bewegung ist Leben",
-            "Konservativ vor operativ",
-            "Schnelle Hilfe bei akuten Beschwerden",
-            "Moderne Diagnostik und Therapie"
+            "Beweglichkeit im Alltag",
+            "Konservative Behandlung vor Operation, wo möglich",
+            "Abklärung akuter und chronischer Beschwerden",
+            "Diagnostik und Therapie des Bewegungsapparats"
         ],
         "language_style": {
             "avoid": [
@@ -360,7 +362,7 @@ export const orthopaedie = {
         }
     },
     "employer": {
-        "typisch": "Manuelle Therapie, OP-Planung, Reha-Begleitung, sichtbare Behandlungserfolge",
+        "typisch": "Diagnostik und konservative Therapie des Bewegungsapparats, Gelenk- und Rückenbeschwerden, Sportverletzungen",
         "aufgaben": {
             "mfa": "Röntgen-Assistenz, Gipsverbände, Injektionsvorbereitung, Stoßwellentherapie-Assistenz",
             "arzt": "Diagnostik Bewegungsapparat, konservative Therapie, OP-Planung, Injektionen",

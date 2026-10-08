@@ -78,22 +78,22 @@ export const neurologie = {
                 {
                     "name": "Neurologische Untersuchung",
                     "icon": "clipboard-check",
-                    "default_description": "Bei der neurologischen Untersuchung prüfen wir Reflexe, Koordination,\nSensibilität und Hirnnerven. Diese gründliche Untersuchung hilft uns,\nneurologische Erkrankungen zu erkennen."
+                    "default_description": "Die neurologische Untersuchung prüft unter anderem Reflexe, Kraft, Koordination, Sensibilität und Hirnnerven. Je nach Befund folgen weitere Untersuchungen wie EEG oder Messungen der Nervenleitung."
                 },
                 {
                     "name": "EEG (Hirnstrommessung)",
                     "icon": "activity",
-                    "default_description": "Das EEG misst die elektrische Aktivität Ihres Gehirns. Die schmerzfreie\nUntersuchung hilft bei der Diagnose von Epilepsie, Schlafstörungen\nund anderen neurologischen Erkrankungen."
+                    "default_description": "Das Elektroenzephalogramm (EEG) misst die elektrische Aktivität des Gehirns über Elektroden auf der Kopfhaut. Es wird unter anderem bei Verdacht auf Epilepsie oder bei Bewusstseinsstörungen eingesetzt."
                 },
                 {
                     "name": "Elektroneurographie (ENG)",
                     "icon": "zap",
-                    "default_description": "Mit der Elektroneurographie messen wir die Nervenleitgeschwindigkeit.\nSo können wir Nervenschädigungen wie beim Karpaltunnelsyndrom\noder bei Polyneuropathie erkennen."
+                    "default_description": "Die Elektroneurographie misst die Leitgeschwindigkeit peripherer Nerven. Damit lassen sich Nervenschädigungen wie beim Karpaltunnelsyndrom oder bei einer Polyneuropathie nachweisen."
                 },
                 {
                     "name": "Elektromyographie (EMG)",
                     "icon": "trending-up",
-                    "default_description": "Die EMG-Untersuchung misst die elektrische Aktivität Ihrer Muskeln.\nSie hilft bei der Diagnose von Muskelerkrankungen und Nervenschädigungen."
+                    "default_description": "Die Elektromyographie misst die elektrische Aktivität von Muskeln, meist mit einer feinen Nadelelektrode. Die Untersuchung hilft, Muskelerkrankungen von Nervenschädigungen zu unterscheiden."
                 }
             ]
         },
@@ -104,12 +104,12 @@ export const neurologie = {
                 {
                     "name": "Kopfschmerzbehandlung / Migräne",
                     "icon": "cloud",
-                    "default_description": "Kopfschmerzen und Migräne können den Alltag stark beeinträchtigen.\nWir diagnostizieren die Art Ihrer Kopfschmerzen und entwickeln\neinen individuellen Behandlungsplan."
+                    "default_description": "Kopfschmerzen und Migräne haben unterschiedliche Formen und Ursachen. Nach Einordnung der Kopfschmerzart werden Akutbehandlung, Vorbeugung und Auslöser besprochen, oft unterstützt durch ein Kopfschmerztagebuch."
                 },
                 {
                     "name": "Schwindel-Diagnostik",
                     "icon": "rotate-ccw",
-                    "default_description": "Schwindel hat viele mögliche Ursachen. Mit gezielter Diagnostik\nfinden wir heraus, ob ein neurologisches Problem vorliegt und\nwelche Therapie Ihnen hilft."
+                    "default_description": "Schwindel kann neurologische, aber auch andere Ursachen haben. Die neurologische Abklärung umfasst Untersuchung und gegebenenfalls weitere Diagnostik, um die Ursache einzugrenzen."
                 }
             ]
         },
@@ -120,32 +120,32 @@ export const neurologie = {
                 {
                     "name": "Multiple Sklerose Betreuung",
                     "icon": "users",
-                    "default_description": "Bei MS begleiten wir Sie langfristig mit moderner Therapie.\nWir überwachen den Verlauf, passen die Behandlung an und sind\nbei Schüben für Sie da."
+                    "default_description": "Multiple Sklerose ist eine chronisch-entzündliche Erkrankung des Nervensystems. Die Betreuung umfasst Verlaufskontrollen, die Auswahl und Überwachung einer verlaufsmodifizierenden Therapie sowie die Behandlung von Schüben und Symptomen."
                 },
                 {
                     "name": "Parkinson-Behandlung",
                     "icon": "move",
-                    "default_description": "Parkinson erfordert eine individuelle Behandlung. Wir optimieren\nIhre Medikation und unterstützen Sie dabei, Ihre Beweglichkeit\nund Lebensqualität zu erhalten."
+                    "default_description": "Die Parkinson-Krankheit beeinträchtigt vor allem die Beweglichkeit. Die Behandlung umfasst die Einstellung der Medikamente sowie die Abstimmung mit Physiotherapie, Ergotherapie und Logopädie."
                 },
                 {
                     "name": "Epilepsie-Behandlung",
                     "icon": "zap-off",
-                    "default_description": "Bei Epilepsie finden wir die richtige Medikation, um Anfälle\nzu kontrollieren. Regelmäßige Kontrollen helfen, die Therapie\noptimal anzupassen."
+                    "default_description": "Bei Epilepsie wird nach der Diagnostik eine anfallsunterdrückende Medikation eingestellt und regelmäßig überprüft. Themen wie Fahrtauglichkeit, Beruf und Alltag gehören zur Beratung."
                 },
                 {
                     "name": "Demenz-Diagnostik",
                     "icon": "brain",
-                    "default_description": "Vergesslichkeit kann viele Ursachen haben. Mit speziellen Tests\nund Untersuchungen klären wir ab, ob eine Demenz vorliegt und\nwelche Behandlung möglich ist."
+                    "default_description": "Nachlassendes Gedächtnis kann unterschiedliche Ursachen haben. Mit Tests, Untersuchung und Bildgebung wird geklärt, ob eine Demenz vorliegt; anschließend werden Behandlungs- und Unterstützungsmöglichkeiten besprochen."
                 },
                 {
                     "name": "Polyneuropathie",
                     "icon": "git-branch",
-                    "default_description": "Bei Polyneuropathie sind mehrere Nerven geschädigt. Wir diagnostizieren\ndie Ursache und behandeln Symptome wie Kribbeln, Taubheit oder Schmerzen."
+                    "default_description": "Bei einer Polyneuropathie sind mehrere periphere Nerven geschädigt, häufig mit Kribbeln, Taubheit oder Schmerzen in Füßen und Händen. Zur Betreuung gehören die Suche nach der Ursache, etwa Diabetes oder Vitaminmangel, und die Behandlung der Beschwerden."
                 },
                 {
                     "name": "Schlaganfall-Nachsorge",
                     "icon": "heart",
-                    "default_description": "Nach einem Schlaganfall begleiten wir Ihre Rehabilitation.\nWir koordinieren Therapien, kontrollieren Risikofaktoren und\nunterstützen Ihre Genesung."
+                    "default_description": "Nach einem Schlaganfall stehen die Behandlung von Risikofaktoren und die Vorbeugung eines erneuten Schlaganfalls im Mittelpunkt. Dazu gehören Kontrollen, Medikamenteneinstellung und die Abstimmung mit Therapeuten."
                 }
             ]
         }
@@ -160,10 +160,10 @@ export const neurologie = {
         ],
         "audience": "Patienten mit neurologischen Beschwerden wie Kopfschmerzen, Schwindel, MS oder Parkinson.\nOft verunsichert, brauchen geduldige Erklärungen.",
         "key_messages": [
-            "Kompetente Diagnostik bei Kopfschmerzen und Migräne",
-            "Einfühlsame Begleitung bei chronischen Erkrankungen",
-            "Modernste neurologische Untersuchungsmethoden",
-            "Zeit für Ihre Anliegen"
+            "Abklärung von Kopfschmerzen, Schwindel und Nervenbeschwerden",
+            "Begleitung bei chronischen neurologischen Erkrankungen",
+            "Verständliche Erklärung von Untersuchungen und Befunden",
+            "Raum für Fragen und Anliegen"
         ]
     },
     "seo": {
@@ -218,7 +218,7 @@ export const neurologie = {
         }
     },
     "employer": {
-        "typisch": "EEG, EMG, Nervenleitgeschwindigkeit, MS-Betreuung, Kopfschmerz-Diagnostik",
+        "typisch": "Neurologische Untersuchung, EEG, Nervenleitungsmessung, chronische neurologische Erkrankungen",
         "aufgaben": {
             "mfa": "EEG anlegen, NLG/EMG-Vorbereitung, Infusionen, Patientenkoordination",
             "arzt": "Neurophysiologische Diagnostik, MS-Management, Parkinson, Kopfschmerzambulanz",

@@ -31,8 +31,18 @@ export interface BlueprintColors {
 export interface ServiceItem {
   name: string
   icon?: string
+  /**
+   * Neutraler Vorlagentext (ohne Anrede/Perspektive, HWG-sauber).
+   * Wird teils wörtlich übernommen – deshalb ohne „wir/Sie/ich/du“.
+   */
   default_description: string
   ai_prompt?: string
+  /**
+   * true = in Deutschland typischerweise Selbstzahler-/IGeL-Leistung.
+   * Konsumenten sollen dann die IGeL-Regeln (Kostenhinweis, keine
+   * Verharmlosung) in Prompts und Texten anwenden.
+   */
+  igel?: boolean
 }
 
 export interface ServiceCategory {

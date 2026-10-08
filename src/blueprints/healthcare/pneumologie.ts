@@ -81,22 +81,22 @@ export const pneumologie: Blueprint = {
         {
           "name": "Lungenfunktionsprüfung (Spirometrie)",
           "icon": "wind",
-          "default_description": "Die Lungenfunktionsprüfung misst, wie gut Ihre Lunge arbeitet.\nIn wenigen Minuten erkennen wir Einschränkungen und können die\npassende Behandlung einleiten."
+          "default_description": "Die Spirometrie misst Atemvolumen und Atemfluss beim kräftigen Ein- und Ausatmen. Die Untersuchung dauert wenige Minuten und zeigt, ob die Atemwege verengt sind oder das Lungenvolumen eingeschränkt ist."
         },
         {
           "name": "Bodyplethysmographie",
           "icon": "monitor",
-          "default_description": "Die große Lungenfunktion in der Glaskabine liefert uns präzise Werte\nüber Ihr Lungenvolumen und den Atemwiderstand. Besonders wichtig\nbei Asthma und COPD."
+          "default_description": "Bei der Bodyplethysmographie wird in einer geschlossenen Messkabine geatmet. Gemessen werden Lungenvolumen und Atemwegswiderstand, etwa bei Asthma und COPD."
         },
         {
           "name": "Röntgen Thorax",
           "icon": "image",
-          "default_description": "Die Röntgenaufnahme des Brustkorbs zeigt uns Veränderungen an\nLunge und Herz. Schnell und mit geringer Strahlenbelastung."
+          "default_description": "Die Röntgenaufnahme des Brustkorbs zeigt Lunge, Herzschatten und Brustkorb. Eingesetzt wird sie zum Beispiel bei Verdacht auf eine Lungenentzündung oder zur Abklärung von Husten und Atemnot."
         },
         {
           "name": "Bronchoskopie",
           "icon": "search",
-          "default_description": "Bei der Bronchoskopie untersuchen wir die Atemwege mit einem\ndünnen, flexiblen Endoskop. So können wir Gewebeproben entnehmen\nund Veränderungen direkt beurteilen."
+          "default_description": "Bei der Bronchoskopie werden Luftröhre und Bronchien mit einem dünnen, flexiblen Endoskop untersucht. Dabei können Gewebeproben oder Sekret zur weiteren Untersuchung entnommen werden."
         }
       ]
     },
@@ -107,17 +107,17 @@ export const pneumologie: Blueprint = {
         {
           "name": "Asthma-Diagnostik & Therapie",
           "icon": "shield",
-          "default_description": "Asthma ist gut behandelbar. Wir finden das richtige Medikament,\nschulen Sie in der Inhalationstechnik und begleiten Sie,\ndamit Sie beschwerdefrei leben können."
+          "default_description": "Asthma ist eine chronische Entzündung der Atemwege mit anfallsartiger Atemnot, Husten oder pfeifender Atmung. Die Behandlung umfasst eine angepasste Inhalationstherapie, die Schulung der Inhalationstechnik und regelmäßige Kontrollen."
         },
         {
           "name": "COPD-Management",
           "icon": "heart",
-          "default_description": "Bei COPD verlangsamen wir den Krankheitsverlauf und verbessern\nIhre Lebensqualität. Mit individueller Therapie, Schulung\nund regelmäßiger Kontrolle."
+          "default_description": "Bei der chronisch obstruktiven Lungenerkrankung (COPD) sind die Atemwege dauerhaft verengt. Zur Behandlung gehören Medikamente, Atemtherapie, Bewegung und der Rauchstopp; regelmäßige Kontrollen begleiten den Verlauf."
         },
         {
           "name": "Allergologische Diagnostik",
           "icon": "flower",
-          "default_description": "Allergien betreffen häufig die Atemwege. Wir testen auf Pollen,\nHausstaubmilben, Tierhaare und mehr, um die richtige Behandlung\noder Hyposensibilisierung einzuleiten."
+          "default_description": "Allergien können die Atemwege betreffen, etwa als allergisches Asthma oder Heuschnupfen. Haut- und Bluttests auf Pollen, Hausstaubmilben oder Tierhaare grenzen die Auslöser ein; anschließend werden Behandlung oder Hyposensibilisierung besprochen."
         }
       ]
     },
@@ -128,12 +128,12 @@ export const pneumologie: Blueprint = {
         {
           "name": "Schlafmedizin / Schlafapnoe",
           "icon": "moon",
-          "default_description": "Atemaussetzer im Schlaf belasten Herz und Kreislauf. Mit der\nSchlafdiagnostik erkennen wir Schlafapnoe und finden die passende\nTherapie für erholsamen Schlaf."
+          "default_description": "Bei der Schlafapnoe kommt es im Schlaf zu wiederholten Atemaussetzern, oft verbunden mit Schnarchen und Tagesmüdigkeit. Die Abklärung erfolgt mit einer Schlafuntersuchung, häufig zunächst als Messung zu Hause; je nach Befund wird die Therapie besprochen, zum Beispiel eine Atemmaske (CPAP)."
         },
         {
           "name": "Raucherentwöhnung",
           "icon": "x-circle",
-          "default_description": "Der beste Schutz für Ihre Lunge: mit dem Rauchen aufhören.\nWir unterstützen Sie mit erprobten Methoden und individueller\nBegleitung auf dem Weg zum Nichtraucher."
+          "default_description": "Die Raucherentwöhnung umfasst Beratung, Verhaltensstrategien und bei Bedarf Medikamente zur Unterstützung des Rauchstopps. Begleitende Termine helfen, Rückfällen vorzubeugen."
         }
       ]
     }
@@ -148,10 +148,10 @@ export const pneumologie: Blueprint = {
     ],
     "audience": "Asthma- und COPD-Patienten, Allergiker, Patienten mit Schlafstörungen,\nRaucher, die aufhören möchten.",
     "key_messages": [
-      "Frei atmen – besser leben",
-      "Moderne Lungenfunktionsdiagnostik",
+      "Atemwege und Lunge im Mittelpunkt",
+      "Lungenfunktionsdiagnostik",
       "Asthma und COPD individuell behandeln",
-      "Schlafmedizin für erholsame Nächte"
+      "Abklärung schlafbezogener Atemstörungen"
     ]
   },
   "seo": {
@@ -213,7 +213,7 @@ export const pneumologie: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Lungenfunktion, Bronchoskopie, Schlafmedizin, Allergologie, COPD/Asthma",
+    "typisch": "Lungenfunktion, Asthma und COPD, Allergologie, schlafbezogene Atemstörungen",
     "aufgaben": {
       "mfa": "Lungenfunktionstest, Allergietest, Blutgasanalyse, Inhalationsschulung",
       "arzt": "Bodyplethysmografie, Bronchoskopie, Schlafmedizin, COPD-Management",

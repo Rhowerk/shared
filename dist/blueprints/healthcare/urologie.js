@@ -78,22 +78,22 @@ export const urologie = {
                 {
                     "name": "Urologische Untersuchung",
                     "icon": "clipboard-check",
-                    "default_description": "Die urologische Untersuchung umfasst Anamnese, körperliche Untersuchung\nund bei Bedarf weitere Diagnostik. Wir nehmen uns Zeit und gehen\ndiskret auf Ihre Beschwerden ein."
+                    "default_description": "Die urologische Untersuchung umfasst Gespräch, körperliche Untersuchung und je nach Beschwerden Urin- und Ultraschalluntersuchung. Themen aus dem Intimbereich werden sachlich und vertraulich besprochen."
                 },
                 {
                     "name": "Prostata-Vorsorge (PSA)",
                     "icon": "shield",
-                    "default_description": "Die Prostata-Vorsorge mit PSA-Test und Tastuntersuchung kann\nProstatakrebs früh erkennen. Ab 45 Jahren empfehlen wir die\njährliche Vorsorge."
+                    "default_description": "Die gesetzliche Früherkennung ab 45 Jahren umfasst ein Gespräch und die Tastuntersuchung der Prostata. Die Bestimmung des PSA-Werts im Blut kann ergänzt werden und ist dabei in der Regel eine Selbstzahlerleistung; Nutzen und Grenzen werden vorher besprochen."
                 },
                 {
                     "name": "Ultraschall Urogenitaltrakt",
                     "icon": "monitor",
-                    "default_description": "Mit dem Ultraschall untersuchen wir Nieren, Blase und Prostata\nschmerzfrei und ohne Strahlung. So können wir viele Erkrankungen\nschnell erkennen."
+                    "default_description": "Mit Ultraschall werden Nieren, Harnblase und Prostata ohne Strahlenbelastung untersucht. Die Untersuchung hilft bei der Abklärung vieler urologischer Beschwerden."
                 },
                 {
                     "name": "Blasenspiegelung",
                     "icon": "eye",
-                    "default_description": "Bei der Blasenspiegelung betrachten wir das Innere Ihrer Blase\nmit einer dünnen Kamera. Die Untersuchung ist wichtig zur Abklärung\nvon Blut im Urin oder wiederkehrenden Infekten."
+                    "default_description": "Bei der Blasenspiegelung (Zystoskopie) wird das Innere von Harnröhre und Blase mit einem dünnen Endoskop betrachtet. Anlass sind zum Beispiel Blut im Urin oder wiederkehrende Harnwegsinfekte."
                 }
             ]
         },
@@ -104,22 +104,22 @@ export const urologie = {
                 {
                     "name": "Harninkontinenz-Behandlung",
                     "icon": "droplet",
-                    "default_description": "Blasenschwäche ist behandelbar. Wir klären die Ursache ab und\nbieten verschiedene Therapieoptionen - von Beckenbodentraining\nüber Medikamente bis zu operativen Verfahren."
+                    "default_description": "Ungewollter Urinverlust kann unterschiedliche Ursachen haben. Nach der Abklärung kommen je nach Form Beckenbodentraining, Medikamente, Hilfsmittel oder operative Verfahren in Frage."
                 },
                 {
                     "name": "Erektionsstörungen",
                     "icon": "heart",
-                    "default_description": "Erektionsprobleme können viele Ursachen haben und sind gut behandelbar.\nWir beraten Sie diskret zu den verschiedenen Therapiemöglichkeiten."
+                    "default_description": "Erektionsstörungen können körperliche und seelische Ursachen haben und ein Hinweis auf Gefäßerkrankungen sein. Nach Abklärung der Ursachen werden die Behandlungsmöglichkeiten besprochen."
                 },
                 {
                     "name": "Nierensteine-Behandlung",
                     "icon": "target",
-                    "default_description": "Nierensteine können starke Schmerzen verursachen. Wir diagnostizieren\ndie Steine und besprechen die beste Behandlung - von der Steinauflösung\nbis zur Stoßwellentherapie."
+                    "default_description": "Nierensteine können krampfartige Schmerzen verursachen. Je nach Größe und Lage kommen abwartende Behandlung, medikamentöse Unterstützung, Stoßwellen oder endoskopische Verfahren in Frage."
                 },
                 {
                     "name": "STI-Diagnostik",
                     "icon": "shield",
-                    "default_description": "Bei Verdacht auf sexuell übertragbare Infektionen bieten wir\ndiskrete Tests und Behandlung. Vertraulichkeit ist uns sehr wichtig."
+                    "default_description": "Untersuchung und Behandlung bei Verdacht auf sexuell übertragbare Infektionen wie Chlamydien, Gonorrhö oder Syphilis. Die Untersuchung unterliegt wie jede ärztliche Behandlung der Schweigepflicht."
                 }
             ]
         },
@@ -130,12 +130,13 @@ export const urologie = {
                 {
                     "name": "Vasektomie-Beratung",
                     "icon": "scissors",
-                    "default_description": "Die Vasektomie ist eine sichere Methode der dauerhaften Verhütung\nfür den Mann. Wir beraten Sie ausführlich zu Ablauf, Risiken\nund Alternativen."
+                    "default_description": "Die Vasektomie ist ein kleiner Eingriff zur dauerhaften Empfängnisverhütung beim Mann. Vorab werden Ablauf, Risiken, die eingeschränkte Umkehrbarkeit und Alternativen besprochen.",
+                    "igel": true
                 },
                 {
                     "name": "Kinderurologie",
                     "icon": "baby",
-                    "default_description": "Bei urologischen Problemen von Kindern wie Bettnässen oder\nHodenhochstand sind wir einfühlsame Ansprechpartner für die\nganze Familie."
+                    "default_description": "Urologische Beschwerden bei Kindern wie Einnässen, Harnwegsinfekte, Vorhautverengung oder Hodenhochstand werden altersgerecht untersucht und behandelt. Eltern werden in Untersuchung und Behandlungsplanung einbezogen."
                 }
             ]
         }
@@ -150,10 +151,10 @@ export const urologie = {
         ],
         "audience": "Männer aller Altersgruppen, Prostata-Vorsorge, aber auch Frauen mit Blasenproblemen.\nThemen sind oft intim - Diskretion sehr wichtig.",
         "key_messages": [
-            "Diskrete und professionelle Beratung",
-            "Prostata-Vorsorge rettet Leben",
-            "Modernste Diagnostik",
-            "Kompetente Behandlung aller urologischen Erkrankungen"
+            "Diskrete und sachliche Beratung",
+            "Früherkennung und Vorsorge",
+            "Verständliche Erklärung von Untersuchungen",
+            "Urologische Erkrankungen bei Frauen, Männern und Kindern"
         ]
     },
     "seo": {
@@ -200,7 +201,7 @@ export const urologie = {
         }
     },
     "employer": {
-        "typisch": "Vorsorge, Ultraschall, Urodynamik, operative Urologie, Andrologie",
+        "typisch": "Vorsorge, Ultraschall, Harnwegs- und Prostataerkrankungen, Andrologie",
         "aufgaben": {
             "mfa": "Ultraschall-Vorbereitung, Urinproben, Uroflowmetrie, PSA-Blutabnahme",
             "arzt": "Vorsorge, Sonografie, Urodynamik, operative Eingriffe, Andrologie",

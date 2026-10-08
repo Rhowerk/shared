@@ -99,30 +99,44 @@ export function generateSEO(blueprint, data) {
         keywords: blueprint.seo.keywords.map(k => replace(k)),
     };
 }
-// ═══════════════════════════════════════════════════════════
-// AI Context Helpers
-// ═══════════════════════════════════════════════════════════
+/** Kennzeichnung für Fachrichtungswissen, das keine Aussage über die konkrete Praxis ist. */
+export const HINTERGRUND_HINWEIS = 'HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen';
+const ZIELGRUPPE_KARRIERE = 'Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen';
 /**
  * Baut den System-Prompt für Claude aus Blueprint ai_context + employer.
  * Ersetzt die alte buildAIContext() aus blueprintHelpers.ts.
+ *
+ * Kernbotschaften und `employer.typisch` beschreiben die FACHRICHTUNG, nicht die
+ * Praxis. Sie werden deshalb ausdrücklich als Hintergrund gekennzeichnet, damit
+ * die KI daraus keine Leistungen, Geräte oder Tätigkeiten der Praxis ableitet.
+ *
+ * Ohne `options` (oder mit `zweck: 'website'`) entspricht der Aufbau dem
+ * bisherigen Prompt. Mit `zweck: 'karriere'` entfallen Patienten-Zielgruppe,
+ * Patienten-Kernbotschaften und der patientenbezogene Sprachstil.
  */
-export function buildAIContext(blueprint, data) {
+export function buildAIContext(blueprint, data, options = {}) {
+    const karriere = options.zweck === 'karriere';
     if (!blueprint) {
+        if (karriere) {
+            return `Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Arztpraxis.\nPRAXIS: ${data.praxis_name} in ${data.ort}\nZIELGRUPPE: ${ZIELGRUPPE_KARRIERE}\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.`;
+        }
         return `Du schreibst Texte für die Website einer Arztpraxis.\nPRAXIS: ${data.praxis_name} in ${data.ort}\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.`;
     }
     const ctx = blueprint.ai_context;
     const emp = blueprint.employer;
-    let prompt = `Du schreibst Texte für die Website einer ${blueprint.meta.name}.\n\n`;
+    let prompt = karriere
+        ? `Du schreibst Texte für die Karriereseite und Stellenanzeigen einer ${blueprint.meta.name}.\n\n`
+        : `Du schreibst Texte für die Website einer ${blueprint.meta.name}.\n\n`;
     prompt += `PRAXIS: ${data.praxis_name} in ${data.ort}\n\n`;
     prompt += `TONALITÄT: ${ctx.tone.join(', ')}\n`;
-    prompt += `ZIELGRUPPE: ${ctx.audience}\n`;
+    prompt += `ZIELGRUPPE: ${karriere ? ZIELGRUPPE_KARRIERE : ctx.audience}\n`;
     if (ctx.personality?.length) {
         prompt += `PERSÖNLICHKEIT: ${ctx.personality.join(', ')}\n`;
     }
-    if (ctx.key_messages.length) {
-        prompt += `\nKERNBOTSCHAFTEN:\n${ctx.key_messages.map(m => `- ${m}`).join('\n')}\n`;
+    if (!karriere && ctx.key_messages.length) {
+        prompt += `\nKERNBOTSCHAFTEN DER FACHRICHTUNG (${HINTERGRUND_HINWEIS}):\n${ctx.key_messages.map(m => `- ${m}`).join('\n')}\n`;
     }
-    if (ctx.language_style) {
+    if (!karriere && ctx.language_style) {
         prompt += `\nSPRACHSTIL:\n`;
         if (ctx.language_style.avoid.length)
             prompt += `- Vermeide: ${ctx.language_style.avoid.join(', ')}\n`;
@@ -130,12 +144,14 @@ export function buildAIContext(blueprint, data) {
             prompt += `- Bevorzuge: ${ctx.language_style.prefer.join(', ')}\n`;
     }
     if (emp.typisch) {
-        prompt += `\nFACHRICHTUNGS-KONTEXT: ${emp.typisch}\n`;
+        prompt += `\nFACHRICHTUNGS-KONTEXT (${HINTERGRUND_HINWEIS}): ${emp.typisch}\n`;
     }
     if (emp.verbotene_phrasen.length) {
         prompt += `\nVERBOTEN (diese Phrasen NICHT verwenden):\n${emp.verbotene_phrasen.map(p => `- "${p}"`).join('\n')}\n`;
     }
-    prompt += `\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.`;
+    prompt += karriere
+        ? `\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.`
+        : `\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.`;
     return prompt.trim();
 }
 /**
@@ -170,15 +186,17 @@ export function getAufgaben(fachrichtung, rolle) {
     // Direct match
     if (aufgaben[lower])
         return aufgaben[lower];
-    // Fuzzy match
-    if (lower.includes('mfa') || lower.includes('medizinische fachangestellte'))
-        return aufgaben['mfa'] || aufgaben['zfa'] || '';
+    // Fuzzy match – Ausbildung ZUERST prüfen: „Auszubildende/r zur ZFA“ enthält
+    // auch „zfa“ und bekäme sonst die Aufgaben einer ausgelernten Fachkraft.
+    if (lower.includes('azubi') || lower.includes('auszubildend') || lower.includes('ausbildung'))
+        return aufgaben['azubi'] || '';
+    // „zahnmedizinische“ enthält „medizinische“ → ZFA vor MFA prüfen
     if (lower.includes('zfa') || lower.includes('zahnmedizinische'))
         return aufgaben['zfa'] || aufgaben['mfa'] || '';
+    if (lower.includes('mfa') || lower.includes('medizinische fachangestellte'))
+        return aufgaben['mfa'] || aufgaben['zfa'] || '';
     if (lower.includes('arzt') || lower.includes('ärztin') || lower.includes('facharzt'))
         return aufgaben['arzt'] || '';
-    if (lower.includes('azubi') || lower.includes('auszubildend'))
-        return aufgaben['azubi'] || '';
     if (lower.includes('mtra') || lower.includes('radiolog'))
         return aufgaben['mtra'] || aufgaben['mfa'] || '';
     if (lower.includes('therapeut'))

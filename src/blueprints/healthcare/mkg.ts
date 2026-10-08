@@ -81,17 +81,19 @@ export const mkg: Blueprint = {
         {
           "name": "Implantologie",
           "icon": "plus-circle",
-          "default_description": "Zahnimplantate sind die beste Lösung für fehlende Zähne.\nAls Kieferchirurgen setzen wir Implantate sicher und präzise,\nauch bei schwierigen Knochenverhältnissen."
+          "default_description": "Zahnimplantate sind künstliche Zahnwurzeln, die im Kieferknochen einheilen und Kronen, Brücken oder Prothesen tragen können. Vor dem Eingriff werden Knochenangebot, Ablauf, Alternativen und Kosten besprochen.",
+          "igel": true
         },
         {
           "name": "Knochenaufbau (Augmentation)",
           "icon": "layers",
-          "default_description": "Für ein sicheres Implantat braucht es ausreichend Knochen.\nMit verschiedenen Augmentationstechniken bauen wir den\nKieferknochen zuverlässig auf."
+          "default_description": "Reicht der Kieferknochen für ein Implantat nicht aus, kann er mit Eigenknochen oder Knochenersatzmaterial aufgebaut werden. Das Verfahren richtet sich nach Umfang und Lage des Defekts.",
+          "igel": true
         },
         {
           "name": "3D-Röntgen / DVT",
           "icon": "monitor",
-          "default_description": "Das digitale Volumentomogramm zeigt uns Ihren Kiefer dreidimensional.\nSo planen wir Implantate und Eingriffe millimetergenau\nund minimal-invasiv."
+          "default_description": "Die digitale Volumentomographie (DVT) liefert dreidimensionale Röntgenbilder von Kiefer und Zähnen. Die Aufnahmen werden zur Planung von Implantaten und operativen Eingriffen genutzt, etwa um die Lage von Nerven oder Weisheitszähnen zu beurteilen."
         }
       ]
     },
@@ -102,17 +104,17 @@ export const mkg: Blueprint = {
         {
           "name": "Weisheitszahn-Entfernung",
           "icon": "minus-circle",
-          "default_description": "Weisheitszähne entfernen wir schonend, bei Bedarf unter\nDämmerschlaf oder Narkose. Unsere chirurgische Erfahrung\nsorgt für eine schnelle Heilung."
+          "default_description": "Weisheitszähne werden entfernt, wenn sie Beschwerden verursachen, nicht genug Platz haben oder benachbarten Zähnen schaden können. Der Eingriff ist in örtlicher Betäubung, im Dämmerschlaf oder in Vollnarkose möglich; die Form der Betäubung wird vorab besprochen."
         },
         {
           "name": "Wurzelspitzenresektion",
           "icon": "scissors",
-          "default_description": "Wenn eine Wurzelbehandlung nicht ausreicht, entfernen wir\ndie entzündete Wurzelspitze chirurgisch. So kann der\neigene Zahn oft noch erhalten werden."
+          "default_description": "Bei der Wurzelspitzenresektion wird die entzündete Wurzelspitze eines Zahns chirurgisch entfernt. Der Eingriff kommt in Frage, wenn eine Wurzelbehandlung allein nicht ausreicht, und kann den Erhalt des Zahns ermöglichen."
         },
         {
           "name": "Kiefergelenkbehandlung (CMD)",
           "icon": "settings",
-          "default_description": "Kiefergelenkbeschwerden, Knacken und Schmerzen behandeln wir\nmit einem individuellen Therapiekonzept aus Schienentherapie,\nPhysiotherapie und bei Bedarf chirurgischen Maßnahmen."
+          "default_description": "Bei einer craniomandibulären Dysfunktion (CMD) treten Beschwerden wie Kiefergelenkknacken, Schmerzen oder eine eingeschränkte Mundöffnung auf. Die Behandlung kann Aufbissschienen, Physiotherapie und in einzelnen Fällen chirurgische Maßnahmen umfassen."
         }
       ]
     }
@@ -127,10 +129,10 @@ export const mkg: Blueprint = {
     ],
     "audience": "Patienten vor chirurgischen Eingriffen im Mund-Kiefer-Bereich,\nImplantologie-Interessierte, Weisheitszahn-Patienten, CMD-Betroffene.",
     "key_messages": [
-      "Chirurgische Expertise für Mund, Kiefer und Gesicht",
-      "Implantate vom Spezialisten",
-      "Schonende Eingriffe mit modernster Technik",
-      "3D-Diagnostik für sichere Planung"
+      "Chirurgie im Mund-, Kiefer- und Gesichtsbereich",
+      "Implantologie als Teil des Fachgebiets",
+      "Sorgfältige Planung vor jedem Eingriff",
+      "Ausführliche Aufklärung zu Ablauf und Alternativen"
     ]
   },
   "seo": {
@@ -185,7 +187,7 @@ export const mkg: Blueprint = {
     }
   },
   "employer": {
-    "typisch": "Weisheitszähne, Implantologie, Kieferchirurgie, Traumatologie",
+    "typisch": "Oralchirurgie, Weisheitszähne, Implantologie, Kieferchirurgie",
     "aufgaben": {
       "zfa": "OP-Assistenz, Röntgen, Abdrücke, Nahtentfernung, Patientenbetreuung",
       "arzt": "Oralchirurgie, Implantologie, Kieferfrakturen, Tumorchirurgie",

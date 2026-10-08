@@ -79,17 +79,17 @@ export const angiologie = {
                 {
                     "name": "Gefäßdiagnostik / Duplexsonographie",
                     "icon": "monitor",
-                    "default_description": "Mit der farbcodierten Duplexsonographie stellen wir Ihre Arterien\nund Venen schmerzfrei und präzise dar. Verengungen und Verschlüsse\nerkennen wir so zuverlässig."
+                    "default_description": "Die farbcodierte Duplexsonographie stellt Arterien und Venen sowie den Blutfluss im Ultraschall dar. Damit lassen sich Verengungen, Verschlüsse und Thrombosen ohne Strahlenbelastung beurteilen."
                 },
                 {
                     "name": "ABI-Messung",
                     "icon": "activity",
-                    "default_description": "Der Knöchel-Arm-Index gibt Auskunft über die arterielle Durchblutung\nIhrer Beine. Eine schnelle, schmerzfreie Screening-Methode\nfür Durchblutungsstörungen."
+                    "default_description": "Beim Knöchel-Arm-Index (ABI) wird der Blutdruck an Armen und Knöcheln verglichen. Die Messung gibt Hinweise auf Durchblutungsstörungen der Beine, etwa bei der Schaufensterkrankheit."
                 },
                 {
                     "name": "Carotis-Duplex",
                     "icon": "search",
-                    "default_description": "Die Ultraschalluntersuchung der Halsschlagadern zeigt Verengungen,\ndie Ihr Schlaganfallrisiko erhöhen. Frühzeitig erkannt,\nkönnen wir rechtzeitig handeln."
+                    "default_description": "Ultraschalluntersuchung der Halsschlagadern zur Beurteilung von Ablagerungen und Verengungen. Die Ergebnisse fließen in die Einschätzung des Schlaganfallrisikos und die Therapieplanung ein."
                 }
             ]
         },
@@ -100,17 +100,17 @@ export const angiologie = {
                 {
                     "name": "Periphere arterielle Verschlusskrankheit (pAVK)",
                     "icon": "shield",
-                    "default_description": "Die Schaufensterkrankheit schränkt Ihre Gehstrecke ein. Mit\nGehtraining, Medikamenten und bei Bedarf interventionellen\nVerfahren verbessern wir Ihre Durchblutung."
+                    "default_description": "Die periphere arterielle Verschlusskrankheit, auch Schaufensterkrankheit genannt, entsteht durch verengte Beinarterien. Zur Behandlung gehören je nach Stadium Gehtraining, Medikamente, die Behandlung von Risikofaktoren und gegebenenfalls gefäßerweiternde Eingriffe."
                 },
                 {
                     "name": "Thrombose-Diagnostik & Therapie",
                     "icon": "heart",
-                    "default_description": "Bei Verdacht auf Thrombose reagieren wir schnell. Mit Ultraschall\nund Labor klären wir die Diagnose und leiten sofort die\npassende Behandlung ein."
+                    "default_description": "Bei Verdacht auf eine Venenthrombose werden Ultraschall und Laborwerte zur Abklärung eingesetzt. Je nach Befund folgt eine Behandlung mit gerinnungshemmenden Medikamenten und Kompression."
                 },
                 {
                     "name": "Wundmanagement / chronische Wunden",
                     "icon": "bandage",
-                    "default_description": "Chronische Wunden bei Durchblutungsstörungen erfordern\nspezialisierte Wundversorgung. Wir behandeln die Wunde\nund die zugrunde liegende Gefäßerkrankung."
+                    "default_description": "Behandlung chronischer Wunden, die bei Durchblutungsstörungen entstehen oder schlecht heilen. Neben der Wundversorgung stehen die Abklärung und Behandlung der zugrunde liegenden Gefäßerkrankung im Mittelpunkt."
                 }
             ]
         }
@@ -125,10 +125,10 @@ export const angiologie = {
         ],
         "audience": "Patienten mit Durchblutungsstörungen, Thrombosen, Schaufensterkrankheit,\nAortenaneurysmen, chronischen Wunden.",
         "key_messages": [
-            "Gute Durchblutung – gute Gesundheit",
-            "Thrombose erkennen und sicher behandeln",
-            "Modernste Gefäßdiagnostik",
-            "Schaufensterkrankheit stoppen"
+            "Durchblutungsstörungen erkennen und behandeln",
+            "Abklärung bei Verdacht auf Thrombose",
+            "Ultraschall als zentrale Untersuchungsmethode der Gefäßmedizin",
+            "Gehstrecke und Mobilität im Alltag"
         ]
     },
     "seo": {
