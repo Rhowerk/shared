@@ -42,7 +42,7 @@
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "test": "node --experimental-strip-types --experimental-transform-types --test tests/shared.test.ts",
+    "test": "node --import ./tests/register-ts.mjs --experimental-strip-types --experimental-transform-types --test tests/shared.test.ts",
     "dry-test": "node --experimental-strip-types --experimental-transform-types dry-test-provision.ts"
   },
   "devDependencies": {
