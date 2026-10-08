@@ -79,9 +79,9 @@ export const plastische_chirurgie: Blueprint = {
       "icon_color": "#B8860B",
       "items": [
         {
-          "name": "Botox-Behandlung",
+          "name": "Faltenbehandlung (Unterspritzung)",
           "icon": "syringe",
-          "default_description": "Botulinumtoxin wird in kleinen Mengen in bestimmte Gesichtsmuskeln gespritzt und schwächt diese vorübergehend ab, wodurch sich Mimikfalten glätten können. Die Wirkung hält in der Regel einige Monate an.",
+          "default_description": "Bei der Behandlung von Mimikfalten wird ein Wirkstoff in kleinen Mengen in einzelne Gesichtsmuskeln gespritzt, der diese vorübergehend entspannt. Die Wirkung hält in der Regel einige Monate an; Ablauf, Risiken und Kosten werden vorab besprochen.",
           "igel": true
         },
         {
@@ -93,7 +93,7 @@ export const plastische_chirurgie: Blueprint = {
         {
           "name": "Fadenlift",
           "icon": "arrow-up",
-          "default_description": "Beim Fadenlifting werden spezielle Fäden unter die Haut eingebracht, um erschlaffte Gesichtspartien anzuheben. Das Verfahren kommt ohne Operation aus, die Wirkung ist zeitlich begrenzt.",
+          "default_description": "Beim Fadenlifting werden spezielle Fäden über feine Einstiche unter die Haut eingebracht, um erschlaffte Gesichtspartien anzuheben. Die Wirkung ist zeitlich begrenzt; Ablauf, Risiken und Kosten werden vorab besprochen.",
           "igel": true
         }
       ]
@@ -111,7 +111,7 @@ export const plastische_chirurgie: Blueprint = {
         {
           "name": "Fettabsaugung (Liposuktion)",
           "icon": "minus-circle",
-          "default_description": "Bei der Fettabsaugung wird Fettgewebe an umschriebenen Körperstellen über feine Kanülen entfernt. Das Verfahren ersetzt keine Gewichtsabnahme; Eignung, Risiken und Kosten werden vorab besprochen.",
+          "default_description": "Bei der Fettabsaugung wird Fettgewebe an umschriebenen Körperstellen über feine Kanülen entfernt. Das Verfahren ersetzt keine Gewichtsabnahme; Eignung, Risiken und Kosten werden vorab besprochen. Bei einem Lipödem gelten eigene medizinische Voraussetzungen, ob die Krankenkasse die Kosten übernimmt, hängt vom Einzelfall ab.",
           "igel": true
         },
         {
@@ -145,7 +145,7 @@ export const plastische_chirurgie: Blueprint = {
   },
   "seo": {
     "title_template": "{praxis_name} | Plastische & Ästhetische Chirurgie in {ort}",
-    "description_template": "Praxis für Plastische Chirurgie {praxis_name} in {ort}. ✓ Botox & Filler ✓ Brustchirurgie ✓ Liposuktion. Jetzt Beratungstermin vereinbaren!",
+    "description_template": "Praxis für Plastische Chirurgie {praxis_name} in {ort}. Ästhetische und rekonstruktive Eingriffe, Beratung zu Ablauf, Risiken und Kosten.",
     "keywords": []
   },
   "fachrichtung_titel": {

@@ -153,7 +153,7 @@ export const orthopaedie = {
                 {
                     "name": "Akupunktur",
                     "icon": "needle",
-                    "default_description": "Akupunktur wird ergänzend bei chronischen Schmerzen eingesetzt. Gesetzliche Krankenkassen übernehmen sie bei chronischen Rückenschmerzen und bei Kniegelenksarthrose."
+                    "default_description": "Akupunktur wird ergänzend bei chronischen Schmerzen eingesetzt. Gesetzliche Krankenkassen übernehmen sie bei chronischen Schmerzen der Lendenwirbelsäule und bei Kniegelenksarthrose, wenn die Beschwerden seit mindestens sechs Monaten bestehen."
                 },
                 {
                     "name": "Infiltrationstherapie",

@@ -88,7 +88,8 @@ export const zahnarzt = {
                 {
                     "name": "Professionelle Zahnreinigung (PZR)",
                     "icon": "sparkles",
-                    "default_description": "Bei der professionellen Zahnreinigung werden harte und weiche Beläge sowie Verfärbungen entfernt, auch in den Zahnzwischenräumen. Anschließend werden die Zähne poliert und meist fluoridiert. Gesetzliche Krankenkassen übernehmen die Kosten nicht regulär, einige beteiligen sich mit Zuschüssen."
+                    "default_description": "Bei der professionellen Zahnreinigung werden harte und weiche Beläge sowie Verfärbungen entfernt, auch in den Zahnzwischenräumen. Anschließend werden die Zähne poliert und meist fluoridiert. Gesetzliche Krankenkassen übernehmen die Kosten nicht regulär, einige beteiligen sich mit Zuschüssen.",
+                    "igel": true
                 },
                 {
                     "name": "Vorsorgeuntersuchung",
@@ -119,7 +120,7 @@ export const zahnarzt = {
                     "igel": true
                 },
                 {
-                    "name": "Invisalign",
+                    "name": "Aligner-Therapie",
                     "icon": "move",
                     "default_description": "Bei der Aligner-Therapie werden Zahnfehlstellungen mit einer Folge transparenter, herausnehmbarer Kunststoffschienen schrittweise korrigiert. Die Schienen werden in der Regel täglich 20 bis 22 Stunden getragen.",
                     "igel": true

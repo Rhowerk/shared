@@ -107,7 +107,7 @@ export const kinderarzt: Blueprint = {
           "name": "Vorsorgeuntersuchungen U1-J2",
           "icon": "clipboard-check",
           "ai_prompt": "Beschreibe die U-Untersuchungen für Eltern verständlich.\nBetone: Früherkennung, Entwicklungsbegleitung, Impfplan\nLänge: 2-3 Sätze",
-          "default_description": "Die Vorsorgeuntersuchungen begleiten die körperliche, geistige und soziale Entwicklung von der Geburt bis ins Jugendalter. Dabei werden Wachstum, Entwicklung, Hören und Sehen geprüft und Fragen der Eltern besprochen. U10, U11 und J2 übernehmen nicht alle Krankenkassen."
+          "default_description": "Die Vorsorgeuntersuchungen begleiten die körperliche, geistige und soziale Entwicklung von der Geburt bis ins Jugendalter. Dabei werden Wachstum, Entwicklung, Hören und Sehen geprüft und Fragen der Eltern besprochen. Einzelne zusätzliche Untersuchungen übernehmen nicht alle Krankenkassen."
         },
         {
           "name": "Impfungen",

@@ -137,9 +137,9 @@ export const dermatologie: Blueprint = {
           "igel": true
         },
         {
-          "name": "Botox & Filler",
+          "name": "Faltenbehandlung (Unterspritzung)",
           "icon": "droplet",
-          "default_description": "Botulinumtoxin und Hyaluronsäure-Filler werden zur Behandlung von Mimikfalten und Volumenverlust eingesetzt. Die Wirkung ist zeitlich begrenzt; Ablauf, Risiken und Kosten werden vorab besprochen.",
+          "default_description": "Unterspritzungen können Mimikfalten vorübergehend glätten oder einen Volumenverlust im Gesicht ausgleichen. Die Wirkung ist zeitlich begrenzt; Ablauf, Risiken und Kosten werden vorab besprochen.",
           "igel": true
         },
         {

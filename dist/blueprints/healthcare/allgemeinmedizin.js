@@ -157,7 +157,7 @@ export const allgemeinmedizin = {
                 {
                     "name": "EKG",
                     "icon": "activity",
-                    "default_description": "Das Elektrokardiogramm (EKG) zeichnet die elektrische Aktivität des Herzens auf. Es wird zum Beispiel bei Herzrhythmusstörungen, Brustschmerzen oder im Rahmen von Vorsorgeuntersuchungen eingesetzt."
+                    "default_description": "Das Elektrokardiogramm (EKG) zeichnet die elektrische Aktivität des Herzens auf. Es wird zum Beispiel bei Herzrhythmusstörungen, Brustschmerzen oder zur Verlaufskontrolle bekannter Herzerkrankungen eingesetzt."
                 },
                 {
                     "name": "Lungenfunktionstest",
