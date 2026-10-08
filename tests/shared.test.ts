@@ -957,7 +957,7 @@ describe('blueprints: Leistungs-Vorlagentexte', () => {
     assert.equal(findService(zahn, 'Bleaching / Zahnaufhellung')?.igel, true)
     assert.equal(findService(zahn, 'Veneers')?.igel, true)
     assert.equal(findService(zahn, 'Wurzelbehandlung')?.igel, undefined)
-    assert.equal(findService(getBlueprint('dermatologie'), 'Botox & Filler')?.igel, true)
+    assert.equal(findService(getBlueprint('dermatologie'), 'Faltenbehandlung (Unterspritzung)')?.igel, true)
     assert.equal(findService(getBlueprint('orthopaedie'), 'Stoßwellentherapie')?.igel, true)
   })
 
