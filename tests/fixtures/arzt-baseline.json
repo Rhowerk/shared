@@ -1,0 +1,2695 @@
+{
+  "ids": [
+    "allgemeinmedizin",
+    "kardiologie",
+    "gastroenterologie",
+    "pneumologie",
+    "endokrinologie",
+    "nephrologie",
+    "rheumatologie",
+    "angiologie",
+    "onkologie",
+    "orthopaedie",
+    "mkg",
+    "plastische_chirurgie",
+    "augenheilkunde",
+    "hno",
+    "dermatologie",
+    "phlebologie",
+    "gynaekologie",
+    "kinderarzt",
+    "neurologie",
+    "psychotherapie",
+    "urologie",
+    "zahnarzt",
+    "schmerztherapie",
+    "sportmedizin",
+    "nuklearmedizin"
+  ],
+  "resolve": {
+    "allgemeinmedizin": "allgemeinmedizin",
+    "kardiologie": "kardiologie",
+    "gastroenterologie": "gastroenterologie",
+    "pneumologie": "pneumologie",
+    "endokrinologie": "endokrinologie",
+    "nephrologie": "nephrologie",
+    "rheumatologie": "rheumatologie",
+    "angiologie": "angiologie",
+    "onkologie": "onkologie",
+    "orthopaedie": "orthopaedie",
+    "mkg": "mkg",
+    "plastische_chirurgie": "plastische_chirurgie",
+    "augenheilkunde": "augenheilkunde",
+    "hno": "hno",
+    "dermatologie": "dermatologie",
+    "phlebologie": "phlebologie",
+    "gynaekologie": "gynaekologie",
+    "kinderarzt": "kinderarzt",
+    "neurologie": "neurologie",
+    "psychotherapie": "psychotherapie",
+    "urologie": "urologie",
+    "zahnarzt": "zahnarzt",
+    "schmerztherapie": "schmerztherapie",
+    "sportmedizin": "sportmedizin",
+    "nuklearmedizin": "nuklearmedizin",
+    "Allgemeinmedizin / Hausarzt": "allgemeinmedizin",
+    "allgemeinarzt": "allgemeinmedizin",
+    "allgemeinärztin": "allgemeinmedizin",
+    "allgemeinmediziner": "allgemeinmedizin",
+    "hausarzt": "allgemeinmedizin",
+    "hausärztin": "allgemeinmedizin",
+    "hausarztpraxis": "allgemeinmedizin",
+    "hausärztliche praxis": "allgemeinmedizin",
+    "innere medizin": "allgemeinmedizin",
+    "internist": "allgemeinmedizin",
+    "internistin": "allgemeinmedizin",
+    "facharzt für innere medizin": "allgemeinmedizin",
+    "facharzt für allgemeinmedizin": "allgemeinmedizin",
+    "innere und allgemeinmedizin": "allgemeinmedizin",
+    "praxis für allgemeinmedizin": "allgemeinmedizin",
+    "general practitioner": "allgemeinmedizin",
+    "gp": "allgemeinmedizin",
+    "arzt": "allgemeinmedizin",
+    "ärztin": "allgemeinmedizin",
+    "arztpraxis": "allgemeinmedizin",
+    "gemeinschaftspraxis": "allgemeinmedizin",
+    "Kardiologie": "kardiologie",
+    "kardiologe": "kardiologie",
+    "kardiologin": "kardiologie",
+    "herzspezialist": "kardiologie",
+    "herzpraxis": "kardiologie",
+    "kardiologische praxis": "kardiologie",
+    "praxis für kardiologie": "kardiologie",
+    "facharzt für kardiologie": "kardiologie",
+    "herzzentrum": "kardiologie",
+    "innere medizin und kardiologie": "kardiologie",
+    "Gastroenterologie": "gastroenterologie",
+    "gastroenterologe": "gastroenterologie",
+    "gastroenterologin": "gastroenterologie",
+    "magen-darm": "gastroenterologie",
+    "magen darm": "gastroenterologie",
+    "magen-darm-praxis": "gastroenterologie",
+    "innere medizin und gastroenterologie": "gastroenterologie",
+    "facharzt für gastroenterologie": "gastroenterologie",
+    "hepatologie": "gastroenterologie",
+    "darmspiegelung": "gastroenterologie",
+    "koloskopie": "gastroenterologie",
+    "endoskopie": "gastroenterologie",
+    "Pneumologie / Lungenmedizin": "pneumologie",
+    "pneumologe": "pneumologie",
+    "pneumologin": "pneumologie",
+    "lungenarzt": "pneumologie",
+    "lungenärztin": "pneumologie",
+    "lungenfacharzt": "pneumologie",
+    "lungenpraxis": "pneumologie",
+    "praxis für pneumologie": "pneumologie",
+    "innere medizin und pneumologie": "pneumologie",
+    "schlafmedizin": "pneumologie",
+    "schlaflabor": "pneumologie",
+    "atemwegserkrankungen": "pneumologie",
+    "Endokrinologie / Diabetologie": "endokrinologie",
+    "endokrinologe": "endokrinologie",
+    "endokrinologin": "endokrinologie",
+    "diabetologie": "endokrinologie",
+    "diabetologe": "endokrinologie",
+    "diabetologin": "endokrinologie",
+    "diabetespraxis": "endokrinologie",
+    "schilddrüse": "endokrinologie",
+    "schilddrüsenpraxis": "endokrinologie",
+    "innere medizin und endokrinologie": "endokrinologie",
+    "hormonpraxis": "endokrinologie",
+    "stoffwechselerkrankungen": "endokrinologie",
+    "Nephrologie": "nephrologie",
+    "nephrologe": "nephrologie",
+    "nephrologin": "nephrologie",
+    "niere": "nephrologie",
+    "nierenpraxis": "nephrologie",
+    "dialyse": "nephrologie",
+    "dialysepraxis": "nephrologie",
+    "dialysezentrum": "nephrologie",
+    "innere medizin und nephrologie": "nephrologie",
+    "nierenheilkunde": "nephrologie",
+    "Rheumatologie": "rheumatologie",
+    "rheumatologe": "rheumatologie",
+    "rheumatologin": "rheumatologie",
+    "rheuma": "rheumatologie",
+    "rheumapraxis": "rheumatologie",
+    "innere medizin und rheumatologie": "rheumatologie",
+    "rheumazentrum": "rheumatologie",
+    "autoimmunerkrankungen": "rheumatologie",
+    "Angiologie / Gefäßmedizin": "angiologie",
+    "angiologe": "angiologie",
+    "angiologin": "angiologie",
+    "gefäßmedizin": "angiologie",
+    "gefäßpraxis": "angiologie",
+    "innere medizin und angiologie": "angiologie",
+    "gefäßchirurgie": "angiologie",
+    "gefäßchirurg": "angiologie",
+    "hämostaseologie": "angiologie",
+    "gerinnungsstörungen": "angiologie",
+    "thrombose": "angiologie",
+    "Onkologie / Hämatologie": "onkologie",
+    "onkologe": "onkologie",
+    "onkologin": "onkologie",
+    "hämatologie": "onkologie",
+    "hämatologe": "onkologie",
+    "onkologische praxis": "onkologie",
+    "krebsbehandlung": "onkologie",
+    "tumortherapie": "onkologie",
+    "chemotherapie": "onkologie",
+    "facharzt für hämatologie und onkologie": "onkologie",
+    "mvz onkologie": "onkologie",
+    "Orthopädie / Unfallchirurgie": "orthopaedie",
+    "orthopädie": "orthopaedie",
+    "orthopäde": "orthopaedie",
+    "orthopädin": "orthopaedie",
+    "unfallchirurgie": "orthopaedie",
+    "unfallchirurg": "orthopaedie",
+    "orthopädische praxis": "orthopaedie",
+    "praxis für orthopädie": "orthopaedie",
+    "praxis für orthopädie und unfallchirurgie": "orthopaedie",
+    "chirurgie": "orthopaedie",
+    "chirurg": "orthopaedie",
+    "chirurgin": "orthopaedie",
+    "allgemeinchirurgie": "orthopaedie",
+    "sportorthopädie": "orthopaedie",
+    "Mund-Kiefer-Gesichtschirurgie": "mkg",
+    "mund-kiefer-gesichtschirurgie": "mkg",
+    "mkg-chirurgie": "mkg",
+    "kieferchirurg": "mkg",
+    "oralchirurgie": "mkg",
+    "oralchirurg": "mkg",
+    "implantatchirurgie": "mkg",
+    "Plastische & Ästhetische Chirurgie": "orthopaedie",
+    "plastische chirurgie": "plastische_chirurgie",
+    "plastischer chirurg": "plastische_chirurgie",
+    "ästhetische chirurgie": "plastische_chirurgie",
+    "ästhetische medizin": "plastische_chirurgie",
+    "schönheitschirurgie": "plastische_chirurgie",
+    "facelift": "plastische_chirurgie",
+    "fettabsaugung": "plastische_chirurgie",
+    "Augenheilkunde": "augenheilkunde",
+    "augenarzt": "augenheilkunde",
+    "augenärztin": "augenheilkunde",
+    "ophthalmologie": "augenheilkunde",
+    "ophthalmologe": "augenheilkunde",
+    "augenpraxis": "augenheilkunde",
+    "augenzentrum": "augenheilkunde",
+    "HNO-Heilkunde": "hno",
+    "hno-arzt": "hno",
+    "hno-ärztin": "hno",
+    "hals-nasen-ohren": "hno",
+    "hno-praxis": "hno",
+    "hno-heilkunde": "hno",
+    "hals-nasen-ohrenheilkunde": "hno",
+    "ohrenarzt": "hno",
+    "phoniatrie": "hno",
+    "Dermatologie": "dermatologie",
+    "dermatologe": "dermatologie",
+    "dermatologin": "dermatologie",
+    "hautarzt": "dermatologie",
+    "hautärztin": "dermatologie",
+    "hautpraxis": "dermatologie",
+    "haut- und geschlechtskrankheiten": "dermatologie",
+    "venerologie": "dermatologie",
+    "Phlebologie / Venenmedizin": "phlebologie",
+    "phlebologe": "phlebologie",
+    "venenpraxis": "phlebologie",
+    "venenspezialist": "phlebologie",
+    "venenmedizin": "phlebologie",
+    "krampfadern": "phlebologie",
+    "varikose": "phlebologie",
+    "besenreiser": "phlebologie",
+    "Gynäkologie": "gynaekologie",
+    "gynäkologie": "gynaekologie",
+    "gynäkologe": "gynaekologie",
+    "gynäkologin": "gynaekologie",
+    "frauenarzt": "gynaekologie",
+    "frauenärztin": "gynaekologie",
+    "frauenheilkunde": "gynaekologie",
+    "frauenpraxis": "gynaekologie",
+    "geburtshilfe": "gynaekologie",
+    "reproduktionsmedizin": "gynaekologie",
+    "kinderwunschzentrum": "gynaekologie",
+    "Kinder- und Jugendmedizin": "kinderarzt",
+    "kinderärztin": "kinderarzt",
+    "pädiater": "kinderarzt",
+    "pädiaterin": "kinderarzt",
+    "pädiatrie": "kinderarzt",
+    "kinder- und jugendmedizin": "kinderarzt",
+    "kindermedizin": "kinderarzt",
+    "kinderheilkunde": "kinderarzt",
+    "kinderpraxis": "kinderarzt",
+    "jugendmedizin": "kinderarzt",
+    "Neurologie": "neurologie",
+    "neurologe": "neurologie",
+    "neurologin": "neurologie",
+    "nervenarzt": "neurologie",
+    "nervenärztin": "neurologie",
+    "neurologische praxis": "neurologie",
+    "neuromedizin": "neurologie",
+    "Psychotherapie / Psychiatrie": "psychotherapie",
+    "psychotherapeut": "psychotherapie",
+    "psychotherapeutin": "psychotherapie",
+    "psychiatrie": "psychotherapie",
+    "psychiater": "psychotherapie",
+    "psychiaterin": "psychotherapie",
+    "psychologischer psychotherapeut": "psychotherapie",
+    "verhaltenstherapie": "psychotherapie",
+    "psychosomatik": "psychotherapie",
+    "psychosomatische medizin": "psychotherapie",
+    "Urologie": "urologie",
+    "urologe": "urologie",
+    "urologin": "urologie",
+    "urologische praxis": "urologie",
+    "andrologie": "urologie",
+    "androloge": "urologie",
+    "Zahnmedizin": "zahnarzt",
+    "zahnärztin": "zahnarzt",
+    "zahnmedizin": "zahnarzt",
+    "zahnheilkunde": "zahnarzt",
+    "zahnarztpraxis": "zahnarzt",
+    "zahnpraxis": "zahnarzt",
+    "dentist": "zahnarzt",
+    "dental": "zahnarzt",
+    "kieferorthopädie": "zahnarzt",
+    "kieferorthopäde": "zahnarzt",
+    "implantologie": "zahnarzt",
+    "parodontologie": "zahnarzt",
+    "Schmerztherapie": "schmerztherapie",
+    "schmerztherapeut": "schmerztherapie",
+    "schmerzmedizin": "schmerztherapie",
+    "schmerzpraxis": "schmerztherapie",
+    "schmerzzentrum": "schmerztherapie",
+    "schmerzambulanz": "schmerztherapie",
+    "spezielle schmerztherapie": "schmerztherapie",
+    "algesiologie": "schmerztherapie",
+    "chronische schmerzen": "schmerztherapie",
+    "Sportmedizin": "sportmedizin",
+    "sportmediziner": "sportmedizin",
+    "sportarzt": "sportmedizin",
+    "sportpraxis": "sportmedizin",
+    "sportmedizinische praxis": "sportmedizin",
+    "sportverletzungen": "sportmedizin",
+    "leistungsdiagnostik": "sportmedizin",
+    "Nuklearmedizin / Radiologie": "nuklearmedizin",
+    "nuklearmediziner": "nuklearmedizin",
+    "praxis für nuklearmedizin": "nuklearmedizin",
+    "szintigraphie": "nuklearmedizin",
+    "schilddrüsendiagnostik": "nuklearmedizin",
+    "radiologie": "nuklearmedizin",
+    "radiologe": "nuklearmedizin",
+    "radiologin": "nuklearmedizin",
+    "radiologische praxis": "nuklearmedizin",
+    "Heilpraktikerin für Psychotherapie": "psychotherapie",
+    "Heilpraktiker": null,
+    "Praxis für Psychotherapie": "psychotherapie",
+    "Praxis für Orthopädie und Unfallchirurgie": "orthopaedie",
+    "Zahnarztpraxis Dr. Müller": "allgemeinmedizin",
+    "therapie": "onkologie",
+    "psych": "psychotherapie",
+    "Naturheilkunde": null,
+    "Physiotherapie": null,
+    "": null,
+    "unbekannt": null
+  },
+  "labels": {
+    "allgemeinmedizin": "Allgemeinmedizin / Hausarzt",
+    "kardiologie": "Kardiologie",
+    "gastroenterologie": "Gastroenterologie",
+    "pneumologie": "Pneumologie / Lungenmedizin",
+    "endokrinologie": "Endokrinologie / Diabetologie",
+    "nephrologie": "Nephrologie",
+    "rheumatologie": "Rheumatologie",
+    "angiologie": "Angiologie / Gefäßmedizin",
+    "onkologie": "Onkologie / Hämatologie",
+    "orthopaedie": "Orthopädie / Unfallchirurgie",
+    "mkg": "Mund-Kiefer-Gesichtschirurgie",
+    "plastische_chirurgie": "Plastische & Ästhetische Chirurgie",
+    "augenheilkunde": "Augenheilkunde",
+    "hno": "HNO-Heilkunde",
+    "dermatologie": "Dermatologie",
+    "phlebologie": "Phlebologie / Venenmedizin",
+    "gynaekologie": "Gynäkologie",
+    "kinderarzt": "Kinder- und Jugendmedizin",
+    "neurologie": "Neurologie",
+    "psychotherapie": "Psychotherapie / Psychiatrie",
+    "urologie": "Urologie",
+    "zahnarzt": "Zahnmedizin",
+    "schmerztherapie": "Schmerztherapie",
+    "sportmedizin": "Sportmedizin",
+    "nuklearmedizin": "Nuklearmedizin / Radiologie",
+    "Allgemeinmedizin / Hausarzt": "Allgemeinmedizin / Hausarzt",
+    "allgemeinarzt": "Allgemeinmedizin / Hausarzt",
+    "allgemeinärztin": "Allgemeinmedizin / Hausarzt",
+    "allgemeinmediziner": "Allgemeinmedizin / Hausarzt",
+    "hausarzt": "Allgemeinmedizin / Hausarzt",
+    "hausärztin": "Allgemeinmedizin / Hausarzt",
+    "hausarztpraxis": "Allgemeinmedizin / Hausarzt",
+    "hausärztliche praxis": "Allgemeinmedizin / Hausarzt",
+    "innere medizin": "Allgemeinmedizin / Hausarzt",
+    "internist": "Allgemeinmedizin / Hausarzt",
+    "internistin": "Allgemeinmedizin / Hausarzt",
+    "facharzt für innere medizin": "Allgemeinmedizin / Hausarzt",
+    "facharzt für allgemeinmedizin": "Allgemeinmedizin / Hausarzt",
+    "innere und allgemeinmedizin": "Allgemeinmedizin / Hausarzt",
+    "praxis für allgemeinmedizin": "Allgemeinmedizin / Hausarzt",
+    "general practitioner": "Allgemeinmedizin / Hausarzt",
+    "gp": "Allgemeinmedizin / Hausarzt",
+    "arzt": "Allgemeinmedizin / Hausarzt",
+    "ärztin": "Allgemeinmedizin / Hausarzt",
+    "arztpraxis": "Allgemeinmedizin / Hausarzt",
+    "gemeinschaftspraxis": "Allgemeinmedizin / Hausarzt",
+    "Kardiologie": "Kardiologie",
+    "kardiologe": "Kardiologie",
+    "kardiologin": "Kardiologie",
+    "herzspezialist": "Kardiologie",
+    "herzpraxis": "Kardiologie",
+    "kardiologische praxis": "Kardiologie",
+    "praxis für kardiologie": "Kardiologie",
+    "facharzt für kardiologie": "Kardiologie",
+    "herzzentrum": "Kardiologie",
+    "innere medizin und kardiologie": "Kardiologie",
+    "Gastroenterologie": "Gastroenterologie",
+    "gastroenterologe": "Gastroenterologie",
+    "gastroenterologin": "Gastroenterologie",
+    "magen-darm": "Gastroenterologie",
+    "magen darm": "Gastroenterologie",
+    "magen-darm-praxis": "Gastroenterologie",
+    "innere medizin und gastroenterologie": "Gastroenterologie",
+    "facharzt für gastroenterologie": "Gastroenterologie",
+    "hepatologie": "Gastroenterologie",
+    "darmspiegelung": "Gastroenterologie",
+    "koloskopie": "Gastroenterologie",
+    "endoskopie": "Gastroenterologie",
+    "Pneumologie / Lungenmedizin": "Pneumologie / Lungenmedizin",
+    "pneumologe": "Pneumologie / Lungenmedizin",
+    "pneumologin": "Pneumologie / Lungenmedizin",
+    "lungenarzt": "Pneumologie / Lungenmedizin",
+    "lungenärztin": "Pneumologie / Lungenmedizin",
+    "lungenfacharzt": "Pneumologie / Lungenmedizin",
+    "lungenpraxis": "Pneumologie / Lungenmedizin",
+    "praxis für pneumologie": "Pneumologie / Lungenmedizin",
+    "innere medizin und pneumologie": "Pneumologie / Lungenmedizin",
+    "schlafmedizin": "Pneumologie / Lungenmedizin",
+    "schlaflabor": "Pneumologie / Lungenmedizin",
+    "atemwegserkrankungen": "Pneumologie / Lungenmedizin",
+    "Endokrinologie / Diabetologie": "Endokrinologie / Diabetologie",
+    "endokrinologe": "Endokrinologie / Diabetologie",
+    "endokrinologin": "Endokrinologie / Diabetologie",
+    "diabetologie": "Endokrinologie / Diabetologie",
+    "diabetologe": "Endokrinologie / Diabetologie",
+    "diabetologin": "Endokrinologie / Diabetologie",
+    "diabetespraxis": "Endokrinologie / Diabetologie",
+    "schilddrüse": "Endokrinologie / Diabetologie",
+    "schilddrüsenpraxis": "Endokrinologie / Diabetologie",
+    "innere medizin und endokrinologie": "Endokrinologie / Diabetologie",
+    "hormonpraxis": "Endokrinologie / Diabetologie",
+    "stoffwechselerkrankungen": "Endokrinologie / Diabetologie",
+    "Nephrologie": "Nephrologie",
+    "nephrologe": "Nephrologie",
+    "nephrologin": "Nephrologie",
+    "niere": "Nephrologie",
+    "nierenpraxis": "Nephrologie",
+    "dialyse": "Nephrologie",
+    "dialysepraxis": "Nephrologie",
+    "dialysezentrum": "Nephrologie",
+    "innere medizin und nephrologie": "Nephrologie",
+    "nierenheilkunde": "Nephrologie",
+    "Rheumatologie": "Rheumatologie",
+    "rheumatologe": "Rheumatologie",
+    "rheumatologin": "Rheumatologie",
+    "rheuma": "Rheumatologie",
+    "rheumapraxis": "Rheumatologie",
+    "innere medizin und rheumatologie": "Rheumatologie",
+    "rheumazentrum": "Rheumatologie",
+    "autoimmunerkrankungen": "Rheumatologie",
+    "Angiologie / Gefäßmedizin": "Angiologie / Gefäßmedizin",
+    "angiologe": "Angiologie / Gefäßmedizin",
+    "angiologin": "Angiologie / Gefäßmedizin",
+    "gefäßmedizin": "Angiologie / Gefäßmedizin",
+    "gefäßpraxis": "Angiologie / Gefäßmedizin",
+    "innere medizin und angiologie": "Angiologie / Gefäßmedizin",
+    "gefäßchirurgie": "Angiologie / Gefäßmedizin",
+    "gefäßchirurg": "Angiologie / Gefäßmedizin",
+    "hämostaseologie": "Angiologie / Gefäßmedizin",
+    "gerinnungsstörungen": "Angiologie / Gefäßmedizin",
+    "thrombose": "Angiologie / Gefäßmedizin",
+    "Onkologie / Hämatologie": "Onkologie / Hämatologie",
+    "onkologe": "Onkologie / Hämatologie",
+    "onkologin": "Onkologie / Hämatologie",
+    "hämatologie": "Onkologie / Hämatologie",
+    "hämatologe": "Onkologie / Hämatologie",
+    "onkologische praxis": "Onkologie / Hämatologie",
+    "krebsbehandlung": "Onkologie / Hämatologie",
+    "tumortherapie": "Onkologie / Hämatologie",
+    "chemotherapie": "Onkologie / Hämatologie",
+    "facharzt für hämatologie und onkologie": "Onkologie / Hämatologie",
+    "mvz onkologie": "Onkologie / Hämatologie",
+    "Orthopädie / Unfallchirurgie": "Orthopädie / Unfallchirurgie",
+    "orthopädie": "Orthopädie / Unfallchirurgie",
+    "orthopäde": "Orthopädie / Unfallchirurgie",
+    "orthopädin": "Orthopädie / Unfallchirurgie",
+    "unfallchirurgie": "Orthopädie / Unfallchirurgie",
+    "unfallchirurg": "Orthopädie / Unfallchirurgie",
+    "orthopädische praxis": "Orthopädie / Unfallchirurgie",
+    "praxis für orthopädie": "Orthopädie / Unfallchirurgie",
+    "praxis für orthopädie und unfallchirurgie": "Orthopädie / Unfallchirurgie",
+    "chirurgie": "Orthopädie / Unfallchirurgie",
+    "chirurg": "Orthopädie / Unfallchirurgie",
+    "chirurgin": "Orthopädie / Unfallchirurgie",
+    "allgemeinchirurgie": "Orthopädie / Unfallchirurgie",
+    "sportorthopädie": "Orthopädie / Unfallchirurgie",
+    "Mund-Kiefer-Gesichtschirurgie": "Mund-Kiefer-Gesichtschirurgie",
+    "mund-kiefer-gesichtschirurgie": "Mund-Kiefer-Gesichtschirurgie",
+    "mkg-chirurgie": "Mund-Kiefer-Gesichtschirurgie",
+    "kieferchirurg": "Mund-Kiefer-Gesichtschirurgie",
+    "oralchirurgie": "Mund-Kiefer-Gesichtschirurgie",
+    "oralchirurg": "Mund-Kiefer-Gesichtschirurgie",
+    "implantatchirurgie": "Mund-Kiefer-Gesichtschirurgie",
+    "Plastische & Ästhetische Chirurgie": "Orthopädie / Unfallchirurgie",
+    "plastische chirurgie": "Plastische & Ästhetische Chirurgie",
+    "plastischer chirurg": "Plastische & Ästhetische Chirurgie",
+    "ästhetische chirurgie": "Plastische & Ästhetische Chirurgie",
+    "ästhetische medizin": "Plastische & Ästhetische Chirurgie",
+    "schönheitschirurgie": "Plastische & Ästhetische Chirurgie",
+    "facelift": "Plastische & Ästhetische Chirurgie",
+    "fettabsaugung": "Plastische & Ästhetische Chirurgie",
+    "Augenheilkunde": "Augenheilkunde",
+    "augenarzt": "Augenheilkunde",
+    "augenärztin": "Augenheilkunde",
+    "ophthalmologie": "Augenheilkunde",
+    "ophthalmologe": "Augenheilkunde",
+    "augenpraxis": "Augenheilkunde",
+    "augenzentrum": "Augenheilkunde",
+    "HNO-Heilkunde": "HNO-Heilkunde",
+    "hno-arzt": "HNO-Heilkunde",
+    "hno-ärztin": "HNO-Heilkunde",
+    "hals-nasen-ohren": "HNO-Heilkunde",
+    "hno-praxis": "HNO-Heilkunde",
+    "hno-heilkunde": "HNO-Heilkunde",
+    "hals-nasen-ohrenheilkunde": "HNO-Heilkunde",
+    "ohrenarzt": "HNO-Heilkunde",
+    "phoniatrie": "HNO-Heilkunde",
+    "Dermatologie": "Dermatologie",
+    "dermatologe": "Dermatologie",
+    "dermatologin": "Dermatologie",
+    "hautarzt": "Dermatologie",
+    "hautärztin": "Dermatologie",
+    "hautpraxis": "Dermatologie",
+    "haut- und geschlechtskrankheiten": "Dermatologie",
+    "venerologie": "Dermatologie",
+    "Phlebologie / Venenmedizin": "Phlebologie / Venenmedizin",
+    "phlebologe": "Phlebologie / Venenmedizin",
+    "venenpraxis": "Phlebologie / Venenmedizin",
+    "venenspezialist": "Phlebologie / Venenmedizin",
+    "venenmedizin": "Phlebologie / Venenmedizin",
+    "krampfadern": "Phlebologie / Venenmedizin",
+    "varikose": "Phlebologie / Venenmedizin",
+    "besenreiser": "Phlebologie / Venenmedizin",
+    "Gynäkologie": "Gynäkologie",
+    "gynäkologie": "Gynäkologie",
+    "gynäkologe": "Gynäkologie",
+    "gynäkologin": "Gynäkologie",
+    "frauenarzt": "Gynäkologie",
+    "frauenärztin": "Gynäkologie",
+    "frauenheilkunde": "Gynäkologie",
+    "frauenpraxis": "Gynäkologie",
+    "geburtshilfe": "Gynäkologie",
+    "reproduktionsmedizin": "Gynäkologie",
+    "kinderwunschzentrum": "Gynäkologie",
+    "Kinder- und Jugendmedizin": "Kinder- und Jugendmedizin",
+    "kinderärztin": "Kinder- und Jugendmedizin",
+    "pädiater": "Kinder- und Jugendmedizin",
+    "pädiaterin": "Kinder- und Jugendmedizin",
+    "pädiatrie": "Kinder- und Jugendmedizin",
+    "kinder- und jugendmedizin": "Kinder- und Jugendmedizin",
+    "kindermedizin": "Kinder- und Jugendmedizin",
+    "kinderheilkunde": "Kinder- und Jugendmedizin",
+    "kinderpraxis": "Kinder- und Jugendmedizin",
+    "jugendmedizin": "Kinder- und Jugendmedizin",
+    "Neurologie": "Neurologie",
+    "neurologe": "Neurologie",
+    "neurologin": "Neurologie",
+    "nervenarzt": "Neurologie",
+    "nervenärztin": "Neurologie",
+    "neurologische praxis": "Neurologie",
+    "neuromedizin": "Neurologie",
+    "Psychotherapie / Psychiatrie": "Psychotherapie / Psychiatrie",
+    "psychotherapeut": "Psychotherapie / Psychiatrie",
+    "psychotherapeutin": "Psychotherapie / Psychiatrie",
+    "psychiatrie": "Psychotherapie / Psychiatrie",
+    "psychiater": "Psychotherapie / Psychiatrie",
+    "psychiaterin": "Psychotherapie / Psychiatrie",
+    "psychologischer psychotherapeut": "Psychotherapie / Psychiatrie",
+    "verhaltenstherapie": "Psychotherapie / Psychiatrie",
+    "psychosomatik": "Psychotherapie / Psychiatrie",
+    "psychosomatische medizin": "Psychotherapie / Psychiatrie",
+    "Urologie": "Urologie",
+    "urologe": "Urologie",
+    "urologin": "Urologie",
+    "urologische praxis": "Urologie",
+    "andrologie": "Urologie",
+    "androloge": "Urologie",
+    "Zahnmedizin": "Zahnmedizin",
+    "zahnärztin": "Zahnmedizin",
+    "zahnmedizin": "Zahnmedizin",
+    "zahnheilkunde": "Zahnmedizin",
+    "zahnarztpraxis": "Zahnmedizin",
+    "zahnpraxis": "Zahnmedizin",
+    "dentist": "Zahnmedizin",
+    "dental": "Zahnmedizin",
+    "kieferorthopädie": "Zahnmedizin",
+    "kieferorthopäde": "Zahnmedizin",
+    "implantologie": "Zahnmedizin",
+    "parodontologie": "Zahnmedizin",
+    "Schmerztherapie": "Schmerztherapie",
+    "schmerztherapeut": "Schmerztherapie",
+    "schmerzmedizin": "Schmerztherapie",
+    "schmerzpraxis": "Schmerztherapie",
+    "schmerzzentrum": "Schmerztherapie",
+    "schmerzambulanz": "Schmerztherapie",
+    "spezielle schmerztherapie": "Schmerztherapie",
+    "algesiologie": "Schmerztherapie",
+    "chronische schmerzen": "Schmerztherapie",
+    "Sportmedizin": "Sportmedizin",
+    "sportmediziner": "Sportmedizin",
+    "sportarzt": "Sportmedizin",
+    "sportpraxis": "Sportmedizin",
+    "sportmedizinische praxis": "Sportmedizin",
+    "sportverletzungen": "Sportmedizin",
+    "leistungsdiagnostik": "Sportmedizin",
+    "Nuklearmedizin / Radiologie": "Nuklearmedizin / Radiologie",
+    "nuklearmediziner": "Nuklearmedizin / Radiologie",
+    "praxis für nuklearmedizin": "Nuklearmedizin / Radiologie",
+    "szintigraphie": "Nuklearmedizin / Radiologie",
+    "schilddrüsendiagnostik": "Nuklearmedizin / Radiologie",
+    "radiologie": "Nuklearmedizin / Radiologie",
+    "radiologe": "Nuklearmedizin / Radiologie",
+    "radiologin": "Nuklearmedizin / Radiologie",
+    "radiologische praxis": "Nuklearmedizin / Radiologie",
+    "Heilpraktikerin für Psychotherapie": "Psychotherapie / Psychiatrie",
+    "Heilpraktiker": "Heilpraktiker",
+    "Praxis für Psychotherapie": "Psychotherapie / Psychiatrie",
+    "Praxis für Orthopädie und Unfallchirurgie": "Orthopädie / Unfallchirurgie",
+    "Zahnarztpraxis Dr. Müller": "Allgemeinmedizin / Hausarzt",
+    "therapie": "Onkologie / Hämatologie",
+    "psych": "Psychotherapie / Psychiatrie",
+    "Naturheilkunde": "Naturheilkunde",
+    "Physiotherapie": "Physiotherapie",
+    "": "",
+    "unbekannt": "unbekannt"
+  },
+  "blueprintIds": {
+    "allgemeinmedizin": "allgemeinmedizin",
+    "kardiologie": "kardiologie",
+    "gastroenterologie": "allgemeinmedizin",
+    "pneumologie": "allgemeinmedizin",
+    "endokrinologie": "allgemeinmedizin",
+    "nephrologie": "allgemeinmedizin",
+    "rheumatologie": "orthopaedie",
+    "angiologie": "kardiologie",
+    "onkologie": "allgemeinmedizin",
+    "orthopaedie": "orthopaedie",
+    "mkg": "zahnarzt",
+    "plastische_chirurgie": "dermatologie",
+    "augenheilkunde": "augenheilkunde",
+    "hno": "hno",
+    "dermatologie": "dermatologie",
+    "phlebologie": "dermatologie",
+    "gynaekologie": "gynaekologie",
+    "kinderarzt": "kinderarzt",
+    "neurologie": "neurologie",
+    "psychotherapie": "psychotherapie",
+    "urologie": "urologie",
+    "zahnarzt": "zahnarzt",
+    "schmerztherapie": "neurologie",
+    "sportmedizin": "orthopaedie",
+    "nuklearmedizin": "allgemeinmedizin",
+    "unbekannt": "unbekannt"
+  },
+  "aiWebsite": {
+    "allgemeinmedizin": "Du schreibst Texte für die Website einer Hausarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: vertrauensvoll, nahbar, kompetent, bodenständig, fürsorglich\nZIELGRUPPE: Patienten aller Altersgruppen.\nFamilien, die einen verlässlichen Hausarzt suchen.\nChronisch Kranke, die langfristige Betreuung brauchen.\nPERSÖNLICHKEIT: familienorientiert, geduldig, erfahren, ganzheitlich denkend\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Hausärztliche Versorgung als erste Anlaufstelle\n- Begleitung über viele Jahre und Lebensphasen\n- Vorsorge und Früherkennung\n- Persönliches Gespräch und verständliche Erklärungen\n\nSPRACHSTIL:\n- Vermeide: zu technische Sprache, distanzierte Formulierungen, Übertreibungen\n- Bevorzuge: persönliche Ansprache, direkte Ansprache in der eingestellten Anrede und Perspektive, alltagsnahe Erklärungen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Breites Spektrum, Langzeit-Betreuung, Prävention, erste Anlaufstelle\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Patienten\"\n- \"Betreuung von Patienten aller Art\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "kardiologie": "Du schreibst Texte für die Website einer Kardiologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: kompetent, vertrauensvoll, beruhigend, präzise\nZIELGRUPPE: Patienten mit Herzproblemen oder Risikofaktoren.\nOft besorgt, suchen Sicherheit und kompetente Betreuung.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Herzgesundheit verständlich erklärt\n- Abklärung von Herzbeschwerden\n- Vorsorge und Behandlung von Risikofaktoren\n- Langfristige Begleitung bei Herzerkrankungen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): EKG, Herzultraschall, Belastungstests, Herzrhythmusstörungen, Langzeitbetreuung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Herzerkrankungen\"\n- \"kardiologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "gastroenterologie": "Du schreibst Texte für die Website einer Gastroenterologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, sachlich, vertrauensvoll\nZIELGRUPPE: Patienten mit Magen-Darm-Beschwerden, chronisch-entzündlichen Darmerkrankungen,\nLebererkrankungen. Darmkrebsvorsorge-Patienten ab 50 Jahren.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Darmkrebsvorsorge als wichtige Früherkennung\n- Endoskopische Untersuchungen mit verständlicher Aufklärung\n- Begleitung bei chronischen Darm- und Lebererkrankungen\n- Verdauungsbeschwerden ernst nehmen und abklären\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Endoskopie, Sonografie, Darm- und Lebererkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"gastroenterologische Versorgung\"\n- \"Magen-Darm-Behandlung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "pneumologie": "Du schreibst Texte für die Website einer Pneumologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, verständnisvoll, motivierend\nZIELGRUPPE: Asthma- und COPD-Patienten, Allergiker, Patienten mit Schlafstörungen,\nRaucher, die aufhören möchten.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Atemwege und Lunge im Mittelpunkt\n- Lungenfunktionsdiagnostik\n- Asthma und COPD individuell behandeln\n- Abklärung schlafbezogener Atemstörungen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Lungenfunktion, Asthma und COPD, Allergologie, schlafbezogene Atemstörungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Lungenerkrankungen\"\n- \"pneumologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "endokrinologie": "Du schreibst Texte für die Website einer Endokrinologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, geduldig, motivierend, alltagsbezogen\nZIELGRUPPE: Diabetes-Patienten (Typ 1 und 2), Schilddrüsenerkrankte,\nPatienten mit hormonellen Störungen, Adipositas-Betroffene.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Diabetes-Betreuung mit Blick auf den Alltag\n- Abklärung von Schilddrüsenerkrankungen\n- Hormone und Stoffwechsel verständlich erklärt\n- Langfristige Begleitung chronischer Erkrankungen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Schilddrüse, Diabetes, Hormonstörungen, Stoffwechsel\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Stoffwechselerkrankungen\"\n- \"endokrinologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "nephrologie": "Du schreibst Texte für die Website einer Nephrologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, unterstützend, zuverlässig\nZIELGRUPPE: Patienten mit chronischer Nierenerkrankung, Dialysepatienten,\nTransplantierte, Bluthochdruck-Patienten mit Nierenbeteiligung.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Nierenfunktion erhalten und den Verlauf begleiten\n- Dialyseverfahren verständlich erklärt\n- Nachsorge nach Nierentransplantation\n- Chronische Nierenerkrankung früh erkennen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Chronische Nierenerkrankungen, Bluthochdruck, Dialyse, Transplantationsnachsorge\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Nierenerkrankungen\"\n- \"nephrologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "rheumatologie": "Du schreibst Texte für die Website einer Rheumatologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, motivierend, geduldig\nZIELGRUPPE: Patienten mit rheumatoider Arthritis, Morbus Bechterew, Lupus,\nFibromyalgie, Gicht und anderen Autoimmunerkrankungen.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Frühe Diagnose entzündlich-rheumatischer Erkrankungen\n- Therapie nach aktuellen Leitlinien\n- Beweglichkeit und Alltag im Blick\n- Langfristige Begleitung chronischer Erkrankungen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Immundiagnostik, Gelenksonografie, Basistherapie und Biologika, Autoimmunerkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung rheumatischer Erkrankungen\"\n- \"rheumatologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "angiologie": "Du schreibst Texte für die Website einer Angiologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, präzise, vertrauensvoll\nZIELGRUPPE: Patienten mit Durchblutungsstörungen, Thrombosen, Schaufensterkrankheit,\nAortenaneurysmen, chronischen Wunden.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Durchblutungsstörungen erkennen und behandeln\n- Abklärung bei Verdacht auf Thrombose\n- Ultraschall als zentrale Untersuchungsmethode der Gefäßmedizin\n- Gehstrecke und Mobilität im Alltag\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Gefäßdiagnostik, Duplexsonografie, Thrombose, pAVK, Wundversorgung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Gefäßerkrankungen\"\n- \"angiologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "onkologie": "Du schreibst Texte für die Website einer Onkologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, fachkompetent, zuversichtlich, unterstützend\nZIELGRUPPE: Krebspatienten in Diagnostik, Therapie und Nachsorge.\nPatienten mit hämatologischen Erkrankungen. Angehörige.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Begleitung durch alle Phasen der Behandlung\n- Therapie nach aktuellen Leitlinien\n- Einbeziehung von Angehörigen\n- Nachsorge und Lebensqualität\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Systemische Tumortherapie, Begleittherapie, Nachsorge, interdisziplinäre Zusammenarbeit\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Krebsbehandlung\"\n- \"onkologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "orthopaedie": "Du schreibst Texte für die Website einer Orthopädische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: kompetent, motivierend, sachlich, zuversichtlich, aktiv\nZIELGRUPPE: Patienten mit Schmerzen im Bewegungsapparat.\nSportler mit Verletzungen.\nMenschen mit chronischen Beschwerden.\nSuchen Abklärung ihrer Beschwerden und langfristige Behandlungsmöglichkeiten.\nPERSÖNLICHKEIT: sportlich, lösungsorientiert, modern, pragmatisch\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Beweglichkeit im Alltag\n- Konservative Behandlung vor Operation, wo möglich\n- Abklärung akuter und chronischer Beschwerden\n- Diagnostik und Therapie des Bewegungsapparats\n\nSPRACHSTIL:\n- Vermeide: zu viel Fachjargon, negative Prognosen, Passivkonstruktionen\n- Bevorzuge: aktive, positive Sprache, wieder aktiv werden, konkrete Behandlungsoptionen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Diagnostik und konservative Therapie des Bewegungsapparats, Gelenk- und Rückenbeschwerden, Sportverletzungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Patienten\"\n- \"Betreuung orthopädischer Patienten\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "mkg": "Du schreibst Texte für die Website einer MKG-Chirurgische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, chirurgisch-präzise, vertrauensvoll\nZIELGRUPPE: Patienten vor chirurgischen Eingriffen im Mund-Kiefer-Bereich,\nImplantologie-Interessierte, Weisheitszahn-Patienten, CMD-Betroffene.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Chirurgie im Mund-, Kiefer- und Gesichtsbereich\n- Implantologie als Teil des Fachgebiets\n- Sorgfältige Planung vor jedem Eingriff\n- Ausführliche Aufklärung zu Ablauf und Alternativen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Oralchirurgie, Weisheitszähne, Implantologie, Kieferchirurgie\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"kieferchirurgische Behandlung\"\n- \"MKG-Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "plastische_chirurgie": "Du schreibst Texte für die Website einer Praxis für Plastische & Ästhetische Chirurgie.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: hochwertig, diskret, professionell, einfühlsam\nZIELGRUPPE: Patienten, die ihr Äußeres harmonisieren möchten.\nNatürliche Ergebnisse statt übertriebener Veränderung.\nAuch rekonstruktive Patienten nach Unfällen oder Operationen.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Ausführliche Beratung vor jedem Eingriff\n- Realistische Erwartungen und Aufklärung über Risiken\n- Ästhetische und rekonstruktive Chirurgie\n- Diskretion\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Ästhetische und rekonstruktive Chirurgie, Beratung, Nachsorge\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"plastische Eingriffe\"\n- \"Schönheitsoperationen\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "augenheilkunde": "Du schreibst Texte für die Website einer Augenarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, präzise, beruhigend, kompetent\nZIELGRUPPE: Patienten aller Altersgruppen - von Kindern mit Sehschwäche\nbis Senioren mit Grauem Star oder Makuladegeneration.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Sehen als Teil der Lebensqualität\n- Früherkennung von Grünem Star, Grauem Star und Netzhauterkrankungen\n- Verständliche Erklärung von Befunden\n- Beratung zu Brille und Kontaktlinsen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Sehtest, Augeninnendruckmessung, Netzhaut-Diagnostik, Behandlung von Augenerkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Augenerkrankungen\"\n- \"augenärztliche Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "hno": "Du schreibst Texte für die Website einer HNO-Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, beruhigend, kompetent, verständnisvoll\nZIELGRUPPE: Patienten mit Hör-, Nasen- oder Halsproblemen.\nVon Kindern mit Ohrenschmerzen bis Senioren mit Hörgeräten.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Hören, Riechen, Schmecken und Atmen im Alltag\n- Abklärung von Hör- und Gleichgewichtsstörungen\n- Allergien der oberen Atemwege\n- Patienten vom Kindesalter bis ins hohe Alter\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Hördiagnostik, Allergologie, Erkrankungen von Ohr, Nase und Hals\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"HNO-ärztliche Behandlung\"\n- \"Betreuung von HNO-Patienten\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "dermatologie": "Du schreibst Texte für die Website einer Hautarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, einfühlsam, kompetent, diskret\nZIELGRUPPE: Patienten mit Hautproblemen, von Akne über Allergien bis Hautkrebs-Vorsorge.\nOft unsicher, suchen kompetente und diskrete Beratung.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Hautgesundheit in allen Lebensphasen\n- Früherkennung von Hautkrebs\n- Behandlung chronischer Hauterkrankungen\n- Ästhetische Behandlungen nur nach ausführlicher Beratung\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Hautkrebs-Screening, Allergologie, entzündliche und chronische Hauterkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Hauterkrankungen\"\n- \"Hautprobleme aller Art\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "phlebologie": "Du schreibst Texte für die Website einer Phlebologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, lösungsorientiert, modern\nZIELGRUPPE: Patienten mit Krampfadern, Besenreisern, schweren Beinen,\nThrombose-Vorgeschichte, Lymphödemen.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Venengesundheit und Beschwerden der Beine\n- Abklärung von Krampfadern und Thrombosen\n- Behandlungsmöglichkeiten verständlich erklärt\n- Kompression als Basis der Venentherapie\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Krampfadern, Kompressionstherapie, venöse Insuffizienz, Thrombose\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Venenbehandlung\"\n- \"phlebologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "gynaekologie": "Du schreibst Texte für die Website einer Frauenarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, vertrauensvoll, diskret, kompetent, warmherzig\nZIELGRUPPE: Frauen aller Altersgruppen, von Teenager bis Seniorin.\nThemen sind oft intim, daher besonders wichtig: Vertrauen und Diskretion.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Vorsorge in jeder Lebensphase\n- Begleitung in Schwangerschaft und Familienplanung\n- Diskret und einfühlsam\n- Verständliche Beratung bei intimen Themen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge, Schwangerschaftsbegleitung, Ultraschall, hormonelle Beratung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Betreuung von Patientinnen\"\n- \"frauenärztliche Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "kinderarzt": "Du schreibst Texte für die Website einer Kinderarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: warmherzig, einfühlsam, kindgerecht, beruhigend, professionell\nZIELGRUPPE: Eltern von Kindern im Alter von 0-18 Jahren.\nOft besorgt, suchen Vertrauen und Kompetenz.\nWünschen sich kindgerechte Atmosphäre.\nPERSÖNLICHKEIT: kinderfreundlich, geduldig, modern, familienorientiert, nahbar\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Kinder und Jugendliche individuell betrachten\n- Kindgerechter Umgang\n- Eltern als Partner einbeziehen\n- Vorsorge und Impfungen nach aktuellen Empfehlungen\n\nSPRACHSTIL:\n- Vermeide: medizinischer Fachjargon, angsteinflößende Begriffe, zu formelle Sprache, komplizierte Satzstrukturen\n- Bevorzuge: Eltern direkt ansprechen (Ihr bzw. dein Kind statt das Kind, je nach Anrede), Perspektive (ich/wir) gemäß Praxiseinstellung, positive Formulierungen, konkrete Beispiele\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge (U-Untersuchungen), Impfungen, Entwicklungsdiagnostik, Elternberatung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Kindern\"\n- \"Betreuung der kleinen Patienten\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "neurologie": "Du schreibst Texte für die Website einer Neurologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, verständnisvoll, kompetent, geduldig\nZIELGRUPPE: Patienten mit neurologischen Beschwerden wie Kopfschmerzen, Schwindel, MS oder Parkinson.\nOft verunsichert, brauchen geduldige Erklärungen.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Abklärung von Kopfschmerzen, Schwindel und Nervenbeschwerden\n- Begleitung bei chronischen neurologischen Erkrankungen\n- Verständliche Erklärung von Untersuchungen und Befunden\n- Raum für Fragen und Anliegen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Neurologische Untersuchung, EEG, Nervenleitungsmessung, chronische neurologische Erkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung neurologischer Erkrankungen\"\n- \"neurologische Betreuung\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "psychotherapie": "Du schreibst Texte für die Website einer Psychotherapeutische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, wertschätzend, vertrauensvoll, professionell, warmherzig\nZIELGRUPPE: Menschen mit psychischen Belastungen wie Depressionen, Ängsten oder Burnout.\nDer erste Schritt zur Therapie ist oft schwer - Hürden abbauen wichtig.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Der erste Schritt ist oft der schwerste\n- Vertrauliche und wertschätzende Atmosphäre\n- Behandlung mit anerkannten Therapieverfahren\n- Psychische Gesundheit ist genauso wichtig wie körperliche\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Gesprächsbasierte Psychotherapie, Diagnostik, anerkannte Therapieverfahren\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"psychotherapeutische Behandlung\"\n- \"Behandlung psychischer Erkrankungen\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "urologie": "Du schreibst Texte für die Website einer Urologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: diskret, professionell, vertrauensvoll, sachlich\nZIELGRUPPE: Männer aller Altersgruppen, Prostata-Vorsorge, aber auch Frauen mit Blasenproblemen.\nThemen sind oft intim - Diskretion sehr wichtig.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Diskrete und sachliche Beratung\n- Früherkennung und Vorsorge\n- Verständliche Erklärung von Untersuchungen\n- Urologische Erkrankungen bei Frauen, Männern und Kindern\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge, Ultraschall, Harnwegs- und Prostataerkrankungen, Andrologie\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"urologische Versorgung\"\n- \"Betreuung urologischer Patienten\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "zahnarzt": "Du schreibst Texte für die Website einer Zahnarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, beruhigend, modern, einfühlsam, vertrauenswürdig\nZIELGRUPPE: Erwachsene Patienten, teils mit Zahnarztangst.\nWünschen sich verständliche Erklärungen und eine ruhige Behandlung.\nInteressiert an Ästhetik und Prophylaxe.\nPERSÖNLICHKEIT: kompetent, geduldig, modern, ästhetisch orientiert\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Vorsorge statt Reparatur\n- Ästhetik und Funktion im Einklang\n- Verständnis für Patienten mit Zahnarztangst\n- Behandlungsschritte verständlich erklärt\n\nSPRACHSTIL:\n- Vermeide: angsteinflößende Begriffe (Bohrer, Spritze), zu technische Fachbegriffe, Passiv-Konstruktionen\n- Bevorzuge: positive Formulierungen, ruhige, erklärende Sprache zum Ablauf, moderne Begriffe\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Prophylaxe, Füllungen, Zahnersatz, Zahnerhaltung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"zahnärztliche Versorgung\"\n- \"Behandlung von Zahnproblemen\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "schmerztherapie": "Du schreibst Texte für die Website einer Schmerztherapeutische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, kompetent, ganzheitlich, hoffnungsvoll\nZIELGRUPPE: Chronische Schmerzpatienten, Rückenschmerz-Betroffene, Migräniker,\nPatienten mit Nervenschmerzen, Patienten nach erfolglosen Vorbehandlungen.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Chronische Schmerzen ernst nehmen\n- Multimodaler Ansatz aus Körper und Psyche\n- Mehr Aktivität und Lebensqualität im Alltag als Ziel\n- Gemeinsame Therapieplanung\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Multimodale Schmerztherapie, medikamentöse Einstellung, interdisziplinäre Zusammenarbeit\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Schmerzbehandlung\"\n- \"Behandlung chronischer Schmerzen\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "sportmedizin": "Du schreibst Texte für die Website einer Sportmedizinische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: motivierend, fachkompetent, dynamisch, sportlich-professionell\nZIELGRUPPE: Sportler aller Leistungsklassen, Breitensportler, Vereinssportler,\nPatienten mit Sportverletzungen, Wiedereinsteiger.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Medizin für Sportlerinnen und Sportler aller Leistungsklassen\n- Belastbarkeit und Gesundheit im Sport\n- Verletzungen vorbeugen und die Rückkehr zum Sport planen\n- Sporttauglichkeit ärztlich beurteilt\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Sportmedizinische Untersuchung, Sportverletzungen, Prävention, Trainingsberatung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"sportmedizinische Behandlung\"\n- \"Betreuung von Sportlern\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "nuklearmedizin": "Du schreibst Texte für die Website einer Nuklearmedizinische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, sachlich, beruhigend, technisch-verständlich\nZIELGRUPPE: Schilddrüsenpatienten, Patienten mit Knochen- oder Herzdiagnostik,\nonkologische Patienten zur PET/CT-Untersuchung.\n\nKERNBOTSCHAFTEN DER FACHRICHTUNG (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen):\n- Bildgebende Diagnostik mit Radiopharmaka\n- Schilddrüsendiagnostik und -therapie\n- Strahlenschutz und Aufklärung zur Strahlenbelastung\n- Verständliche Erklärung des Untersuchungsablaufs\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Szintigrafie, Schilddrüsendiagnostik, Strahlenschutz\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"nuklearmedizinische Untersuchungen\"\n- \"Behandlung mit Radiopharmaka\"\n\nSchreibe authentisch, ohne Floskeln, patientenfreundlich.",
+    "unbekannt": "Du schreibst Texte für die Website einer Arztpraxis.\nPRAXIS: Testpraxis in Leipzig\nSchreibe authentisch, ohne Floskeln, patientenfreundlich."
+  },
+  "aiKarriere": {
+    "allgemeinmedizin": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Hausarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: vertrauensvoll, nahbar, kompetent, bodenständig, fürsorglich\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\nPERSÖNLICHKEIT: familienorientiert, geduldig, erfahren, ganzheitlich denkend\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Breites Spektrum, Langzeit-Betreuung, Prävention, erste Anlaufstelle\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Patienten\"\n- \"Betreuung von Patienten aller Art\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "kardiologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Kardiologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: kompetent, vertrauensvoll, beruhigend, präzise\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): EKG, Herzultraschall, Belastungstests, Herzrhythmusstörungen, Langzeitbetreuung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Herzerkrankungen\"\n- \"kardiologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "gastroenterologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Gastroenterologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, sachlich, vertrauensvoll\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Endoskopie, Sonografie, Darm- und Lebererkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"gastroenterologische Versorgung\"\n- \"Magen-Darm-Behandlung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "pneumologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Pneumologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, verständnisvoll, motivierend\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Lungenfunktion, Asthma und COPD, Allergologie, schlafbezogene Atemstörungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Lungenerkrankungen\"\n- \"pneumologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "endokrinologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Endokrinologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, geduldig, motivierend, alltagsbezogen\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Schilddrüse, Diabetes, Hormonstörungen, Stoffwechsel\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Stoffwechselerkrankungen\"\n- \"endokrinologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "nephrologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Nephrologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, unterstützend, zuverlässig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Chronische Nierenerkrankungen, Bluthochdruck, Dialyse, Transplantationsnachsorge\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Nierenerkrankungen\"\n- \"nephrologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "rheumatologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Rheumatologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, einfühlsam, motivierend, geduldig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Immundiagnostik, Gelenksonografie, Basistherapie und Biologika, Autoimmunerkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung rheumatischer Erkrankungen\"\n- \"rheumatologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "angiologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Angiologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, präzise, vertrauensvoll\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Gefäßdiagnostik, Duplexsonografie, Thrombose, pAVK, Wundversorgung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Gefäßerkrankungen\"\n- \"angiologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "onkologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Onkologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, fachkompetent, zuversichtlich, unterstützend\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Systemische Tumortherapie, Begleittherapie, Nachsorge, interdisziplinäre Zusammenarbeit\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Krebsbehandlung\"\n- \"onkologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "orthopaedie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Orthopädische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: kompetent, motivierend, sachlich, zuversichtlich, aktiv\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\nPERSÖNLICHKEIT: sportlich, lösungsorientiert, modern, pragmatisch\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Diagnostik und konservative Therapie des Bewegungsapparats, Gelenk- und Rückenbeschwerden, Sportverletzungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Diagnose und Behandlung von Patienten\"\n- \"Betreuung orthopädischer Patienten\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "mkg": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer MKG-Chirurgische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, chirurgisch-präzise, vertrauensvoll\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Oralchirurgie, Weisheitszähne, Implantologie, Kieferchirurgie\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"kieferchirurgische Behandlung\"\n- \"MKG-Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "plastische_chirurgie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Praxis für Plastische & Ästhetische Chirurgie.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: hochwertig, diskret, professionell, einfühlsam\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Ästhetische und rekonstruktive Chirurgie, Beratung, Nachsorge\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"plastische Eingriffe\"\n- \"Schönheitsoperationen\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "augenheilkunde": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Augenarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, präzise, beruhigend, kompetent\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Sehtest, Augeninnendruckmessung, Netzhaut-Diagnostik, Behandlung von Augenerkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Augenerkrankungen\"\n- \"augenärztliche Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "hno": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer HNO-Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, beruhigend, kompetent, verständnisvoll\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Hördiagnostik, Allergologie, Erkrankungen von Ohr, Nase und Hals\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"HNO-ärztliche Behandlung\"\n- \"Betreuung von HNO-Patienten\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "dermatologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Hautarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, einfühlsam, kompetent, diskret\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Hautkrebs-Screening, Allergologie, entzündliche und chronische Hauterkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Hauterkrankungen\"\n- \"Hautprobleme aller Art\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "phlebologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Phlebologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, beruhigend, lösungsorientiert, modern\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Krampfadern, Kompressionstherapie, venöse Insuffizienz, Thrombose\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Venenbehandlung\"\n- \"phlebologische Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "gynaekologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Frauenarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, vertrauensvoll, diskret, kompetent, warmherzig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge, Schwangerschaftsbegleitung, Ultraschall, hormonelle Beratung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Betreuung von Patientinnen\"\n- \"frauenärztliche Versorgung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "kinderarzt": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Kinderarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: warmherzig, einfühlsam, kindgerecht, beruhigend, professionell\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\nPERSÖNLICHKEIT: kinderfreundlich, geduldig, modern, familienorientiert, nahbar\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge (U-Untersuchungen), Impfungen, Entwicklungsdiagnostik, Elternberatung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung von Kindern\"\n- \"Betreuung der kleinen Patienten\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "neurologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Neurologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, verständnisvoll, kompetent, geduldig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Neurologische Untersuchung, EEG, Nervenleitungsmessung, chronische neurologische Erkrankungen\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Behandlung neurologischer Erkrankungen\"\n- \"neurologische Betreuung\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "psychotherapie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Psychotherapeutische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, wertschätzend, vertrauensvoll, professionell, warmherzig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Gesprächsbasierte Psychotherapie, Diagnostik, anerkannte Therapieverfahren\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"psychotherapeutische Behandlung\"\n- \"Behandlung psychischer Erkrankungen\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "urologie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Urologische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: diskret, professionell, vertrauensvoll, sachlich\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Vorsorge, Ultraschall, Harnwegs- und Prostataerkrankungen, Andrologie\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"urologische Versorgung\"\n- \"Betreuung urologischer Patienten\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "zahnarzt": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Zahnarztpraxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: professionell, beruhigend, modern, einfühlsam, vertrauenswürdig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\nPERSÖNLICHKEIT: kompetent, geduldig, modern, ästhetisch orientiert\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Prophylaxe, Füllungen, Zahnersatz, Zahnerhaltung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"zahnärztliche Versorgung\"\n- \"Behandlung von Zahnproblemen\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "schmerztherapie": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Schmerztherapeutische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: einfühlsam, kompetent, ganzheitlich, hoffnungsvoll\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Multimodale Schmerztherapie, medikamentöse Einstellung, interdisziplinäre Zusammenarbeit\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"Schmerzbehandlung\"\n- \"Behandlung chronischer Schmerzen\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "sportmedizin": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Sportmedizinische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: motivierend, fachkompetent, dynamisch, sportlich-professionell\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Sportmedizinische Untersuchung, Sportverletzungen, Prävention, Trainingsberatung\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"sportmedizinische Behandlung\"\n- \"Betreuung von Sportlern\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "nuklearmedizin": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Nuklearmedizinische Praxis.\n\nPRAXIS: Testpraxis in Leipzig\n\nTONALITÄT: fachkompetent, sachlich, beruhigend, technisch-verständlich\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\n\nFACHRICHTUNGS-KONTEXT (HINTERGRUND zur Fachrichtung – nicht als Leistung, Ausstattung oder Tätigkeit DIESER Praxis nennen): Szintigrafie, Schilddrüsendiagnostik, Strahlenschutz\n\nVERBOTEN (diese Phrasen NICHT verwenden):\n- \"nuklearmedizinische Untersuchungen\"\n- \"Behandlung mit Radiopharmaka\"\n\nSchreibe authentisch, ohne Floskeln, bewerberorientiert.",
+    "unbekannt": "Du schreibst Texte für die Karriereseite und Stellenanzeigen einer Arztpraxis.\nPRAXIS: Testpraxis in Leipzig\nZIELGRUPPE: Bewerberinnen und Bewerber (Fachkräfte, Berufseinsteiger, Auszubildende), die einen Arbeitsplatz in dieser Praxis prüfen\nSchreibe authentisch, ohne Floskeln, bewerberorientiert."
+  },
+  "team": {
+    "allgemeinmedizin": [
+      {
+        "label": "Facharzt für Allgemeinmedizin / Fachärztin für Allgemeinmedizin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Blutabnahme,  EKG, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Grundlagen Blutabnahme,  Vitalzeichen"
+      }
+    ],
+    "kardiologie": [
+      {
+        "label": "Facharzt für Kardiologie / Fachärztin für Kardiologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: EKG anlegen,  Langzeit-EKG/RR, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, EKG-Grundlagen,  Vitalzeichen"
+      }
+    ],
+    "gastroenterologie": [
+      {
+        "label": "Facharzt für Innere Medizin und Gastroenterologie / Fachärztin für Innere Medizin und Gastroenterologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Endoskopie-Assistenz,  Sedierung-Überwachung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Endoskopie-Aufbereitung,  Patientenempfang"
+      }
+    ],
+    "pneumologie": [
+      {
+        "label": "Facharzt für Innere Medizin und Pneumologie / Fachärztin für Innere Medizin und Pneumologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Lungenfunktionstest,  Allergietest, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Spirometrie-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "endokrinologie": [
+      {
+        "label": "Facharzt für Innere Medizin, Endokrinologie und Diabetologie / Fachärztin für Innere Medizin, Endokrinologie und Diabetologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Schilddrüsen-Sono-Assistenz,  Blutzucker-Schulung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Blutzucker-Messung,  Patientenempfang"
+      }
+    ],
+    "nephrologie": [
+      {
+        "label": "Facharzt für Innere Medizin und Nephrologie / Fachärztin für Innere Medizin und Nephrologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Dialyse-Betreuung,  Shunt-Pflege, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Dialyse-Technik-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "rheumatologie": [
+      {
+        "label": "Facharzt für Innere Medizin und Rheumatologie / Fachärztin für Innere Medizin und Rheumatologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Gelenksonografie-Assistenz,  Infusionstherapie (Biologika), Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Labor-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "angiologie": [
+      {
+        "label": "Facharzt für Innere Medizin und Angiologie / Fachärztin für Innere Medizin und Angiologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: ABI-Messung,  Duplexsonografie-Assistenz, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, ABI-Messung-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "onkologie": [
+      {
+        "label": "Facharzt für Innere Medizin, Hämatologie und Onkologie / Fachärztin für Innere Medizin, Hämatologie und Onkologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Chemotherapie-Vorbereitung,  Port-Versorgung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Laborarbeit-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "orthopaedie": [
+      {
+        "label": "Facharzt für Orthopädie / Fachärztin für Orthopädie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Röntgen-Assistenz,  Gipsverbände, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Grundlagen Röntgen,  Verbandstechnik"
+      }
+    ],
+    "mkg": [
+      {
+        "label": "Facharzt für Mund-, Kiefer- und Gesichtschirurgie / Fachärztin für Mund-, Kiefer- und Gesichtschirurgie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Zahnmedizinische Fachangestellte (ZFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2018 in der Praxis, Schwerpunkt: OP-Assistenz,  Röntgen, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r ZFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, OP-Assistenz-Grundlagen,  Instrumentenkunde"
+      }
+    ],
+    "plastische_chirurgie": [
+      {
+        "label": "Facharzt für Plastische und Ästhetische Chirurgie / Fachärztin für Plastische und Ästhetische Chirurgie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: OP-Vorbereitung,  Fotodokumentation, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, OP-Vorbereitung-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "augenheilkunde": [
+      {
+        "label": "Facharzt für Augenheilkunde / Fachärztin für Augenheilkunde",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Sehtest,  Augeninnendruck, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Sehtest-Grundlagen,  Patientenführung"
+      }
+    ],
+    "hno": [
+      {
+        "label": "Facharzt für HNO-Heilkunde / Fachärztin für HNO-Heilkunde",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Hörtest,  Allergietest, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Hörtest-Grundlagen,  Patientenführung"
+      }
+    ],
+    "dermatologie": [
+      {
+        "label": "Facharzt für Dermatologie / Fachärztin für Dermatologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Lichttherapie,  Allergietests, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Patientenempfang,  Lichttherapie-Grundlagen"
+      }
+    ],
+    "phlebologie": [
+      {
+        "label": "Facharzt für Phlebologie / Fachärztin für Phlebologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Duplexsonografie-Assistenz,  Kompressionsversorgung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Kompressionsversorgung-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "gynaekologie": [
+      {
+        "label": "Facharzt für Gynäkologie / Fachärztin für Gynäkologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Ultraschall-Vorbereitung,  Abstriche, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Patientenannahme,  Terminplanung"
+      }
+    ],
+    "kinderarzt": [
+      {
+        "label": "Facharzt für Kinder- und Jugendmedizin / Fachärztin für Kinder- und Jugendmedizin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Vorsorge-Assistenz,  Impfungen, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Kindgerechte Patientenannahme,  Vitalzeichen"
+      }
+    ],
+    "neurologie": [
+      {
+        "label": "Facharzt für Neurologie / Fachärztin für Neurologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: EEG anlegen,  NLG/EMG-Vorbereitung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, EEG-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "psychotherapie": [
+      {
+        "label": "Psychologischer Psychotherapeut / Psychologische Psychotherapeutin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Terminmanagement,  Patientenkoordination, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Patientenempfang,  Terminplanung"
+      }
+    ],
+    "urologie": [
+      {
+        "label": "Facharzt für Urologie / Fachärztin für Urologie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Ultraschall-Vorbereitung,  Urinproben, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Patientenempfang,  Probenversand"
+      }
+    ],
+    "zahnarzt": [
+      {
+        "label": "Zahnarzt / Zahnärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Zahnmedizinische Fachangestellte (ZFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2018 in der Praxis, Schwerpunkt: Assistenz am Stuhl,  Röntgen, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r ZFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Grundlagen Assistenz,  Instrumentenkunde"
+      }
+    ],
+    "schmerztherapie": [
+      {
+        "label": "Facharzt für Anästhesiologie – Spezielle Schmerztherapie / Fachärztin für Anästhesiologie – Spezielle Schmerztherapie",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Schmerzanamnese-Vorbereitung,  Infusionstherapie, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Schmerzerfassung-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "sportmedizin": [
+      {
+        "label": "Facharzt für Orthopädie – Sportmedizin / Fachärztin für Orthopädie – Sportmedizin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Schwerpunkt: Belastungs-EKG-Assistenz,  Laktatmessung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Belastungstest-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "nuklearmedizin": [
+      {
+        "label": "Facharzt für Nuklearmedizin / Fachärztin für Nuklearmedizin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …, betreut …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Weiterbildungsassistent/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2023 in Weiterbildung, vorher … Klinik, interessiert sich besonders für …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "MTRA / Medizinisch-technische Radiologieassistentin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2017 im Team, spezialisiert auf Radiopharmakon-Vorbereitung,  Kamera-Bedienung, Strahlenschutzkurs …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, Strahlenschutz-Grundlagen,  Patientenempfang"
+      }
+    ],
+    "unbekannt": [
+      {
+        "label": "Facharzt / Fachärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2015 niedergelassen, Schwerpunkt …, Fortbildungen in …"
+      },
+      {
+        "label": "Praxisinhaber/in",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Gründung der Praxis 2010, besonderer Fokus auf …, Vision für die Praxis …"
+      },
+      {
+        "label": "Angestellte/r Arzt/Ärztin",
+        "category": "arzt",
+        "aiPlaceholder": "z.B.: Seit 2020 im Team, vorher Oberarzt …-Klinik, Zusatzbezeichnung …, Schwerpunkt …"
+      },
+      {
+        "label": "Medizinische Fachangestellte (MFA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2019 im Team, Blutentnahmen, EKG, Patientenbetreuung, Fortbildung …"
+      },
+      {
+        "label": "Leitende MFA / Praxismanagerin",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: Seit 2015 im Team, seit 2020 leitend, koordiniert Praxisabläufe, Ansprechpartnerin für …, QM-Beauftragte"
+      },
+      {
+        "label": "Physician Assistant (PA)",
+        "category": "fachpersonal",
+        "aiPlaceholder": "z.B.: PA-Studium 2022 abgeschlossen, unterstützt bei …, übernimmt eigenständig …"
+      },
+      {
+        "label": "Empfang / Rezeption",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Erster Kontakt für Patienten, Terminkoordination, spricht neben Deutsch auch …, sorgt für reibungslosen Ablauf"
+      },
+      {
+        "label": "Praxismanager/in",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Verantwortlich für Organisation und QM, optimiert Praxisabläufe, Abrechnung, Personalplanung"
+      },
+      {
+        "label": "Verwaltung / Abrechnung",
+        "category": "verwaltung",
+        "aiPlaceholder": "z.B.: Zuständig für Privat- und Kassenabrechnung, Buchhaltung, Schriftverkehr mit Kostenträgern"
+      },
+      {
+        "label": "Auszubildende/r MFA",
+        "category": "ausbildung",
+        "aiPlaceholder": "z.B.: Im 2. Ausbildungsjahr, lernt alle Bereiche der Praxis kennen"
+      }
+    ]
+  },
+  "aufgaben": {
+    "allgemeinmedizin": {
+      "MFA": "Blutabnahme, EKG, Lungenfunktion, Impfungen, Wundversorgung, Patientenannahme, DMP-Dokumentation",
+      "ZFA": "Blutabnahme, EKG, Lungenfunktion, Impfungen, Wundversorgung, Patientenannahme, DMP-Dokumentation",
+      "Auszubildende/r MFA": "Grundlagen Blutabnahme, Vitalzeichen, Patientenempfang, Terminvergabe, Praxishygiene",
+      "Facharzt": "Diagnostik, Langzeit-Betreuung chronischer Patienten, Vorsorge, Hausbesuche, Überweisungsmanagement",
+      "Therapeut": "Blutabnahme, EKG, Lungenfunktion, Impfungen, Wundversorgung, Patientenannahme, DMP-Dokumentation",
+      "Empfang": "Blutabnahme, EKG, Lungenfunktion, Impfungen, Wundversorgung, Patientenannahme, DMP-Dokumentation"
+    },
+    "kardiologie": {
+      "MFA": "EKG anlegen, Langzeit-EKG/RR, Belastungs-EKG-Assistenz, Gerinnungsmanagement",
+      "ZFA": "EKG anlegen, Langzeit-EKG/RR, Belastungs-EKG-Assistenz, Gerinnungsmanagement",
+      "Auszubildende/r MFA": "EKG-Grundlagen, Vitalzeichen, Patientenempfang",
+      "Facharzt": "Echokardiografie, Belastungsdiagnostik, Rhythmologie, Herzinsuffizienz",
+      "Therapeut": "EKG anlegen, Langzeit-EKG/RR, Belastungs-EKG-Assistenz, Gerinnungsmanagement",
+      "Empfang": "EKG anlegen, Langzeit-EKG/RR, Belastungs-EKG-Assistenz, Gerinnungsmanagement"
+    },
+    "gastroenterologie": {
+      "MFA": "Endoskopie-Assistenz, Sedierung-Überwachung, Blutabnahme, Infusionstherapie",
+      "ZFA": "Endoskopie-Assistenz, Sedierung-Überwachung, Blutabnahme, Infusionstherapie",
+      "Auszubildende/r MFA": "Endoskopie-Aufbereitung, Patientenempfang, Dokumentation",
+      "Facharzt": "Gastroskopie, Koloskopie, Sonografie, CED-Management, Hepatologie",
+      "Therapeut": "Endoskopie-Assistenz, Sedierung-Überwachung, Blutabnahme, Infusionstherapie",
+      "Empfang": "Endoskopie-Assistenz, Sedierung-Überwachung, Blutabnahme, Infusionstherapie"
+    },
+    "pneumologie": {
+      "MFA": "Lungenfunktionstest, Allergietest, Blutgasanalyse, Inhalationsschulung",
+      "ZFA": "Lungenfunktionstest, Allergietest, Blutgasanalyse, Inhalationsschulung",
+      "Auszubildende/r MFA": "Spirometrie-Grundlagen, Patientenempfang, Dokumentation",
+      "Facharzt": "Bodyplethysmografie, Bronchoskopie, Schlafmedizin, COPD-Management",
+      "Therapeut": "Lungenfunktionstest, Allergietest, Blutgasanalyse, Inhalationsschulung",
+      "Empfang": "Lungenfunktionstest, Allergietest, Blutgasanalyse, Inhalationsschulung"
+    },
+    "endokrinologie": {
+      "MFA": "Schilddrüsen-Sono-Assistenz, Blutzucker-Schulung, Labor, CGM-Einweisung",
+      "ZFA": "Schilddrüsen-Sono-Assistenz, Blutzucker-Schulung, Labor, CGM-Einweisung",
+      "Auszubildende/r MFA": "Blutzucker-Messung, Patientenempfang, Laborversand",
+      "Facharzt": "Schilddrüsen-Sonografie, Diabetes-Einstellung, Hormon-Diagnostik",
+      "Therapeut": "Schilddrüsen-Sono-Assistenz, Blutzucker-Schulung, Labor, CGM-Einweisung",
+      "Empfang": "Schilddrüsen-Sono-Assistenz, Blutzucker-Schulung, Labor, CGM-Einweisung"
+    },
+    "nephrologie": {
+      "MFA": "Dialyse-Betreuung, Shunt-Pflege, Blutabnahme, Infusionstherapie",
+      "ZFA": "Dialyse-Betreuung, Shunt-Pflege, Blutabnahme, Infusionstherapie",
+      "Auszubildende/r MFA": "Dialyse-Technik-Grundlagen, Patientenempfang, Vitalzeichen",
+      "Facharzt": "Dialyse-Verordnung, Nierenbiopsie, Transplant-Nachsorge",
+      "Therapeut": "Dialyse-Betreuung, Shunt-Pflege, Blutabnahme, Infusionstherapie",
+      "Empfang": "Dialyse-Betreuung, Shunt-Pflege, Blutabnahme, Infusionstherapie"
+    },
+    "rheumatologie": {
+      "MFA": "Gelenksonografie-Assistenz, Infusionstherapie (Biologika), Labormanagement",
+      "ZFA": "Gelenksonografie-Assistenz, Infusionstherapie (Biologika), Labormanagement",
+      "Auszubildende/r MFA": "Labor-Grundlagen, Patientenempfang, Infusionsvorbereitung",
+      "Facharzt": "Gelenksonografie, Immundiagnostik, Biologika-Einstellung",
+      "Therapeut": "Gelenksonografie-Assistenz, Infusionstherapie (Biologika), Labormanagement",
+      "Empfang": "Gelenksonografie-Assistenz, Infusionstherapie (Biologika), Labormanagement"
+    },
+    "angiologie": {
+      "MFA": "ABI-Messung, Duplexsonografie-Assistenz, Kompressionstherapie, Wundversorgung",
+      "ZFA": "ABI-Messung, Duplexsonografie-Assistenz, Kompressionstherapie, Wundversorgung",
+      "Auszubildende/r MFA": "ABI-Messung-Grundlagen, Patientenempfang, Kompressionsversorgung",
+      "Facharzt": "Duplexsonografie, Angio-CT/MRT-Befundung, Interventionsplanung",
+      "Therapeut": "ABI-Messung, Duplexsonografie-Assistenz, Kompressionstherapie, Wundversorgung",
+      "Empfang": "ABI-Messung, Duplexsonografie-Assistenz, Kompressionstherapie, Wundversorgung"
+    },
+    "onkologie": {
+      "MFA": "Chemotherapie-Vorbereitung, Port-Versorgung, Blutbildkontrolle",
+      "ZFA": "Chemotherapie-Vorbereitung, Port-Versorgung, Blutbildkontrolle",
+      "Auszubildende/r MFA": "Laborarbeit-Grundlagen, Patientenempfang, Hygiene",
+      "Facharzt": "Therapieplanung, Chemotherapie-Protokolle, Tumorboards, Palliativ",
+      "Therapeut": "Chemotherapie-Vorbereitung, Port-Versorgung, Blutbildkontrolle",
+      "Empfang": "Chemotherapie-Vorbereitung, Port-Versorgung, Blutbildkontrolle"
+    },
+    "orthopaedie": {
+      "MFA": "Röntgen-Assistenz, Gipsverbände, Injektionsvorbereitung, Stoßwellentherapie-Assistenz",
+      "ZFA": "Röntgen-Assistenz, Gipsverbände, Injektionsvorbereitung, Stoßwellentherapie-Assistenz",
+      "Auszubildende/r MFA": "Grundlagen Röntgen, Verbandstechnik, Patientenführung",
+      "Facharzt": "Diagnostik Bewegungsapparat, konservative Therapie, OP-Planung, Injektionen",
+      "Therapeut": "Röntgen-Assistenz, Gipsverbände, Injektionsvorbereitung, Stoßwellentherapie-Assistenz",
+      "Empfang": "Röntgen-Assistenz, Gipsverbände, Injektionsvorbereitung, Stoßwellentherapie-Assistenz"
+    },
+    "mkg": {
+      "MFA": "OP-Assistenz, Röntgen, Abdrücke, Nahtentfernung, Patientenbetreuung",
+      "ZFA": "OP-Assistenz, Röntgen, Abdrücke, Nahtentfernung, Patientenbetreuung",
+      "Auszubildende/r MFA": "OP-Assistenz-Grundlagen, Instrumentenkunde, Hygiene",
+      "Facharzt": "Oralchirurgie, Implantologie, Kieferfrakturen, Tumorchirurgie",
+      "Therapeut": "",
+      "Empfang": "OP-Assistenz, Röntgen, Abdrücke, Nahtentfernung, Patientenbetreuung"
+    },
+    "plastische_chirurgie": {
+      "MFA": "OP-Vorbereitung, Fotodokumentation, Beratungstermine, Nachsorge",
+      "ZFA": "OP-Vorbereitung, Fotodokumentation, Beratungstermine, Nachsorge",
+      "Auszubildende/r MFA": "OP-Vorbereitung-Grundlagen, Patientenempfang, Fotodokumentation",
+      "Facharzt": "Ästhetische OPs, Rekonstruktion, Handchirurgie, Injektionsbehandlungen",
+      "Therapeut": "OP-Vorbereitung, Fotodokumentation, Beratungstermine, Nachsorge",
+      "Empfang": "OP-Vorbereitung, Fotodokumentation, Beratungstermine, Nachsorge"
+    },
+    "augenheilkunde": {
+      "MFA": "Sehtest, Augeninnendruck, OCT-Aufnahmen, Gesichtsfeldprüfung, Tropfen",
+      "ZFA": "Sehtest, Augeninnendruck, OCT-Aufnahmen, Gesichtsfeldprüfung, Tropfen",
+      "Auszubildende/r MFA": "Sehtest-Grundlagen, Patientenführung, Tropfenapplikation",
+      "Facharzt": "Spaltlampe, OCT-Befundung, Netzhaut-Diagnostik, Laser, Katarakt-OP",
+      "Therapeut": "Sehtest, Augeninnendruck, OCT-Aufnahmen, Gesichtsfeldprüfung, Tropfen",
+      "Empfang": "Sehtest, Augeninnendruck, OCT-Aufnahmen, Gesichtsfeldprüfung, Tropfen"
+    },
+    "hno": {
+      "MFA": "Hörtest, Allergietest, Endoskopie-Assistenz, Infusionen, Schwindel-Diagnostik",
+      "ZFA": "Hörtest, Allergietest, Endoskopie-Assistenz, Infusionen, Schwindel-Diagnostik",
+      "Auszubildende/r MFA": "Hörtest-Grundlagen, Patientenführung, Instrumentenaufbereitung",
+      "Facharzt": "Endoskopie, Audiometrie, operative HNO, Allergologie, Schlafmedizin",
+      "Therapeut": "Hörtest, Allergietest, Endoskopie-Assistenz, Infusionen, Schwindel-Diagnostik",
+      "Empfang": "Hörtest, Allergietest, Endoskopie-Assistenz, Infusionen, Schwindel-Diagnostik"
+    },
+    "dermatologie": {
+      "MFA": "Lichttherapie, Allergietests, Wundversorgung, Hautkrebs-Screening-Assistenz",
+      "ZFA": "Lichttherapie, Allergietests, Wundversorgung, Hautkrebs-Screening-Assistenz",
+      "Auszubildende/r MFA": "Patientenempfang, Lichttherapie-Grundlagen, Wundversorgung",
+      "Facharzt": "Dermatoskopie, operative Eingriffe, Ästhetik, Allergologie",
+      "Therapeut": "Lichttherapie, Allergietests, Wundversorgung, Hautkrebs-Screening-Assistenz",
+      "Empfang": "Lichttherapie, Allergietests, Wundversorgung, Hautkrebs-Screening-Assistenz"
+    },
+    "phlebologie": {
+      "MFA": "Duplexsonografie-Assistenz, Kompressionsversorgung, Sklerotherapie-Assistenz",
+      "ZFA": "Duplexsonografie-Assistenz, Kompressionsversorgung, Sklerotherapie-Assistenz",
+      "Auszubildende/r MFA": "Kompressionsversorgung-Grundlagen, Patientenempfang, Dokumentation",
+      "Facharzt": "Duplexsonografie, Sklerotherapie, Laser-Therapie, OP-Indikation",
+      "Therapeut": "Duplexsonografie-Assistenz, Kompressionsversorgung, Sklerotherapie-Assistenz",
+      "Empfang": "Duplexsonografie-Assistenz, Kompressionsversorgung, Sklerotherapie-Assistenz"
+    },
+    "gynaekologie": {
+      "MFA": "Ultraschall-Vorbereitung, Abstriche, Blutabnahme, CTG, Schwangerschaftsbetreuung",
+      "ZFA": "Ultraschall-Vorbereitung, Abstriche, Blutabnahme, CTG, Schwangerschaftsbetreuung",
+      "Auszubildende/r MFA": "Patientenannahme, Terminplanung, Ultraschall-Vorbereitung",
+      "Facharzt": "Vorsorge, Schwangerschaftsbegleitung, Ultraschall, operative Gynäkologie",
+      "Therapeut": "Ultraschall-Vorbereitung, Abstriche, Blutabnahme, CTG, Schwangerschaftsbetreuung",
+      "Empfang": "Ultraschall-Vorbereitung, Abstriche, Blutabnahme, CTG, Schwangerschaftsbetreuung"
+    },
+    "kinderarzt": {
+      "MFA": "Vorsorge-Assistenz, Impfungen, Hör-/Sehtests, Dokumentation, Elternberatung",
+      "ZFA": "Vorsorge-Assistenz, Impfungen, Hör-/Sehtests, Dokumentation, Elternberatung",
+      "Auszubildende/r MFA": "Kindgerechte Patientenannahme, Vitalzeichen, Impfdokumentation",
+      "Facharzt": "Vorsorgeuntersuchungen, Entwicklungsdiagnostik, Impfberatung, akute Erkrankungen",
+      "Therapeut": "Vorsorge-Assistenz, Impfungen, Hör-/Sehtests, Dokumentation, Elternberatung",
+      "Empfang": "Vorsorge-Assistenz, Impfungen, Hör-/Sehtests, Dokumentation, Elternberatung"
+    },
+    "neurologie": {
+      "MFA": "EEG anlegen, NLG/EMG-Vorbereitung, Infusionen, Patientenkoordination",
+      "ZFA": "EEG anlegen, NLG/EMG-Vorbereitung, Infusionen, Patientenkoordination",
+      "Auszubildende/r MFA": "EEG-Grundlagen, Patientenempfang, Terminplanung",
+      "Facharzt": "Neurophysiologische Diagnostik, MS-Management, Parkinson, Kopfschmerzambulanz",
+      "Therapeut": "EEG anlegen, NLG/EMG-Vorbereitung, Infusionen, Patientenkoordination",
+      "Empfang": "EEG anlegen, NLG/EMG-Vorbereitung, Infusionen, Patientenkoordination"
+    },
+    "psychotherapie": {
+      "MFA": "Terminmanagement, Patientenkoordination, Abrechnung, Testverfahren-Vorbereitung",
+      "ZFA": "Terminmanagement, Patientenkoordination, Abrechnung, Testverfahren-Vorbereitung",
+      "Auszubildende/r MFA": "Patientenempfang, Terminplanung, Abrechnungsgrundlagen",
+      "Facharzt": "Diagnostische Gespräche, Psychotherapie, Medikation, Krisenintervention",
+      "Therapeut": "Terminmanagement, Patientenkoordination, Abrechnung, Testverfahren-Vorbereitung",
+      "Empfang": "Terminmanagement, Patientenkoordination, Abrechnung, Testverfahren-Vorbereitung"
+    },
+    "urologie": {
+      "MFA": "Ultraschall-Vorbereitung, Urinproben, Uroflowmetrie, PSA-Blutabnahme",
+      "ZFA": "Ultraschall-Vorbereitung, Urinproben, Uroflowmetrie, PSA-Blutabnahme",
+      "Auszubildende/r MFA": "Patientenempfang, Probenversand, Ultraschall-Grundlagen",
+      "Facharzt": "Vorsorge, Sonografie, Urodynamik, operative Eingriffe, Andrologie",
+      "Therapeut": "Ultraschall-Vorbereitung, Urinproben, Uroflowmetrie, PSA-Blutabnahme",
+      "Empfang": "Ultraschall-Vorbereitung, Urinproben, Uroflowmetrie, PSA-Blutabnahme"
+    },
+    "zahnarzt": {
+      "MFA": "Assistenz am Stuhl, Röntgen, Abdrücke, Prophylaxe, Aufbereitung, Abrechnung",
+      "ZFA": "Assistenz am Stuhl, Röntgen, Abdrücke, Prophylaxe, Aufbereitung, Abrechnung",
+      "Auszubildende/r MFA": "Grundlagen Assistenz, Instrumentenkunde, Materialvorbereitung, Hygiene",
+      "Facharzt": "Zahnerhaltung, Prothetik, Chirurgie, Implantologie, Ästhetik",
+      "Therapeut": "",
+      "Empfang": "Assistenz am Stuhl, Röntgen, Abdrücke, Prophylaxe, Aufbereitung, Abrechnung"
+    },
+    "schmerztherapie": {
+      "MFA": "Schmerzanamnese-Vorbereitung, Infusionstherapie, TENS-Einweisung",
+      "ZFA": "Schmerzanamnese-Vorbereitung, Infusionstherapie, TENS-Einweisung",
+      "Auszubildende/r MFA": "Schmerzerfassung-Grundlagen, Patientenempfang, Dokumentation",
+      "Facharzt": "Diagnostik, Nervenblockaden, Medikamenteneinstellung, multimodale Therapie",
+      "Therapeut": "Schmerzanamnese-Vorbereitung, Infusionstherapie, TENS-Einweisung",
+      "Empfang": "Schmerzanamnese-Vorbereitung, Infusionstherapie, TENS-Einweisung"
+    },
+    "sportmedizin": {
+      "MFA": "Belastungs-EKG-Assistenz, Laktatmessung, Tapingverbände, Ultraschall",
+      "ZFA": "Belastungs-EKG-Assistenz, Laktatmessung, Tapingverbände, Ultraschall",
+      "Auszubildende/r MFA": "Belastungstest-Grundlagen, Patientenempfang, Sportler-Betreuung",
+      "Facharzt": "Leistungsdiagnostik, Sportverletzungen, Trainingsplanung, Prävention",
+      "Therapeut": "Belastungs-EKG-Assistenz, Laktatmessung, Tapingverbände, Ultraschall",
+      "Empfang": "Belastungs-EKG-Assistenz, Laktatmessung, Tapingverbände, Ultraschall"
+    },
+    "nuklearmedizin": {
+      "MFA": "",
+      "ZFA": "",
+      "Auszubildende/r MFA": "Strahlenschutz-Grundlagen, Patientenempfang, Dokumentation",
+      "Facharzt": "Befundung, Indikationsstellung, Radiojodtherapie, Schilddrüsen-Sono",
+      "Therapeut": "",
+      "Empfang": "Radiopharmakon-Vorbereitung, Kamera-Bedienung, Patientenlagerung, Strahlenschutz"
+    },
+    "unbekannt": {
+      "MFA": "",
+      "ZFA": "",
+      "Auszubildende/r MFA": "",
+      "Facharzt": "",
+      "Therapeut": "",
+      "Empfang": ""
+    }
+  },
+  "verboten": {
+    "allgemeinmedizin": [
+      "Diagnose und Behandlung von Patienten",
+      "Betreuung von Patienten aller Art"
+    ],
+    "kardiologie": [
+      "Diagnose und Behandlung von Herzerkrankungen",
+      "kardiologische Versorgung"
+    ],
+    "gastroenterologie": [
+      "gastroenterologische Versorgung",
+      "Magen-Darm-Behandlung"
+    ],
+    "pneumologie": [
+      "Behandlung von Lungenerkrankungen",
+      "pneumologische Versorgung"
+    ],
+    "endokrinologie": [
+      "Behandlung von Stoffwechselerkrankungen",
+      "endokrinologische Versorgung"
+    ],
+    "nephrologie": [
+      "Behandlung von Nierenerkrankungen",
+      "nephrologische Versorgung"
+    ],
+    "rheumatologie": [
+      "Behandlung rheumatischer Erkrankungen",
+      "rheumatologische Versorgung"
+    ],
+    "angiologie": [
+      "Behandlung von Gefäßerkrankungen",
+      "angiologische Versorgung"
+    ],
+    "onkologie": [
+      "Krebsbehandlung",
+      "onkologische Versorgung"
+    ],
+    "orthopaedie": [
+      "Diagnose und Behandlung von Patienten",
+      "Betreuung orthopädischer Patienten"
+    ],
+    "mkg": [
+      "kieferchirurgische Behandlung",
+      "MKG-Versorgung"
+    ],
+    "plastische_chirurgie": [
+      "plastische Eingriffe",
+      "Schönheitsoperationen"
+    ],
+    "augenheilkunde": [
+      "Behandlung von Augenerkrankungen",
+      "augenärztliche Versorgung"
+    ],
+    "hno": [
+      "HNO-ärztliche Behandlung",
+      "Betreuung von HNO-Patienten"
+    ],
+    "dermatologie": [
+      "Behandlung von Hauterkrankungen",
+      "Hautprobleme aller Art"
+    ],
+    "phlebologie": [
+      "Venenbehandlung",
+      "phlebologische Versorgung"
+    ],
+    "gynaekologie": [
+      "Betreuung von Patientinnen",
+      "frauenärztliche Versorgung"
+    ],
+    "kinderarzt": [
+      "Behandlung von Kindern",
+      "Betreuung der kleinen Patienten"
+    ],
+    "neurologie": [
+      "Behandlung neurologischer Erkrankungen",
+      "neurologische Betreuung"
+    ],
+    "psychotherapie": [
+      "psychotherapeutische Behandlung",
+      "Behandlung psychischer Erkrankungen"
+    ],
+    "urologie": [
+      "urologische Versorgung",
+      "Betreuung urologischer Patienten"
+    ],
+    "zahnarzt": [
+      "zahnärztliche Versorgung",
+      "Behandlung von Zahnproblemen"
+    ],
+    "schmerztherapie": [
+      "Schmerzbehandlung",
+      "Behandlung chronischer Schmerzen"
+    ],
+    "sportmedizin": [
+      "sportmedizinische Behandlung",
+      "Betreuung von Sportlern"
+    ],
+    "nuklearmedizin": [
+      "nuklearmedizinische Untersuchungen",
+      "Behandlung mit Radiopharmaka"
+    ],
+    "unbekannt": []
+  },
+  "seo": {
+    "allgemeinmedizin": {
+      "title": "Testpraxis | Hausarzt in Leipzig",
+      "description": "Hausarztpraxis Testpraxis in Leipzig. ✓ Check-up ✓ Akutsprechstunde ✓ Für die ganze Familie. Ihr vertrauensvoller Hausarzt!",
+      "keywords": [
+        "hausarzt Leipzig",
+        "hausarztpraxis Leipzig",
+        "allgemeinarzt Leipzig",
+        "hausärztliche praxis Leipzig",
+        "check-up Leipzig"
+      ]
+    },
+    "kardiologie": {
+      "title": "Testpraxis | Kardiologe in Leipzig",
+      "description": "Kardiologische Praxis Testpraxis in Leipzig. ✓ EKG ✓ Herzultraschall ✓ Herzinfarkt-Vorsorge. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "gastroenterologie": {
+      "title": "Testpraxis | Gastroenterologie in Leipzig",
+      "description": "Gastroenterologische Praxis Testpraxis in Leipzig. ✓ Magenspiegelung ✓ Darmspiegelung ✓ CED-Behandlung. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "pneumologie": {
+      "title": "Testpraxis | Pneumologie in Leipzig",
+      "description": "Pneumologische Praxis Testpraxis in Leipzig. ✓ Lungenfunktion ✓ Asthma & COPD ✓ Schlafmedizin. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "endokrinologie": {
+      "title": "Testpraxis | Endokrinologie & Diabetologie in Leipzig",
+      "description": "Endokrinologische Praxis Testpraxis in Leipzig. ✓ Diabetes-Therapie ✓ Schilddrüse ✓ Hormone. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "nephrologie": {
+      "title": "Testpraxis | Nephrologie & Dialyse in Leipzig",
+      "description": "Nephrologische Praxis Testpraxis in Leipzig. ✓ Nierendiagnostik ✓ Dialyse ✓ Transplantations-Nachsorge. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "rheumatologie": {
+      "title": "Testpraxis | Rheumatologie in Leipzig",
+      "description": "Rheumatologische Praxis Testpraxis in Leipzig. ✓ Rheuma-Diagnostik ✓ Biologika ✓ Gelenksonographie. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "angiologie": {
+      "title": "Testpraxis | Angiologie & Gefäßmedizin in Leipzig",
+      "description": "Angiologische Praxis Testpraxis in Leipzig. ✓ Gefäßdiagnostik ✓ Thrombose ✓ pAVK-Behandlung. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "onkologie": {
+      "title": "Testpraxis | Onkologie & Hämatologie in Leipzig",
+      "description": "Onkologische Praxis Testpraxis in Leipzig. ✓ Chemotherapie ✓ Immuntherapie ✓ Tumornachsorge. Kompetent an Ihrer Seite.",
+      "keywords": []
+    },
+    "orthopaedie": {
+      "title": "Testpraxis | Orthopäde in Leipzig",
+      "description": "Orthopädische Praxis Testpraxis in Leipzig. ✓ Rückenschmerzen ✓ Gelenkprobleme ✓ Sportmedizin. Schnelle Termine. Jetzt anrufen!",
+      "keywords": [
+        "orthopäde Leipzig",
+        "orthopädische praxis Leipzig",
+        "rückenschmerzen Leipzig",
+        "knieschmerzen Leipzig",
+        "sportmedizin Leipzig"
+      ]
+    },
+    "mkg": {
+      "title": "Testpraxis | MKG-Chirurgie in Leipzig",
+      "description": "MKG-Chirurgische Praxis Testpraxis in Leipzig. ✓ Implantologie ✓ Weisheitszähne ✓ Knochenaufbau. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "plastische_chirurgie": {
+      "title": "Testpraxis | Plastische & Ästhetische Chirurgie in Leipzig",
+      "description": "Praxis für Plastische Chirurgie Testpraxis in Leipzig. Ästhetische und rekonstruktive Eingriffe, Beratung zu Ablauf, Risiken und Kosten.",
+      "keywords": []
+    },
+    "augenheilkunde": {
+      "title": "Testpraxis | Augenarzt in Leipzig",
+      "description": "Augenarztpraxis Testpraxis in Leipzig. ✓ Sehtest ✓ Grauer Star ✓ Glaukom-Vorsorge. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "hno": {
+      "title": "Testpraxis | HNO-Arzt in Leipzig",
+      "description": "HNO-Praxis Testpraxis in Leipzig. ✓ Hörtest ✓ Allergien ✓ Schnarchen & Tinnitus. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "dermatologie": {
+      "title": "Testpraxis | Hautarzt in Leipzig",
+      "description": "Hautarztpraxis Testpraxis in Leipzig. ✓ Hautkrebs-Screening ✓ Allergologie ✓ Ästhetische Behandlungen. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "phlebologie": {
+      "title": "Testpraxis | Phlebologie & Venenmedizin in Leipzig",
+      "description": "Venenpraxis Testpraxis in Leipzig. ✓ Krampfadern ✓ Besenreiser ✓ Lasertherapie. Für schöne und gesunde Beine!",
+      "keywords": []
+    },
+    "gynaekologie": {
+      "title": "Testpraxis | Frauenärztin in Leipzig",
+      "description": "Frauenarztpraxis Testpraxis in Leipzig. ✓ Vorsorge ✓ Schwangerschaft ✓ Verhütungsberatung. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "kinderarzt": {
+      "title": "Testpraxis | Kinderarzt in Leipzig",
+      "description": "Kinderarztpraxis Testpraxis in Leipzig. ✓ Vorsorge U1-J2 ✓ Impfungen ✓ Liebevolle Betreuung. Jetzt Termin vereinbaren!",
+      "keywords": [
+        "kinderarzt Leipzig",
+        "kinderarztpraxis Leipzig",
+        "pädiater Leipzig",
+        "kinderarzt in der nähe",
+        "u-untersuchung Leipzig",
+        "kinderimpfung Leipzig"
+      ]
+    },
+    "neurologie": {
+      "title": "Testpraxis | Neurologe in Leipzig",
+      "description": "Neurologische Praxis Testpraxis in Leipzig. ✓ Kopfschmerzen ✓ Schwindel ✓ MS & Parkinson. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "psychotherapie": {
+      "title": "Testpraxis | Psychotherapie in Leipzig",
+      "description": "Psychotherapeutische Praxis Testpraxis in Leipzig. ✓ Depression ✓ Angststörungen ✓ Burnout. Jetzt Erstgespräch vereinbaren!",
+      "keywords": []
+    },
+    "urologie": {
+      "title": "Testpraxis | Urologe in Leipzig",
+      "description": "Urologische Praxis Testpraxis in Leipzig. ✓ Prostata-Vorsorge ✓ Blasenprobleme ✓ Diskrete Beratung. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "zahnarzt": {
+      "title": "Testpraxis | Zahnarzt in Leipzig",
+      "description": "Zahnarztpraxis Testpraxis in Leipzig. ✓ Prophylaxe ✓ Bleaching ✓ Implantate ✓ Angstpatienten willkommen. Jetzt Termin buchen!",
+      "keywords": [
+        "zahnarzt Leipzig",
+        "zahnarztpraxis Leipzig",
+        "zahnreinigung Leipzig",
+        "bleaching Leipzig",
+        "implantate Leipzig",
+        "zahnarzt angstpatienten Leipzig"
+      ]
+    },
+    "schmerztherapie": {
+      "title": "Testpraxis | Schmerztherapie in Leipzig",
+      "description": "Schmerztherapeutische Praxis Testpraxis in Leipzig. ✓ Multimodale Therapie ✓ Rückenschmerzen ✓ Migräne. Wir helfen bei chronischen Schmerzen.",
+      "keywords": []
+    },
+    "sportmedizin": {
+      "title": "Testpraxis | Sportmedizin in Leipzig",
+      "description": "Sportmedizinische Praxis Testpraxis in Leipzig. ✓ Leistungsdiagnostik ✓ Sportverletzungen ✓ Sporttauglichkeit. Jetzt Termin vereinbaren!",
+      "keywords": []
+    },
+    "nuklearmedizin": {
+      "title": "Testpraxis | Nuklearmedizin in Leipzig",
+      "description": "Nuklearmedizinische Praxis Testpraxis in Leipzig. ✓ Schilddrüse ✓ Szintigraphie ✓ PET/CT. Präzise Diagnostik und Therapie!",
+      "keywords": []
+    },
+    "unbekannt": {
+      "title": "Testpraxis | Leipzig",
+      "description": "Testpraxis in Leipzig. Jetzt Termin vereinbaren!",
+      "keywords": []
+    }
+  },
+  "lists": {
+    "featured": [
+      "allgemeinmedizin",
+      "kardiologie",
+      "gastroenterologie",
+      "pneumologie",
+      "orthopaedie",
+      "augenheilkunde",
+      "hno",
+      "dermatologie",
+      "gynaekologie",
+      "kinderarzt",
+      "neurologie",
+      "psychotherapie",
+      "urologie",
+      "zahnarzt"
+    ],
+    "more": [
+      "endokrinologie",
+      "nephrologie",
+      "rheumatologie",
+      "angiologie",
+      "onkologie",
+      "mkg",
+      "plastische_chirurgie",
+      "phlebologie",
+      "schmerztherapie",
+      "sportmedizin",
+      "nuklearmedizin"
+    ],
+    "all": [
+      "allgemeinmedizin",
+      "kardiologie",
+      "gastroenterologie",
+      "pneumologie",
+      "endokrinologie",
+      "nephrologie",
+      "rheumatologie",
+      "angiologie",
+      "onkologie",
+      "orthopaedie",
+      "mkg",
+      "plastische_chirurgie",
+      "augenheilkunde",
+      "hno",
+      "dermatologie",
+      "phlebologie",
+      "gynaekologie",
+      "kinderarzt",
+      "neurologie",
+      "psychotherapie",
+      "urologie",
+      "zahnarzt",
+      "schmerztherapie",
+      "sportmedizin",
+      "nuklearmedizin"
+    ]
+  }
+}
