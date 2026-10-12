@@ -5,7 +5,7 @@
 
 import type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext } from './types.js'
 import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.js'
-import { getBlueprintId } from '../registry.js'
+import { getBlueprintId, berufsgruppeOf } from '../registry.js'
 
 // ── All blueprints across all industries ──
 
@@ -276,11 +276,29 @@ export interface TeamPositionSuggestion {
   aiPlaceholder: string  // Beispiel-Stichpunkte für KI-Input
 }
 
+/** Heilpraktiker (Spec Berufsgruppen, Entscheidung 5): ohne Ärzte-, MFA-, ZFA- und PA-Rollen */
+const HEILPRAKTIKER_POSITIONEN: TeamPositionSuggestion[] = [
+  {
+    label: 'Heilpraktiker/in für Psychotherapie',
+    category: 'fachpersonal',
+    aiPlaceholder: 'z.B.: Erlaubnis nach dem Heilpraktikergesetz (beschränkt auf Psychotherapie) seit 2019, Weiterbildungen in …, Schwerpunkte …',
+  },
+  {
+    label: 'Praxisorganisation',
+    category: 'verwaltung',
+    aiPlaceholder: 'z.B.: Terminvergabe, Rechnungen, erster Kontakt am Telefon',
+  },
+]
+
 /**
  * Positions-Vorschläge für die Team-Verwaltung.
  * Basiert auf employer.aufgaben Keys + fachrichtung_titel + jobs.templates.
  */
 export function getBlueprintTeamPositions(fachrichtung: string): TeamPositionSuggestion[] {
+  if (berufsgruppeOf(fachrichtung) === 'heilpraktiker') {
+    return HEILPRAKTIKER_POSITIONEN.map(p => ({ ...p }))
+  }
+
   const bp = getBlueprint(fachrichtung)
   const positions: TeamPositionSuggestion[] = []
   

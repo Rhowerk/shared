@@ -7,6 +7,7 @@ import {
   getSelectableFachrichtungen, isSelectableFachrichtung, berufsgruppeOf, istAerztlich,
   resolveFachrichtung, getFachrichtungLabel,
 } from '../src/registry.ts'
+import { getBlueprintTeamPositions } from '../src/blueprints/index.ts'
 import { arztBaseline, type ArztBaseline } from './arzt-baseline.ts'
 
 const fixture: ArztBaseline = JSON.parse(readFileSync(new URL('./fixtures/arzt-baseline.json', import.meta.url), 'utf8'))
@@ -77,5 +78,23 @@ describe('Registry: Berufsgruppe und Auswahl', () => {
     for (const e of REGISTRY) {
       if (e.selectable === false) assert.ok(!istAerztlich(e.berufsgruppe ?? 'arzt'), e.id)
     }
+  })
+})
+
+describe('Team-Rollen Heilpraktiker', () => {
+  test('keine Ärzte-, MFA-, ZFA- oder PA-Rollen, keine Gruppe arzt', () => {
+    const p = getBlueprintTeamPositions('hp_psychotherapie')
+    assert.ok(p.length >= 2)
+    assert.ok(!p.some(x => x.category === 'arzt'), 'Gruppe arzt darf nicht vorkommen')
+    for (const x of p) {
+      assert.ok(!/MFA|ZFA|Physician|Arzt|Ärzt|Inhaber|Psychotherapeut/i.test(x.label), x.label)
+    }
+    assert.ok(p.some(x => x.label === 'Heilpraktiker/in für Psychotherapie'))
+  })
+
+  test('Rückgabe ist eine Kopie (Aufrufer dürfen nicht die Konstante verändern)', () => {
+    const a = getBlueprintTeamPositions('hp_psychotherapie')
+    a[0]!.label = 'x'
+    assert.notEqual(getBlueprintTeamPositions('hp_psychotherapie')[0]!.label, 'x')
   })
 })
