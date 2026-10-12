@@ -43,6 +43,12 @@ export interface ServiceItem {
    * Verharmlosung) in Prompts und Texten anwenden.
    */
   igel?: boolean
+  /**
+   * true = keine Standardleistung der Fachrichtung. Konsumenten schlagen sie nicht
+   * vor und übernehmen sie nicht automatisch; nur aufnehmen, wenn die Praxis sie
+   * ausdrücklich anbietet (z. B. Hausbesuch, Video, Paargespräche bei hp_psychotherapie).
+   */
+  optional?: boolean
 }
 
 export interface ServiceCategory {

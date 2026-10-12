@@ -140,3 +140,81 @@ describe('Blueprint-IDs', () => {
     assert.deepEqual(alle.filter(id => VORHER.includes(id)), VORHER)
   })
 })
+
+describe('Blueprint hp_psychotherapie', () => {
+  const bp = getBlueprint('hp_psychotherapie')!
+  const daten = { praxis_name: 'Testpraxis', ort: 'Leipzig' }
+
+  test('existiert und ist kein Fallback auf psychotherapie', () => {
+    assert.ok(bp)
+    assert.equal(bp.meta.id, 'hp_psychotherapie')
+  })
+
+  test('KI-Kontext nennt die richtige Praxisart und nie Arzt', () => {
+    const w = buildAIContext(bp, daten)
+    assert.ok(w.startsWith('Du schreibst Texte für die Website einer Praxis für Psychotherapie nach dem Heilpraktikergesetz.'))
+    assert.ok(!/arzt|ärzt|Arztpraxis/i.test(w), w)
+  })
+
+  test('keine geschützte Berufsbezeichnung in Name, Titel, SEO-Vorlagen und Leistungen', () => {
+    const texte = [
+      bp.meta.name, bp.meta.description, ...bp.meta.name_variants,
+      bp.fachrichtung_titel.de, bp.fachrichtung_titel.de_female,
+      bp.seo.title_template, bp.seo.description_template,
+      ...getBlueprintServices(bp).flatMap(s => [s.name, s.default_description]),
+    ]
+    for (const t of texte) assert.ok(!/Psychotherapeut/i.test(t), t)
+  })
+
+  test('FAQ: 10–15 Fragen, Pflichtfragen vorhanden', () => {
+    const fragen = bp.faq.flatMap(c => c.questions)
+    assert.ok(fragen.length >= 10 && fragen.length <= 15, `Anzahl ${fragen.length}`)
+    for (const f of fragen) assert.ok(f.answer.trim().length > 80, f.question)
+    assert.ok(fragen.some(f => /112/.test(f.answer)), 'Notfall-Frage mit 112 fehlt')
+    assert.ok(fragen.some(f => /Krankenkasse|Kasse/.test(f.question)), 'Kassen-Frage fehlt')
+    assert.ok(fragen.some(f => /Psychotherapeutin/.test(f.question)), 'Frage „Ich suche eine Psychotherapeutin …“ fehlt')
+  })
+
+  test('keine Stellenvorlagen, keine Arbeitgeber-Aufgaben für MFA/ZFA', () => {
+    assert.deepEqual(bp.jobs.templates, [])
+    assert.deepEqual(Object.keys(bp.employer.aufgaben), [])
+  })
+
+  test('verbotene Phrasen enthalten die Berufsbezeichnung', () => {
+    assert.ok(bp.employer.verbotene_phrasen.some(p => /Psychotherapeut/.test(p)))
+  })
+
+  // Entscheidungen Kevin 12.10.2026 zu den offenen Punkten der Recherche
+  test('Paargespräche, Video und Hausbesuch sind keine Standardleistung', () => {
+    const optional = getBlueprintServices(bp).filter(s => s.optional).map(s => s.name).sort()
+    assert.deepEqual(optional, ['Hausbesuch', 'Paar- und Beziehungsgespräche', 'Sitzungen per Video'])
+    const faq = bp.faq.flatMap(c => c.questions)
+    assert.ok(!faq.some(f => /Video|Hausbesuch|Paar/.test(f.question + f.answer)), 'FAQ setzt Video/Hausbesuch/Paar als Angebot voraus')
+  })
+
+  test('Video nur nach persönlichem Kennenlernen', () => {
+    const video = getBlueprintServices(bp).find(s => s.name === 'Sitzungen per Video')!
+    assert.ok(/persönlichen Kennenlernen/.test(video.default_description))
+  })
+
+  test('GKV klar nein, Beihilfe Bund nein, Länder: Beihilfestelle fragen', () => {
+    const faq = bp.faq.flatMap(c => c.questions)
+    const gkv = faq.find(f => /gesetzliche Krankenkasse/.test(f.question))!
+    assert.ok(gkv.answer.startsWith('Nein.'))
+    const beihilfe = faq.find(f => /Beihilfe/.test(f.question))!
+    assert.ok(/Bundes/.test(beihilfe.answer) && /nicht beihilfefähig/.test(beihilfe.answer))
+    assert.ok(/Beihilfestelle/.test(beihilfe.answer))
+  })
+
+  test('„Klient/in“ bevorzugt, „Patient/in“ nicht verboten', () => {
+    const { avoid, prefer } = bp.ai_context.language_style!
+    assert.ok(prefer.some(p => /Klient/.test(p)))
+    assert.ok(!avoid.some(p => /Patient\/in|Patientin|Patienten\b/.test(p) && !/Patientenakte/.test(p)))
+    assert.ok(!bp.employer.verbotene_phrasen.some(p => /^Patient/.test(p)))
+  })
+
+  test('nicht auswählbar: fehlt in getAvailableBlueprintIds, nur mit includeHidden', () => {
+    assert.ok(!getAvailableBlueprintIds().includes('hp_psychotherapie'))
+    assert.ok(getAvailableBlueprintIds({ includeHidden: true }).includes('hp_psychotherapie'))
+  })
+})
