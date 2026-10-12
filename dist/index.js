@@ -13,6 +13,6 @@ export { BENEFITS, BENEFIT_CATEGORIES, getBenefitsByCategory, getBenefitLabels, 
 // ── Werte Catalog ──
 export { WERTE_CATALOG, getWert, getWerteLabels } from './employer-context.js';
 // ── Registry (ersetzt fachrichtungMapping.ts) ──
-export { REGISTRY, INDUSTRIES, resolveFachrichtung, getRegistryEntry, getBlueprintId, getFachrichtungLabel, getFeaturedFachrichtungen, getMoreFachrichtungen, getAllFachrichtungen, getFachrichtungenByIndustry, getValidFachrichtungIds, } from './registry.js';
+export { REGISTRY, INDUSTRIES, resolveFachrichtung, getRegistryEntry, getBlueprintId, getFachrichtungLabel, getFeaturedFachrichtungen, getMoreFachrichtungen, getAllFachrichtungen, getFachrichtungenByIndustry, getValidFachrichtungIds, getSelectableFachrichtungen, isSelectableFachrichtung, berufsgruppeOf, istAerztlich, AERZTLICHE_BERUFSGRUPPEN, } from './registry.js';
 // ── Blueprints ──
 export { getBlueprint, getAvailableBlueprintIds, getAllBlueprints, getBlueprintServices, getServicesByCategory, findService, getBlueprintTeamPositions, generateSEO, buildAIContext, buildServicePrompt, HINTERGRUND_HINWEIS, getEmployerData, getAufgaben, getBenefitKontext, getVerbotenePhrases, HEALTHCARE_BLUEPRINTS, } from './blueprints/index.js';

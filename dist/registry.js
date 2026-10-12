@@ -3,6 +3,8 @@
 // Ersetzt: fachrichtungMapping.ts (Wizard)
 // Single Source of Truth für Fachrichtungs-IDs, Labels, Aliase
 // ═══════════════════════════════════════════════════════════
+/** Berufsgruppen, für die alles wie bisher (ärztlich) bleibt */
+export const AERZTLICHE_BERUFSGRUPPEN = ['arzt', 'zahnarzt', 'psychotherapie'];
 // ── Branchen ──
 export const INDUSTRIES = [
     { id: 'healthcare', label: 'Gesundheitswesen', icon: 'stethoscope' },
@@ -194,6 +196,7 @@ export const REGISTRY = [
     {
         id: 'psychotherapie', label: 'Psychotherapie / Psychiatrie', icon: 'heart-handshake',
         industry: 'healthcare', featured: true, blueprintFallback: null,
+        berufsgruppe: 'psychotherapie',
         aliases: [
             'psychotherapie', 'psychotherapeut', 'psychotherapeutin',
             'psychiatrie', 'psychiater', 'psychiaterin',
@@ -214,6 +217,7 @@ export const REGISTRY = [
     {
         id: 'zahnarzt', label: 'Zahnmedizin', icon: 'smile',
         industry: 'healthcare', featured: true, blueprintFallback: null,
+        berufsgruppe: 'zahnarzt',
         aliases: [
             'zahnarzt', 'zahnärztin', 'zahnmedizin', 'zahnheilkunde',
             'zahnarztpraxis', 'zahnpraxis', 'dentist', 'dental',
@@ -247,6 +251,15 @@ export const REGISTRY = [
             'radiologie', 'radiologe', 'radiologin', 'radiologische praxis',
         ],
     },
+    // ── NICHT-ÄRZTLICHE BERUFSGRUPPEN (nur durch Admins setzbar, in keiner Auswahl) ──
+    {
+        id: 'hp_psychotherapie', label: 'Heilpraktiker/in für Psychotherapie', icon: 'heart-handshake',
+        industry: 'healthcare', featured: false, blueprintFallback: null,
+        berufsgruppe: 'heilpraktiker', selectable: false,
+        // Keine Aliase: Freitext („Heilpraktikerin für Psychotherapie“) löst weiter wie bisher auf.
+        // Nur die ID selbst trifft diesen Eintrag, damit Scanner und Wizard ihn nie zuordnen.
+        aliases: [],
+    },
 ];
 // ═══════════════════════════════════════════════════════════
 // Lookup Functions
@@ -256,6 +269,9 @@ function getAliasMap() {
     if (!_aliasMap) {
         _aliasMap = new Map();
         for (const entry of REGISTRY) {
+            // Nicht auswählbare Einträge nehmen nicht an der Freitext-Zuordnung teil
+            if (entry.selectable === false)
+                continue;
             _aliasMap.set(entry.id, entry.id);
             for (const alias of entry.aliases) {
                 _aliasMap.set(alias.toLowerCase().trim(), entry.id);
@@ -269,6 +285,10 @@ export function resolveFachrichtung(input) {
     if (!input)
         return null;
     const normalized = input.toLowerCase().trim();
+    // Nicht auswählbare Einträge (z. B. hp_psychotherapie) nur über ihre exakte ID
+    const versteckt = REGISTRY.find(e => e.selectable === false && e.id === normalized);
+    if (versteckt)
+        return versteckt.id;
     const map = getAliasMap();
     // Exakter Match
     if (map.has(normalized))
@@ -301,23 +321,49 @@ export function getFachrichtungLabel(input) {
         return input;
     return getRegistryEntry(id)?.label || input;
 }
-/** Hauptfachrichtungen (für Wizard-Auswahl) */
+/** Hauptfachrichtungen (für Wizard-Auswahl) – nur auswählbare */
 export function getFeaturedFachrichtungen() {
-    return REGISTRY.filter(e => e.featured);
+    return REGISTRY.filter(e => e.featured && e.selectable !== false);
 }
-/** Weitere Fachrichtungen */
+/** Weitere Fachrichtungen – nur auswählbare */
 export function getMoreFachrichtungen() {
-    return REGISTRY.filter(e => !e.featured);
+    return REGISTRY.filter(e => !e.featured && e.selectable !== false);
 }
-/** Alle Fachrichtungen */
+/** Alle Fachrichtungen inkl. nicht auswählbarer (für Lookup/Admin; Auswahl-Listen: getSelectableFachrichtungen) */
 export function getAllFachrichtungen() {
     return REGISTRY;
 }
-/** Fachrichtungen einer Branche */
+/** Auswählbare Fachrichtungen einer Branche (nicht auswählbare wie hp_psychotherapie fehlen; Lookup: getAllFachrichtungen) */
 export function getFachrichtungenByIndustry(industry) {
-    return REGISTRY.filter(e => e.industry === industry);
+    return REGISTRY.filter(e => e.industry === industry && e.selectable !== false);
 }
 /** Alle gültigen IDs */
 export function getValidFachrichtungIds() {
     return REGISTRY.map(e => e.id);
+}
+// ═══════════════════════════════════════════════════════════
+// Berufsgruppen (Spec 2026-10-12)
+// ═══════════════════════════════════════════════════════════
+/** Fachrichtungen für Auswahl-Listen (Wizard, Fachbereiche-Seite, Partner, Scanner) */
+export function getSelectableFachrichtungen() {
+    return REGISTRY.filter(e => e.selectable !== false);
+}
+/** true, wenn die ID existiert und in Auswahl-Listen erscheinen darf */
+export function isSelectableFachrichtung(id) {
+    const normalized = id?.toLowerCase().trim();
+    if (!normalized)
+        return false;
+    const entry = getRegistryEntry(normalized);
+    return !!entry && entry.selectable !== false;
+}
+/** Berufsgruppe zu einer Fachrichtung (ID oder Freitext). Unbekannt oder leer = 'arzt'. */
+export function berufsgruppeOf(input) {
+    if (!input)
+        return 'arzt';
+    const id = resolveFachrichtung(input);
+    return (id ? getRegistryEntry(id)?.berufsgruppe : undefined) ?? 'arzt';
+}
+/** Ärztliche Berufsgruppen behalten Wortwahl, Compliance und Schema wie bisher */
+export function istAerztlich(b) {
+    return AERZTLICHE_BERUFSGRUPPEN.includes(b);
 }

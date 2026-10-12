@@ -9,6 +9,7 @@ import { endokrinologie } from './endokrinologie.js';
 import { gastroenterologie } from './gastroenterologie.js';
 import { gynaekologie } from './gynaekologie.js';
 import { hno } from './hno.js';
+import { hp_psychotherapie } from './hp_psychotherapie.js';
 import { kardiologie } from './kardiologie.js';
 import { kinderarzt } from './kinderarzt.js';
 import { mkg } from './mkg.js';
@@ -36,6 +37,7 @@ export const HEALTHCARE_BLUEPRINTS = {
     gastroenterologie,
     gynaekologie,
     hno,
+    hp_psychotherapie,
     kardiologie,
     kinderarzt,
     mkg,
@@ -55,4 +57,4 @@ export const HEALTHCARE_BLUEPRINTS = {
     zahnarzt,
 };
 // Re-export individual blueprints
-export { allgemeinmedizin, angiologie, augenheilkunde, dermatologie, endokrinologie, gastroenterologie, gynaekologie, hno, kardiologie, kinderarzt, mkg, nephrologie, neurologie, nuklearmedizin, onkologie, orthopaedie, phlebologie, plastische_chirurgie, pneumologie, psychotherapie, rheumatologie, schmerztherapie, sportmedizin, urologie, zahnarzt, };
+export { allgemeinmedizin, angiologie, augenheilkunde, dermatologie, endokrinologie, gastroenterologie, gynaekologie, hno, hp_psychotherapie, kardiologie, kinderarzt, mkg, nephrologie, neurologie, nuklearmedizin, onkologie, orthopaedie, phlebologie, plastische_chirurgie, pneumologie, psychotherapie, rheumatologie, schmerztherapie, sportmedizin, urologie, zahnarzt, };
