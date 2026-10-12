@@ -4,7 +4,12 @@
 // Single Source of Truth für Fachrichtungs-IDs, Labels, Aliase
 // ═══════════════════════════════════════════════════════════
 
-/** Berufsgruppe einer Fachrichtung (Spec Berufsgruppen 2026-10-12). Fehlt sie, gilt 'arzt'. */
+/**
+ * Berufsgruppe einer Fachrichtung (Spec Berufsgruppen 2026-10-12). Fehlt sie, gilt 'arzt'.
+ * 'therapie' ist ein Vorgriff für Heilmittelerbringer (Physio-, Ergotherapie, Logopädie):
+ * heute nutzt kein Registry-Eintrag den Wert, Konsumenten behandeln ihn wie 'heilpraktiker'
+ * (nicht ärztlich, siehe istAerztlich).
+ */
 export type Berufsgruppe = 'arzt' | 'zahnarzt' | 'psychotherapie' | 'heilpraktiker' | 'therapie'
 
 /** Berufsgruppen, für die alles wie bisher (ärztlich) bleibt */
@@ -381,9 +386,9 @@ export function getAllFachrichtungen(): RegistryEntry[] {
   return REGISTRY
 }
 
-/** Fachrichtungen einer Branche */
+/** Auswählbare Fachrichtungen einer Branche (nicht auswählbare wie hp_psychotherapie fehlen; Lookup: getAllFachrichtungen) */
 export function getFachrichtungenByIndustry(industry: string): RegistryEntry[] {
-  return REGISTRY.filter(e => e.industry === industry)
+  return REGISTRY.filter(e => e.industry === industry && e.selectable !== false)
 }
 
 /** Alle gültigen IDs */
@@ -402,8 +407,9 @@ export function getSelectableFachrichtungen(): RegistryEntry[] {
 
 /** true, wenn die ID existiert und in Auswahl-Listen erscheinen darf */
 export function isSelectableFachrichtung(id: string | null | undefined): boolean {
-  if (!id) return false
-  const entry = getRegistryEntry(id)
+  const normalized = id?.toLowerCase().trim()
+  if (!normalized) return false
+  const entry = getRegistryEntry(normalized)
   return !!entry && entry.selectable !== false
 }
 

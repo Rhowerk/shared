@@ -5,7 +5,7 @@
 
 import type { Blueprint, ServiceItem, ServiceCategory, BlueprintSEO, EmployerData, AIContext } from './types.js'
 import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.js'
-import { getBlueprintId, berufsgruppeOf } from '../registry.js'
+import { getBlueprintId, berufsgruppeOf, getRegistryEntry } from '../registry.js'
 
 // ── All blueprints across all industries ──
 
@@ -37,14 +37,18 @@ export function getBlueprint(fachrichtung: string): Blueprint | null {
 }
 
 /**
- * Gibt alle verfügbaren Blueprint-IDs zurück.
+ * Gibt die Blueprint-IDs für Auswahl-Listen zurück.
+ * Blueprints nicht auswählbarer Fachrichtungen (z. B. hp_psychotherapie) fehlen,
+ * außer mit `includeHidden: true` (Admin/Lookup).
  */
-export function getAvailableBlueprintIds(): string[] {
-  return Object.keys(ALL_BLUEPRINTS)
+export function getAvailableBlueprintIds(options: { includeHidden?: boolean } = {}): string[] {
+  const ids = Object.keys(ALL_BLUEPRINTS)
+  if (options.includeHidden) return ids
+  return ids.filter(id => getRegistryEntry(id)?.selectable !== false)
 }
 
 /**
- * Gibt alle Blueprints zurück.
+ * Gibt alle Blueprints zurück, auch die nicht auswählbarer Fachrichtungen.
  */
 export function getAllBlueprints(): Record<string, Blueprint> {
   return ALL_BLUEPRINTS

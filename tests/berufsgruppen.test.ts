@@ -5,9 +5,12 @@ import { readFileSync } from 'node:fs'
 import {
   REGISTRY, getRegistryEntry, getAllFachrichtungen, getFeaturedFachrichtungen, getMoreFachrichtungen,
   getSelectableFachrichtungen, isSelectableFachrichtung, berufsgruppeOf, istAerztlich,
-  resolveFachrichtung, getFachrichtungLabel,
+  resolveFachrichtung, getFachrichtungLabel, getFachrichtungenByIndustry,
 } from '../src/registry.ts'
-import { getBlueprintTeamPositions } from '../src/blueprints/index.ts'
+import {
+  getBlueprint, buildAIContext, getBlueprintServices, getBlueprintTeamPositions, getAvailableBlueprintIds,
+  getAllBlueprints,
+} from '../src/blueprints/index.ts'
 import { arztBaseline, type ArztBaseline } from './arzt-baseline.ts'
 
 const fixture: ArztBaseline = JSON.parse(readFileSync(new URL('./fixtures/arzt-baseline.json', import.meta.url), 'utf8'))
@@ -74,6 +77,19 @@ describe('Registry: Berufsgruppe und Auswahl', () => {
     assert.equal(isSelectableFachrichtung(''), false)
   })
 
+  test('isSelectableFachrichtung normalisiert wie berufsgruppeOf (trim, klein)', () => {
+    assert.equal(isSelectableFachrichtung('  Orthopaedie '), true)
+    assert.equal(isSelectableFachrichtung('HP_Psychotherapie'), false)
+    assert.equal(isSelectableFachrichtung(' hp_psychotherapie '), false)
+    assert.equal(isSelectableFachrichtung('   '), false)
+    assert.equal(isSelectableFachrichtung(null), false)
+  })
+
+  test('getFachrichtungenByIndustry liefert nur auswählbare, Arzt-Liste wie vorher', () => {
+    assert.deepEqual(getFachrichtungenByIndustry('healthcare').map(e => e.id), fixture.lists.all)
+    assert.deepEqual(getFachrichtungenByIndustry('legal'), [])
+  })
+
   test('nur Nicht-Ärzte sind nicht auswählbar', () => {
     for (const e of REGISTRY) {
       if (e.selectable === false) assert.ok(!istAerztlich(e.berufsgruppe ?? 'arzt'), e.id)
@@ -92,9 +108,35 @@ describe('Team-Rollen Heilpraktiker', () => {
     assert.ok(p.some(x => x.label === 'Heilpraktiker/in für Psychotherapie'))
   })
 
+  test('Groß-/Kleinschreibung der ID egal', () => {
+    assert.deepEqual(getBlueprintTeamPositions('HP_Psychotherapie'), getBlueprintTeamPositions('hp_psychotherapie'))
+    assert.ok(!getBlueprintTeamPositions(' HP_Psychotherapie ').some(x => x.category === 'arzt'))
+  })
+
   test('Rückgabe ist eine Kopie (Aufrufer dürfen nicht die Konstante verändern)', () => {
     const a = getBlueprintTeamPositions('hp_psychotherapie')
     a[0]!.label = 'x'
     assert.notEqual(getBlueprintTeamPositions('hp_psychotherapie')[0]!.label, 'x')
+  })
+})
+
+describe('Blueprint-IDs', () => {
+  // Stand vor der Berufsgruppen-Änderung (25 Arzt-Blueprints)
+  const VORHER = [
+    'allgemeinmedizin', 'angiologie', 'augenheilkunde', 'dermatologie', 'endokrinologie', 'gastroenterologie',
+    'gynaekologie', 'hno', 'kardiologie', 'kinderarzt', 'mkg', 'nephrologie', 'neurologie', 'nuklearmedizin',
+    'onkologie', 'orthopaedie', 'phlebologie', 'plastische_chirurgie', 'pneumologie', 'psychotherapie',
+    'rheumatologie', 'schmerztherapie', 'sportmedizin', 'urologie', 'zahnarzt',
+  ]
+
+  test('getAvailableBlueprintIds: ohne nicht auswählbare, wie vorher', () => {
+    assert.deepEqual(getAvailableBlueprintIds(), VORHER)
+    assert.deepEqual(getAvailableBlueprintIds({ includeHidden: false }), VORHER)
+  })
+
+  test('getAvailableBlueprintIds({ includeHidden: true }) liefert alle Blueprints', () => {
+    const alle = getAvailableBlueprintIds({ includeHidden: true })
+    assert.deepEqual(alle, Object.keys(getAllBlueprints()))
+    assert.deepEqual(alle.filter(id => VORHER.includes(id)), VORHER)
   })
 })
