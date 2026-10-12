@@ -7,11 +7,15 @@ import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.js';
  */
 export declare function getBlueprint(fachrichtung: string): Blueprint | null;
 /**
- * Gibt alle verfügbaren Blueprint-IDs zurück.
+ * Gibt die Blueprint-IDs für Auswahl-Listen zurück.
+ * Blueprints nicht auswählbarer Fachrichtungen (z. B. hp_psychotherapie) fehlen,
+ * außer mit `includeHidden: true` (Admin/Lookup).
  */
-export declare function getAvailableBlueprintIds(): string[];
+export declare function getAvailableBlueprintIds(options?: {
+    includeHidden?: boolean;
+}): string[];
 /**
- * Gibt alle Blueprints zurück.
+ * Gibt alle Blueprints zurück, auch die nicht auswählbarer Fachrichtungen.
  */
 export declare function getAllBlueprints(): Record<string, Blueprint>;
 /**

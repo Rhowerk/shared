@@ -36,7 +36,9 @@ export {
   REGISTRY, INDUSTRIES, resolveFachrichtung, getRegistryEntry, getBlueprintId,
   getFachrichtungLabel, getFeaturedFachrichtungen, getMoreFachrichtungen,
   getAllFachrichtungen, getFachrichtungenByIndustry, getValidFachrichtungIds,
-  type RegistryEntry, type Industry,
+  getSelectableFachrichtungen, isSelectableFachrichtung, berufsgruppeOf, istAerztlich,
+  AERZTLICHE_BERUFSGRUPPEN,
+  type RegistryEntry, type Industry, type Berufsgruppe,
 } from './registry.js'
 
 // ── Blueprints ──

@@ -12,6 +12,7 @@ import { endokrinologie } from './endokrinologie.js'
 import { gastroenterologie } from './gastroenterologie.js'
 import { gynaekologie } from './gynaekologie.js'
 import { hno } from './hno.js'
+import { hp_psychotherapie } from './hp_psychotherapie.js'
 import { kardiologie } from './kardiologie.js'
 import { kinderarzt } from './kinderarzt.js'
 import { mkg } from './mkg.js'
@@ -40,6 +41,7 @@ export const HEALTHCARE_BLUEPRINTS: Record<string, Blueprint> = {
   gastroenterologie,
   gynaekologie,
   hno,
+  hp_psychotherapie,
   kardiologie,
   kinderarzt,
   mkg,
@@ -69,6 +71,7 @@ export {
   gastroenterologie,
   gynaekologie,
   hno,
+  hp_psychotherapie,
   kardiologie,
   kinderarzt,
   mkg,

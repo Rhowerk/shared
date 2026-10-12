@@ -3,7 +3,7 @@
 // Single Source of Truth für alle Blueprint-Daten
 // ═══════════════════════════════════════════════════════════
 import { HEALTHCARE_BLUEPRINTS } from './healthcare/index.js';
-import { getBlueprintId } from '../registry.js';
+import { getBlueprintId, berufsgruppeOf, getRegistryEntry } from '../registry.js';
 // ── All blueprints across all industries ──
 const ALL_BLUEPRINTS = {
     ...HEALTHCARE_BLUEPRINTS,
@@ -29,13 +29,18 @@ export function getBlueprint(fachrichtung) {
     return null;
 }
 /**
- * Gibt alle verfügbaren Blueprint-IDs zurück.
+ * Gibt die Blueprint-IDs für Auswahl-Listen zurück.
+ * Blueprints nicht auswählbarer Fachrichtungen (z. B. hp_psychotherapie) fehlen,
+ * außer mit `includeHidden: true` (Admin/Lookup).
  */
-export function getAvailableBlueprintIds() {
-    return Object.keys(ALL_BLUEPRINTS);
+export function getAvailableBlueprintIds(options = {}) {
+    const ids = Object.keys(ALL_BLUEPRINTS);
+    if (options.includeHidden)
+        return ids;
+    return ids.filter(id => getRegistryEntry(id)?.selectable !== false);
 }
 /**
- * Gibt alle Blueprints zurück.
+ * Gibt alle Blueprints zurück, auch die nicht auswählbarer Fachrichtungen.
  */
 export function getAllBlueprints() {
     return ALL_BLUEPRINTS;
@@ -219,11 +224,27 @@ export function getVerbotenePhrases(fachrichtung) {
     const bp = getBlueprint(fachrichtung);
     return bp?.employer?.verbotene_phrasen || [];
 }
+/** Heilpraktiker (Spec Berufsgruppen, Entscheidung 5): ohne Ärzte-, MFA-, ZFA- und PA-Rollen */
+const HEILPRAKTIKER_POSITIONEN = [
+    {
+        label: 'Heilpraktiker/in für Psychotherapie',
+        category: 'fachpersonal',
+        aiPlaceholder: 'z.B.: Erlaubnis nach dem Heilpraktikergesetz (beschränkt auf Psychotherapie) seit 2019, Weiterbildungen in …, Schwerpunkte …',
+    },
+    {
+        label: 'Praxisorganisation',
+        category: 'verwaltung',
+        aiPlaceholder: 'z.B.: Terminvergabe, Rechnungen, erster Kontakt am Telefon',
+    },
+];
 /**
  * Positions-Vorschläge für die Team-Verwaltung.
  * Basiert auf employer.aufgaben Keys + fachrichtung_titel + jobs.templates.
  */
 export function getBlueprintTeamPositions(fachrichtung) {
+    if (berufsgruppeOf(fachrichtung) === 'heilpraktiker') {
+        return HEILPRAKTIKER_POSITIONEN.map(p => ({ ...p }));
+    }
     const bp = getBlueprint(fachrichtung);
     const positions = [];
     // ── Ärzte-Positionen ──
