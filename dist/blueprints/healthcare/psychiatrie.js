@@ -97,7 +97,7 @@ export const psychiatrie = {
                 {
                     "name": "Abklärung von Gedächtnisstörungen",
                     "icon": "brain",
-                    "default_description": "Nachlassendes Gedächtnis kann verschiedene Ursachen haben, darunter Depressionen oder eine beginnende Demenz. Gespräche, Tests und weitere Untersuchungen helfen, die Ursache einzugrenzen."
+                    "default_description": "Nachlassendes Gedächtnis kann verschiedene Ursachen haben, etwa Depressionen, Schlafmangel, Nebenwirkungen von Medikamenten oder neurologische Erkrankungen. Gespräche, Tests und weitere Untersuchungen helfen, die Ursache einzugrenzen."
                 }
             ]
         },
@@ -123,7 +123,7 @@ export const psychiatrie = {
                 {
                     "name": "Krisenintervention",
                     "icon": "phone",
-                    "default_description": "In akuten seelischen Krisen geht es zunächst um Stabilisierung und um die Klärung, welche weitere Hilfe sinnvoll ist. In akuten Notfällen sind der Notruf 112 und der ärztliche Bereitschaftsdienst (116 117) erreichbar."
+                    "default_description": "In akuten seelischen Krisen geht es zunächst um Stabilisierung und um die Klärung, welche weitere Hilfe sinnvoll ist. Bei akuter Lebensgefahr oder Suizidgedanken gilt der Notruf 112, außerhalb der Sprechzeiten der ärztliche Bereitschaftsdienst 116 117. Die Telefonseelsorge ist rund um die Uhr unter 0800 111 0 111 erreichbar."
                 }
             ]
         },
@@ -154,12 +154,12 @@ export const psychiatrie = {
                 {
                     "name": "Schlafstörungen",
                     "icon": "moon",
-                    "default_description": "Anhaltende Ein- oder Durchschlafstörungen können eigenständig auftreten oder Begleiterscheinung anderer Erkrankungen sein. Nach der Abklärung der Ursachen werden passende Behandlungswege besprochen."
+                    "default_description": "Anhaltende Ein- oder Durchschlafstörungen können eigenständig auftreten oder eine Begleiterscheinung anderer Erkrankungen sein. Nach der Abklärung der Ursachen werden passende Behandlungswege besprochen."
                 },
                 {
                     "name": "Abhängigkeitserkrankungen",
                     "icon": "shield",
-                    "default_description": "Bei Abhängigkeit von Alkohol, Medikamenten oder anderen Substanzen geht es um Einschätzung, Motivation und die Planung weiterer Schritte, etwa einer Entgiftung oder Entwöhnung in Zusammenarbeit mit spezialisierten Einrichtungen."
+                    "default_description": "Bei Abhängigkeit von Alkohol, Medikamenten oder anderen Substanzen geht es zunächst um eine Einschätzung der Situation und die Beratung zu möglichen nächsten Schritten. Bei Bedarf erfolgt die Weiterbehandlung in Zusammenarbeit mit spezialisierten Einrichtungen."
                 }
             ]
         }
@@ -173,10 +173,9 @@ export const psychiatrie = {
             "vertrauensvoll",
             "ruhig"
         ],
-        "audience": "Menschen mit psychischen Beschwerden wie Depressionen, Ängsten, Schlafstörungen oder ADHS-Verdacht, oft auch ihre Angehörigen.\nDer erste Termin kostet viel Überwindung - Hürden abbauen, nichts verharmlosen, nichts versprechen.",
+        "audience": "Menschen mit psychischen Beschwerden wie Depressionen, Ängsten, Schlafstörungen oder ADHS-Verdacht, oft auch ihre Angehörigen.\nDer erste Termin kostet oft viel Überwindung. Hürden abbauen, nichts verharmlosen, nichts versprechen.",
         "key_messages": [
-            "Fachärztliche Diagnostik und Behandlung psychischer Erkrankungen",
-            "Medikamentöse Behandlung und Psychotherapie aus einer Hand",
+            "Fachärztliche Diagnostik und Behandlung, je nach Praxis auch mit Psychotherapie",
             "Vertrauliche, wertschätzende Atmosphäre",
             "Psychische Gesundheit ist genauso wichtig wie körperliche"
         ]
