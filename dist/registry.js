@@ -194,14 +194,25 @@ export const REGISTRY = [
         ],
     },
     {
-        id: 'psychotherapie', label: 'Psychotherapie / Psychiatrie', icon: 'heart-handshake',
+        // Psychiaterinnen und Psychiater sind Ärztinnen und Ärzte (Kevin 24.10.2026). Bewusst kein Alias mit
+        // „psychotherap…“: resolveFachrichtung matcht auch rückwärts (Alias enthält Eingabe), sonst landete
+        // „Psychotherapeutin“ hier.
+        id: 'psychiatrie', label: 'Psychiatrie und Psychotherapie', icon: 'heart-handshake',
         industry: 'healthcare', featured: true, blueprintFallback: null,
-        berufsgruppe: 'psychotherapie',
+        aliases: [
+            'psychiatrie', 'psychiater', 'psychiaterin', 'psychiatrische praxis',
+            'kinder- und jugendpsychiatrie', 'psychosomatik', 'psychosomatische medizin',
+        ],
+    },
+    {
+        // Psychologische Psychotherapie: bis Pracio 1.1 nicht auswählbar (Kevin 24.10.2026). Kammer
+        // (Landespsychotherapeutenkammer), Berufsbezeichnung und Wortwahl sind noch ärztlich abgebildet.
+        id: 'psychotherapie', label: 'Psychotherapie', icon: 'heart-handshake',
+        industry: 'healthcare', featured: false, blueprintFallback: null,
+        berufsgruppe: 'psychotherapie', selectable: false,
         aliases: [
             'psychotherapie', 'psychotherapeut', 'psychotherapeutin',
-            'psychiatrie', 'psychiater', 'psychiaterin',
-            'psychologischer psychotherapeut', 'verhaltenstherapie',
-            'psychosomatik', 'psychosomatische medizin',
+            'psychologischer psychotherapeut', 'psychologische psychotherapeutin', 'verhaltenstherapie',
         ],
     },
     // ── UROLOGIE ──

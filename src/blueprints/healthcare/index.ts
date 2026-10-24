@@ -24,6 +24,7 @@ import { orthopaedie } from './orthopaedie.js'
 import { phlebologie } from './phlebologie.js'
 import { plastische_chirurgie } from './plastische_chirurgie.js'
 import { pneumologie } from './pneumologie.js'
+import { psychiatrie } from './psychiatrie.js'
 import { psychotherapie } from './psychotherapie.js'
 import { rheumatologie } from './rheumatologie.js'
 import { schmerztherapie } from './schmerztherapie.js'
@@ -53,6 +54,7 @@ export const HEALTHCARE_BLUEPRINTS: Record<string, Blueprint> = {
   phlebologie,
   plastische_chirurgie,
   pneumologie,
+  psychiatrie,
   psychotherapie,
   rheumatologie,
   schmerztherapie,
@@ -83,6 +85,7 @@ export {
   phlebologie,
   plastische_chirurgie,
   pneumologie,
+  psychiatrie,
   psychotherapie,
   rheumatologie,
   schmerztherapie,
