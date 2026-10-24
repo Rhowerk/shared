@@ -21,6 +21,7 @@ import { orthopaedie } from './orthopaedie.js';
 import { phlebologie } from './phlebologie.js';
 import { plastische_chirurgie } from './plastische_chirurgie.js';
 import { pneumologie } from './pneumologie.js';
+import { psychiatrie } from './psychiatrie.js';
 import { psychotherapie } from './psychotherapie.js';
 import { rheumatologie } from './rheumatologie.js';
 import { schmerztherapie } from './schmerztherapie.js';
@@ -49,6 +50,7 @@ export const HEALTHCARE_BLUEPRINTS = {
     phlebologie,
     plastische_chirurgie,
     pneumologie,
+    psychiatrie,
     psychotherapie,
     rheumatologie,
     schmerztherapie,
@@ -57,4 +59,4 @@ export const HEALTHCARE_BLUEPRINTS = {
     zahnarzt,
 };
 // Re-export individual blueprints
-export { allgemeinmedizin, angiologie, augenheilkunde, dermatologie, endokrinologie, gastroenterologie, gynaekologie, hno, hp_psychotherapie, kardiologie, kinderarzt, mkg, nephrologie, neurologie, nuklearmedizin, onkologie, orthopaedie, phlebologie, plastische_chirurgie, pneumologie, psychotherapie, rheumatologie, schmerztherapie, sportmedizin, urologie, zahnarzt, };
+export { allgemeinmedizin, angiologie, augenheilkunde, dermatologie, endokrinologie, gastroenterologie, gynaekologie, hno, hp_psychotherapie, kardiologie, kinderarzt, mkg, nephrologie, neurologie, nuklearmedizin, onkologie, orthopaedie, phlebologie, plastische_chirurgie, pneumologie, psychiatrie, psychotherapie, rheumatologie, schmerztherapie, sportmedizin, urologie, zahnarzt, };

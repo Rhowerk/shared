@@ -15,18 +15,70 @@ import { arztBaseline, type ArztBaseline } from './arzt-baseline.ts'
 
 const fixture: ArztBaseline = JSON.parse(readFileSync(new URL('./fixtures/arzt-baseline.json', import.meta.url), 'utf8'))
 
+// 24.10.2026: „Psychotherapie / Psychiatrie“ ist getrennt. Psychiatrie ist eine eigene ärztliche Fachrichtung,
+// die psychologische Psychotherapie bis Pracio 1.1 nicht auswählbar. Alles andere bleibt wie in der Baseline.
+/** Baseline ohne alles, was vorher auf psychotherapie auflöste (Vergleich nur für die übrigen Fachrichtungen) */
+function ohnePsycho(b: Omit<ArztBaseline, 'lists'>, vorher: Omit<ArztBaseline, 'lists'>) {
+  const betroffen = (k: string) => vorher.resolve[k] === 'psychotherapie' || !(k in vorher.resolve)
+  const ohneId = <T>(m: Record<string, T>) => Object.fromEntries(Object.entries(m).filter(([k]) => k !== 'psychotherapie'))
+  return {
+    ...b,
+    ids: b.ids.filter(id => id !== 'psychotherapie'),
+    resolve: Object.fromEntries(Object.entries(b.resolve).filter(([k]) => !betroffen(k))),
+    labels: Object.fromEntries(Object.entries(b.labels).filter(([k]) => !betroffen(k))),
+    blueprintIds: ohneId(b.blueprintIds), aiWebsite: ohneId(b.aiWebsite), aiKarriere: ohneId(b.aiKarriere),
+    team: ohneId(b.team), aufgaben: ohneId(b.aufgaben), verboten: ohneId(b.verboten), seo: ohneId(b.seo),
+  }
+}
+const nachTrennung = (l: string[]) => l.map(id => (id === 'psychotherapie' ? 'psychiatrie' : id))
+
 describe('Arzt bleibt gleich (Baseline vor der Änderung)', () => {
-  test('alle Ausgaben für die 25 bisherigen Fachrichtungen sind identisch', () => {
+  test('alle Ausgaben für die übrigen 24 Fachrichtungen sind identisch', () => {
     const { lists: jetztListen, ...jetzt } = arztBaseline(fixture.ids)
     const { lists: vorherListen, ...vorher } = fixture
-    assert.deepEqual(jetzt, vorher)
-    assert.deepEqual(jetztListen.featured, vorherListen.featured)
+    assert.deepEqual(ohnePsycho(jetzt, vorher), ohnePsycho(vorher, vorher))
+    assert.deepEqual(jetztListen.featured, nachTrennung(vorherListen.featured))
     assert.deepEqual(jetztListen.more, vorherListen.more)
   })
 
-  test('Auswahl-Liste = bisherige Gesamtliste, Gesamtliste hat zusätzlich nur hp_psychotherapie', () => {
-    assert.deepEqual(getSelectableFachrichtungen().map(e => e.id), fixture.lists.all)
-    assert.deepEqual(getAllFachrichtungen().map(e => e.id), [...fixture.lists.all, 'hp_psychotherapie'])
+  test('Auswahl-Liste: Psychiatrie statt Psychotherapie; Gesamtliste zusätzlich psychotherapie und hp_psychotherapie', () => {
+    assert.deepEqual(getSelectableFachrichtungen().map(e => e.id), nachTrennung(fixture.lists.all))
+    const alle = getAllFachrichtungen().map(e => e.id)
+    assert.deepEqual(alle.filter(id => id !== 'psychotherapie'), [...nachTrennung(fixture.lists.all), 'hp_psychotherapie'])
+    assert.ok(alle.includes('psychotherapie'))
+  })
+})
+
+describe('Psychiatrie und Psychotherapie getrennt (24.10.2026)', () => {
+  test('Psychiatrie: ärztlich, auswählbar, eigener Blueprint mit Facharzttitel', () => {
+    const e = getRegistryEntry('psychiatrie')!
+    assert.equal(e.label, 'Psychiatrie und Psychotherapie')
+    assert.equal(berufsgruppeOf('psychiatrie'), 'arzt')
+    assert.equal(isSelectableFachrichtung('psychiatrie'), true)
+    const bp = getBlueprint('psychiatrie')!
+    assert.equal(bp.meta.id, 'psychiatrie')
+    assert.equal(bp.fachrichtung_titel.de_female, 'Fachärztin für Psychiatrie und Psychotherapie')
+    assert.ok(getBlueprintServices(bp).some(s => s.name === 'Medikamentöse Behandlung'))
+  })
+
+  test('Psychiater und Psychosomatik lösen auf Psychiatrie auf', () => {
+    for (const t of ['Psychiater', 'Psychiaterin', 'Psychiatrie', 'Facharzt für Psychiatrie und Psychotherapie',
+      'Psychosomatische Medizin und Psychotherapie', 'Kinder- und Jugendpsychiatrie', 'Praxis für Psychiatrie']) {
+      assert.equal(resolveFachrichtung(t), 'psychiatrie', t)
+    }
+  })
+
+  test('psychologische Psychotherapie: nicht auswählbar, nie per Freitext, nie Psychiatrie', () => {
+    const e = getRegistryEntry('psychotherapie')!
+    assert.equal(e.selectable, false)
+    assert.equal(e.featured, false)
+    assert.equal(isSelectableFachrichtung('psychotherapie'), false)
+    for (const t of ['Psychotherapeutin', 'Psychologische Psychotherapeutin', 'Praxis für Psychotherapie', 'Verhaltenstherapie']) {
+      assert.equal(resolveFachrichtung(t), null, t)
+    }
+    // exakte ID bleibt für Admins und Bestandsdaten auflösbar
+    assert.equal(resolveFachrichtung('psychotherapie'), 'psychotherapie')
+    assert.ok(!getSelectableFachrichtungen().some(x => x.id === 'psychotherapie'))
   })
 })
 
@@ -43,13 +95,14 @@ describe('Registry: Berufsgruppe und Auswahl', () => {
     assert.equal(berufsgruppeOf('orthopaedie'), 'arzt')
     assert.equal(berufsgruppeOf('zahnarzt'), 'zahnarzt')
     assert.equal(berufsgruppeOf('psychotherapie'), 'psychotherapie')
+    assert.equal(berufsgruppeOf('psychiatrie'), 'arzt')
     assert.equal(berufsgruppeOf('hp_psychotherapie'), 'heilpraktiker')
     assert.equal(berufsgruppeOf('HP_Psychotherapie'), 'heilpraktiker')
     assert.equal(berufsgruppeOf(''), 'arzt')
     assert.equal(berufsgruppeOf(null), 'arzt')
     assert.equal(berufsgruppeOf('unbekannt'), 'arzt')
-    // Freitext bleibt bei der Psychotherapie-Fachrichtung (Scanner/Wizard ordnen nie Heilpraktiker zu)
-    assert.equal(berufsgruppeOf('Heilpraktikerin für Psychotherapie'), 'psychotherapie')
+    // Freitext ordnet nie Heilpraktiker zu; seit 24.10.2026 löst „Psychotherapie“ als Freitext nicht mehr auf, also arzt
+    assert.equal(berufsgruppeOf('Heilpraktikerin für Psychotherapie'), 'arzt')
   })
 
   test('istAerztlich', () => {
@@ -62,8 +115,8 @@ describe('Registry: Berufsgruppe und Auswahl', () => {
 
   test('hp_psychotherapie nur exakt per ID auflösbar, nie per Freitext', () => {
     assert.equal(resolveFachrichtung('hp_psychotherapie'), 'hp_psychotherapie')
-    assert.equal(resolveFachrichtung('Heilpraktikerin für Psychotherapie'), 'psychotherapie')
-    assert.equal(resolveFachrichtung('psychotherapie heilpraktiker'), 'psychotherapie')
+    assert.equal(resolveFachrichtung('Heilpraktikerin für Psychotherapie'), null)
+    assert.equal(resolveFachrichtung('psychotherapie heilpraktiker'), null)
     assert.equal(getFachrichtungLabel('hp_psychotherapie'), 'Heilpraktiker/in für Psychotherapie')
   })
 
@@ -86,13 +139,13 @@ describe('Registry: Berufsgruppe und Auswahl', () => {
   })
 
   test('getFachrichtungenByIndustry liefert nur auswählbare, Arzt-Liste wie vorher', () => {
-    assert.deepEqual(getFachrichtungenByIndustry('healthcare').map(e => e.id), fixture.lists.all)
+    assert.deepEqual(getFachrichtungenByIndustry('healthcare').map(e => e.id), nachTrennung(fixture.lists.all))
     assert.deepEqual(getFachrichtungenByIndustry('legal'), [])
   })
 
-  test('nur Nicht-Ärzte sind nicht auswählbar', () => {
+  test('nicht auswählbar sind nur Nicht-Ärzte und die psychologische Psychotherapie (bis Pracio 1.1)', () => {
     for (const e of REGISTRY) {
-      if (e.selectable === false) assert.ok(!istAerztlich(e.berufsgruppe ?? 'arzt'), e.id)
+      if (e.selectable === false && e.id !== 'psychotherapie') assert.ok(!istAerztlich(e.berufsgruppe ?? 'arzt'), e.id)
     }
   })
 })
@@ -129,9 +182,10 @@ describe('Blueprint-IDs', () => {
     'rheumatologie', 'schmerztherapie', 'sportmedizin', 'urologie', 'zahnarzt',
   ]
 
-  test('getAvailableBlueprintIds: ohne nicht auswählbare, wie vorher', () => {
-    assert.deepEqual(getAvailableBlueprintIds(), VORHER)
-    assert.deepEqual(getAvailableBlueprintIds({ includeHidden: false }), VORHER)
+  test('getAvailableBlueprintIds: ohne nicht auswählbare, Psychiatrie statt Psychotherapie', () => {
+    const jetzt = nachTrennung(VORHER)
+    assert.deepEqual(getAvailableBlueprintIds(), jetzt)
+    assert.deepEqual(getAvailableBlueprintIds({ includeHidden: false }), jetzt)
   })
 
   test('getAvailableBlueprintIds({ includeHidden: true }) liefert alle Blueprints', () => {

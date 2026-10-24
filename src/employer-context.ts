@@ -299,6 +299,25 @@ const EMPLOYER_CONTEXTS: Record<string, EmployerContext> = {
     ],
   },
 
+  psychiatrie: {
+    fachrichtung: 'Psychiatrie und Psychotherapie',
+    typisch: 'Psychiatrische Diagnostik, medikamentöse Behandlung, ärztliche Psychotherapie, Depression, Angststörungen, ADHS',
+    aufgaben: {
+      mfa: 'Terminkoordination, einfühlsamer Erstkontakt, Rezepte und Bescheinigungen vorbereiten, Abrechnungswesen (EBM/GOÄ)',
+      arzt: 'Diagnostische Gespräche, medikamentöse Einstellung, ärztliche Psychotherapie, Krisenintervention',
+      azubi: 'Praxismanagement, Abrechnungs-Grundlagen, empathische Kommunikation',
+    },
+    staerke: 'Menschen langfristig begleiten, sinnstiftende Arbeit, kleines Team mit kurzen Wegen',
+    benefit_kontexte: {
+      fortbildung_bezahlt: 'Supervision, psychotherapeutische Weiterbildung, Psychopharmakologie',
+      flexible_arbeitszeiten: 'Planbare Sprechzeiten, keine Nachtdienste',
+    },
+    verbotene_phrasen: [
+      'Behandlung psychischer Erkrankungen',
+      'psychiatrische Versorgung',
+    ],
+  },
+
   psychotherapie: {
     fachrichtung: 'Psychotherapie',
     typisch: 'Gesprächsmedizin, Verhaltenstherapie, tiefenpsychologische Verfahren, Burnout, Depression, Angststörungen',
